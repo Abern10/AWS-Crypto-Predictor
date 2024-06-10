@@ -10,22 +10,11 @@ import os
 @app.route('/api/data', methods=['GET'])
 def get_data():
     crypto = request.args.get('crypto')
-    timescale = request.args.get('timescale')
-
-    if timescale == 'year':
-        days = 365
-    elif timescale == 'month':
-        days = 30
-    elif timescale == 'day':
-        days = 1
-    elif timescale == 'hour':
-        days = 1/24
-    else:
-        return jsonify({'error': 'Invalid timescale'}), 400
+    timescale = 'month'  # Always fetch data for the past 30 days
 
     try:
-        print(f"Fetching data for {crypto} for the past {days} days")
-        data = fetch_data(crypto, days)
+        print(f"Fetching data for {crypto} for the past 30 days")
+        data = fetch_data(crypto)
         print("Data fetched:", data.head())
 
         print("Preprocessing data...")
@@ -36,13 +25,11 @@ def get_data():
             raise ValueError("Processed data does not contain required columns 'timestamp' and 'price'")
 
         print("Training model and making predictions...")
-        # Train the model and make predictions
         model_path = f'backend/models/{crypto}_model.pkl'
         prediction_path = f'backend/data/predictions/{crypto}_predictions.csv'
-        train_model(processed_data, model_path, prediction_path, days_to_predict=30)
+        train_model(processed_data, model_path, prediction_path, days_to_predict=5)
 
         print("Loading predictions...")
-        # Load predictions
         predictions_df = pd.read_csv(prediction_path)
         print("Predictions loaded:", predictions_df.head())
 
@@ -71,23 +58,11 @@ def handle_disconnect():
 @socketio.on('request_update')
 def handle_request_update(json):
     crypto = json.get('crypto')
-    timescale = json.get('timescale')
-
-    if timescale == 'year':
-        days = 365
-    elif timescale == 'month':
-        days = 30
-    elif timescale == 'day':
-        days = 1
-    elif timescale == 'hour':
-        days = 1/24
-    else:
-        socketio.emit('error', {'error': 'Invalid timescale'})
-        return
+    timescale = 'month'  # Always fetch data for the past 30 days
 
     try:
-        print(f"Fetching data for {crypto} for the past {days} days")
-        data = fetch_data(crypto, days)
+        print(f"Fetching data for {crypto} for the past 30 days")
+        data = fetch_data(crypto)
         print("Data fetched:", data.head())
 
         print("Preprocessing data...")
@@ -98,13 +73,11 @@ def handle_request_update(json):
             raise ValueError("Processed data does not contain required columns 'timestamp' and 'price'")
 
         print("Training model and making predictions...")
-        # Train the model and make predictions
         model_path = f'backend/models/{crypto}_model.pkl'
         prediction_path = f'backend/data/predictions/{crypto}_predictions.csv'
-        train_model(processed_data, model_path, prediction_path, days_to_predict=30)
+        train_model(processed_data, model_path, prediction_path, days_to_predict=5)
 
         print("Loading predictions...")
-        # Load predictions
         predictions_df = pd.read_csv(prediction_path)
         print("Predictions loaded:", predictions_df.head())
 

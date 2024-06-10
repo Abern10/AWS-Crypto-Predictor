@@ -10,8 +10,8 @@ function App() {
   const [btcData, setBtcData] = useState({ timestamps: [], prices: [], predictions: { timestamps: [], prices: [] } });
   const [ethData, setEthData] = useState({ timestamps: [], prices: [], predictions: { timestamps: [], prices: [] } });
 
-  const fetchData = useCallback((crypto, timescale) => {
-    fetch(`http://localhost:1111/api/data?crypto=${crypto}&timescale=${timescale}`)
+  const fetchData = useCallback((crypto) => {
+    fetch(`http://localhost:1111/api/data?crypto=${crypto}&timescale=month`)
       .then(response => response.json())
       .then(data => {
         if (data.error) {
@@ -35,8 +35,8 @@ function App() {
   }, []);
 
   useEffect(() => {
-    fetchData('bitcoin', timescale);
-    fetchData('ethereum', timescale);
+    fetchData('bitcoin');
+    fetchData('ethereum');
 
     socket.on('update_graph', (data) => {
       if (data.error) {
@@ -58,7 +58,7 @@ function App() {
     });
 
     return () => socket.off('update_graph');
-  }, [timescale, fetchData]);
+  }, [fetchData]);
 
   const handleTimescaleChange = (newTimescale) => {
     setTimescale(newTimescale);
@@ -72,10 +72,10 @@ function App() {
       <div className="dropdown">
         <button className="dropbtn">Select Timescale</button>
         <div className="dropdown-content">
-          <button onClick={() => handleTimescaleChange('year')}>1 Year</button>
-          <button onClick={() => handleTimescaleChange('month')}>1 Month</button>
-          <button onClick={() => handleTimescaleChange('day')}>1 Day</button>
-          <button onClick={() => handleTimescaleChange('hour')}>1 Hour</button>
+          <a href="#" onClick={() => handleTimescaleChange('year')}>1 Year</a>
+          <a href="#" onClick={() => handleTimescaleChange('month')}>1 Month</a>
+          <a href="#" onClick={() => handleTimescaleChange('day')}>1 Day</a>
+          <a href="#" onClick={() => handleTimescaleChange('hour')}>1 Hour</a>
         </div>
       </div>
       <div className="graph-container">
@@ -88,31 +88,25 @@ function App() {
                 y: btcData.prices,
                 type: 'scatter',
                 mode: 'lines',
-                line: { color: 'gold' },
+                marker: { color: 'gold' },
               },
               {
                 x: btcData.predictions.timestamps,
                 y: btcData.predictions.prices,
                 type: 'scatter',
                 mode: 'lines',
-                line: { color: 'red' },
-              }
+                marker: { color: 'red' },
+              },
             ]}
             layout={{
-              margin: { t: 0 },
-              showlegend: false,
-              xaxis: {
-                showgrid: false,
-                zeroline: false,
-              },
-              yaxis: {
-                showgrid: false,
-                zeroline: false,
-              },
-              paper_bgcolor: '#2e2e2e',
-              plot_bgcolor: '#2e2e2e',
+              title: '',
+              paper_bgcolor: '#1c1c1c',
+              plot_bgcolor: '#1c1c1c',
               font: { color: 'white' },
-              responsive: true
+              xaxis: { showgrid: false },
+              yaxis: { showgrid: false },
+              showlegend: false,
+              autosize: true
             }}
             useResizeHandler
             style={{ width: '100%', height: '100%' }}
@@ -127,31 +121,25 @@ function App() {
                 y: ethData.prices,
                 type: 'scatter',
                 mode: 'lines',
-                line: { color: 'rgba(54, 162, 235, 1)' },
+                marker: { color: 'rgba(54, 162, 235, 1)' },
               },
               {
                 x: ethData.predictions.timestamps,
                 y: ethData.predictions.prices,
                 type: 'scatter',
                 mode: 'lines',
-                line: { color: 'red' },
-              }
+                marker: { color: 'red' },
+              },
             ]}
             layout={{
-              margin: { t: 0 },
-              showlegend: false,
-              xaxis: {
-                showgrid: false,
-                zeroline: false,
-              },
-              yaxis: {
-                showgrid: false,
-                zeroline: false,
-              },
-              paper_bgcolor: '#2e2e2e',
-              plot_bgcolor: '#2e2e2e',
+              title: '',
+              paper_bgcolor: '#1c1c1c',
+              plot_bgcolor: '#1c1c1c',
               font: { color: 'white' },
-              responsive: true
+              xaxis: { showgrid: false },
+              yaxis: { showgrid: false },
+              showlegend: false,
+              autosize: true
             }}
             useResizeHandler
             style={{ width: '100%', height: '100%' }}
@@ -160,18 +148,18 @@ function App() {
       </div>
       <div className="table-container">
         <div className="table">
-          <h3>Bitcoin Price Data</h3>
+          <h2 style={{ color: 'gold' }}>Bitcoin</h2>
           <table>
             <thead>
               <tr>
                 <th>Date</th>
-                <th>Price (USD)</th>
+                <th>Price</th>
               </tr>
             </thead>
             <tbody>
               {btcData.timestamps.slice().reverse().map((timestamp, index) => (
                 <tr key={index}>
-                  <td>{timestamp.toLocaleString()}</td>
+                  <td>{new Date(timestamp).toLocaleString()}</td>
                   <td>{btcData.prices.slice().reverse()[index]}</td>
                 </tr>
               ))}
@@ -179,18 +167,18 @@ function App() {
           </table>
         </div>
         <div className="table">
-          <h3>Ethereum Price Data</h3>
+          <h2 style={{ color: 'rgba(54, 162, 235, 1)' }}>Ethereum</h2>
           <table>
             <thead>
               <tr>
                 <th>Date</th>
-                <th>Price (USD)</th>
+                <th>Price</th>
               </tr>
             </thead>
             <tbody>
               {ethData.timestamps.slice().reverse().map((timestamp, index) => (
                 <tr key={index}>
-                  <td>{timestamp.toLocaleString()}</td>
+                  <td>{new Date(timestamp).toLocaleString()}</td>
                   <td>{ethData.prices.slice().reverse()[index]}</td>
                 </tr>
               ))}
@@ -202,4 +190,4 @@ function App() {
   );
 }
 
-export default App;
+export default App

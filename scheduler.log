@@ -1262,3 +1262,312 @@
 2024-06-10 09:25:50,197 - INFO - 127.0.0.1 - - [10/Jun/2024 09:25:50] "POST /socket.io/?EIO=4&transport=polling&t=P02Ye9l&sid=0pfQ-4f5oJnbrUixAAAA HTTP/1.1" 200 -
 2024-06-10 09:25:50,201 - INFO - 127.0.0.1 - - [10/Jun/2024 09:25:50] "GET /socket.io/?EIO=4&transport=polling&t=P02Ye9n&sid=0pfQ-4f5oJnbrUixAAAA HTTP/1.1" 200 -
 2024-06-10 09:25:50,206 - INFO - 127.0.0.1 - - [10/Jun/2024 09:25:50] "GET /socket.io/?EIO=4&transport=polling&t=P02Ye9x&sid=0pfQ-4f5oJnbrUixAAAA HTTP/1.1" 200 -
+2024-06-10 09:26:40,718 - INFO - Starting Flask server...
+2024-06-10 09:26:40,719 - INFO - Starting scheduler thread...
+2024-06-10 09:26:40,719 - INFO - Scheduler thread started.
+2024-06-10 09:26:40,725 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-10 09:26:40,725 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-10 09:26:40,725 - INFO -  * Restarting with stat
+2024-06-10 09:26:41,702 - INFO - Starting Flask server...
+2024-06-10 09:26:41,702 - INFO - Starting scheduler thread...
+2024-06-10 09:26:41,702 - INFO - Scheduler thread started.
+2024-06-10 09:26:41,703 - WARNING -  * Debugger is active!
+2024-06-10 09:26:41,709 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 09:26:41,734 - INFO - 127.0.0.1 - - [10/Jun/2024 09:26:41] "GET /socket.io/?EIO=4&transport=polling&t=P02YqYz HTTP/1.1" 200 -
+2024-06-10 09:26:41,743 - INFO - 127.0.0.1 - - [10/Jun/2024 09:26:41] "POST /socket.io/?EIO=4&transport=polling&t=P02Yql8&sid=34TLWb7ty1ajG1mYAAAA HTTP/1.1" 200 -
+2024-06-10 09:26:41,744 - INFO - 127.0.0.1 - - [10/Jun/2024 09:26:41] "GET /socket.io/?EIO=4&transport=polling&t=P02YqlA&sid=34TLWb7ty1ajG1mYAAAA HTTP/1.1" 200 -
+2024-06-10 09:26:41,754 - INFO - 127.0.0.1 - - [10/Jun/2024 09:26:41] "GET /socket.io/?EIO=4&transport=polling&t=P02YqlK&sid=34TLWb7ty1ajG1mYAAAA HTTP/1.1" 200 -
+2024-06-10 09:27:08,010 - INFO - 127.0.0.1 - - [10/Jun/2024 09:27:08] "GET /socket.io/?EIO=4&transport=websocket&sid=34TLWb7ty1ajG1mYAAAA HTTP/1.1" 200 -
+2024-06-10 09:27:08,229 - INFO - 127.0.0.1 - - [10/Jun/2024 09:27:08] "GET /socket.io/?EIO=4&transport=polling&t=P02YxD2 HTTP/1.1" 200 -
+2024-06-10 09:27:08,237 - INFO - 127.0.0.1 - - [10/Jun/2024 09:27:08] "POST /socket.io/?EIO=4&transport=polling&t=P02YxD8&sid=L2ZuoBa3pzViweSeAAAC HTTP/1.1" 200 -
+2024-06-10 09:27:08,237 - INFO - 127.0.0.1 - - [10/Jun/2024 09:27:08] "GET /socket.io/?EIO=4&transport=polling&t=P02YxD8.0&sid=L2ZuoBa3pzViweSeAAAC HTTP/1.1" 200 -
+2024-06-10 09:27:08,250 - INFO - 127.0.0.1 - - [10/Jun/2024 09:27:08] "GET /socket.io/?EIO=4&transport=polling&t=P02YxDO&sid=L2ZuoBa3pzViweSeAAAC HTTP/1.1" 200 -
+2024-06-10 09:27:08,254 - INFO - 127.0.0.1 - - [10/Jun/2024 09:27:08] "GET /socket.io/?EIO=4&transport=polling&t=P02YxDS&sid=L2ZuoBa3pzViweSeAAAC HTTP/1.1" 200 -
+2024-06-10 09:27:08,304 - INFO - 127.0.0.1 - - [10/Jun/2024 09:27:08] "GET /socket.io/?EIO=4&transport=polling&t=P02YxED&sid=L2ZuoBa3pzViweSeAAAC HTTP/1.1" 200 -
+2024-06-10 09:27:08,314 - INFO - 127.0.0.1 - - [10/Jun/2024 09:27:08] "GET /socket.io/?EIO=4&transport=polling&t=P02YxEO&sid=L2ZuoBa3pzViweSeAAAC HTTP/1.1" 200 -
+2024-06-10 09:27:08,324 - INFO - 127.0.0.1 - - [10/Jun/2024 09:27:08] "GET /socket.io/?EIO=4&transport=polling&t=P02YxEY&sid=L2ZuoBa3pzViweSeAAAC HTTP/1.1" 200 -
+2024-06-10 09:27:08,343 - INFO - 127.0.0.1 - - [10/Jun/2024 09:27:08] "GET /socket.io/?EIO=4&transport=polling&t=P02YxEs&sid=L2ZuoBa3pzViweSeAAAC HTTP/1.1" 200 -
+2024-06-10 09:27:08,499 - INFO - 127.0.0.1 - - [10/Jun/2024 09:27:08] "[35m[1mGET /api/data?crypto=bitcoin&timescale=day HTTP/1.1[0m" 500 -
+2024-06-10 09:27:08,509 - INFO - 127.0.0.1 - - [10/Jun/2024 09:27:08] "[35m[1mGET /api/data?crypto=bitcoin&timescale=day HTTP/1.1[0m" 500 -
+2024-06-10 09:27:08,511 - INFO - 127.0.0.1 - - [10/Jun/2024 09:27:08] "[35m[1mGET /api/data?crypto=ethereum&timescale=day HTTP/1.1[0m" 500 -
+2024-06-10 09:27:08,514 - INFO - 127.0.0.1 - - [10/Jun/2024 09:27:08] "[35m[1mGET /api/data?crypto=ethereum&timescale=day HTTP/1.1[0m" 500 -
+2024-06-10 09:31:40,866 - INFO - Running scheduled job...
+2024-06-10 09:31:41,250 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 09:31:41,259 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 09:31:41,259 - ERROR - Error in job execution: string indices must be integers, not 'str'
+2024-06-10 09:31:41,822 - INFO - Running scheduled job...
+2024-06-10 09:31:42,081 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 09:31:42,090 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 09:31:42,090 - ERROR - Error in job execution: string indices must be integers, not 'str'
+2024-06-10 09:36:41,295 - INFO - Running scheduled job...
+2024-06-10 09:36:41,535 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 09:36:41,538 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 09:36:41,538 - ERROR - Error in job execution: string indices must be integers, not 'str'
+2024-06-10 09:36:42,150 - INFO - Running scheduled job...
+2024-06-10 09:36:42,363 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 09:36:42,366 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 09:36:42,366 - ERROR - Error in job execution: string indices must be integers, not 'str'
+2024-06-10 09:41:41,718 - INFO - Running scheduled job...
+2024-06-10 09:41:41,976 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 09:41:41,985 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 09:41:41,985 - ERROR - Error in job execution: string indices must be integers, not 'str'
+2024-06-10 09:41:42,532 - INFO - Running scheduled job...
+2024-06-10 09:41:42,764 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 09:41:42,770 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 09:41:42,770 - ERROR - Error in job execution: string indices must be integers, not 'str'
+2024-06-10 09:46:42,227 - INFO - Running scheduled job...
+2024-06-10 09:46:42,476 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 09:46:42,482 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 09:46:42,482 - ERROR - Error in job execution: string indices must be integers, not 'str'
+2024-06-10 09:46:42,995 - INFO - Running scheduled job...
+2024-06-10 09:46:43,249 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 09:46:43,257 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 09:46:43,257 - ERROR - Error in job execution: string indices must be integers, not 'str'
+2024-06-10 09:51:42,847 - INFO - Running scheduled job...
+2024-06-10 09:51:43,099 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 09:51:43,105 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 09:51:43,105 - ERROR - Error in job execution: string indices must be integers, not 'str'
+2024-06-10 09:51:43,670 - INFO - Running scheduled job...
+2024-06-10 09:51:43,891 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 09:51:43,897 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 09:51:43,897 - ERROR - Error in job execution: string indices must be integers, not 'str'
+2024-06-10 09:54:22,033 - INFO - 127.0.0.1 - - [10/Jun/2024 09:54:22] "GET /socket.io/?EIO=4&transport=websocket&sid=L2ZuoBa3pzViweSeAAAC HTTP/1.1" 200 -
+2024-06-10 09:55:50,699 - INFO -  * Detected change in '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/process_data.py', reloading
+2024-06-10 09:55:50,852 - INFO -  * Restarting with stat
+2024-06-10 10:02:51,417 - INFO - Starting Flask server...
+2024-06-10 10:02:51,422 - INFO - Starting scheduler thread...
+2024-06-10 10:02:51,422 - INFO - Scheduler thread started.
+2024-06-10 10:02:51,429 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-10 10:02:51,429 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-10 10:02:51,429 - INFO -  * Restarting with stat
+2024-06-10 10:02:52,609 - INFO - Starting Flask server...
+2024-06-10 10:02:52,609 - INFO - Starting scheduler thread...
+2024-06-10 10:02:52,609 - INFO - Scheduler thread started.
+2024-06-10 10:02:52,609 - WARNING -  * Debugger is active!
+2024-06-10 10:02:52,618 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 10:07:51,582 - INFO - Running scheduled job...
+2024-06-10 10:07:51,774 - ERROR - Error in job execution: 'prices'
+2024-06-10 10:07:52,790 - INFO - Running scheduled job...
+2024-06-10 10:07:52,975 - ERROR - Error in job execution: 'prices'
+2024-06-10 10:10:25,286 - INFO - 127.0.0.1 - - [10/Jun/2024 10:10:25] "GET /socket.io/?EIO=4&transport=polling&t=P02irG3 HTTP/1.1" 200 -
+2024-06-10 10:10:25,301 - INFO - 127.0.0.1 - - [10/Jun/2024 10:10:25] "POST /socket.io/?EIO=4&transport=polling&t=P02irGH&sid=4FSJ6sJUOYJnpHOjAAAA HTTP/1.1" 200 -
+2024-06-10 10:10:25,303 - INFO - 127.0.0.1 - - [10/Jun/2024 10:10:25] "GET /socket.io/?EIO=4&transport=polling&t=P02irGI&sid=4FSJ6sJUOYJnpHOjAAAA HTTP/1.1" 200 -
+2024-06-10 10:10:25,370 - INFO - 127.0.0.1 - - [10/Jun/2024 10:10:25] "GET /socket.io/?EIO=4&transport=polling&t=P02irHO&sid=4FSJ6sJUOYJnpHOjAAAA HTTP/1.1" 200 -
+2024-06-10 10:10:25,382 - INFO - 127.0.0.1 - - [10/Jun/2024 10:10:25] "GET /socket.io/?EIO=4&transport=polling&t=P02irHa&sid=4FSJ6sJUOYJnpHOjAAAA HTTP/1.1" 200 -
+2024-06-10 10:10:25,386 - INFO - 127.0.0.1 - - [10/Jun/2024 10:10:25] "GET /socket.io/?EIO=4&transport=polling&t=P02irHd&sid=4FSJ6sJUOYJnpHOjAAAA HTTP/1.1" 200 -
+2024-06-10 10:10:25,409 - INFO - 127.0.0.1 - - [10/Jun/2024 10:10:25] "GET /socket.io/?EIO=4&transport=polling&t=P02irH_&sid=4FSJ6sJUOYJnpHOjAAAA HTTP/1.1" 200 -
+2024-06-10 10:10:25,538 - INFO - 127.0.0.1 - - [10/Jun/2024 10:10:25] "[35m[1mGET /api/data?crypto=bitcoin&timescale=month HTTP/1.1[0m" 500 -
+2024-06-10 10:10:25,546 - INFO - 127.0.0.1 - - [10/Jun/2024 10:10:25] "[35m[1mGET /api/data?crypto=bitcoin&timescale=month HTTP/1.1[0m" 500 -
+2024-06-10 10:10:25,552 - INFO - 127.0.0.1 - - [10/Jun/2024 10:10:25] "[35m[1mGET /api/data?crypto=ethereum&timescale=month HTTP/1.1[0m" 500 -
+2024-06-10 10:10:25,590 - INFO - 127.0.0.1 - - [10/Jun/2024 10:10:25] "[35m[1mGET /api/data?crypto=ethereum&timescale=month HTTP/1.1[0m" 500 -
+2024-06-10 10:10:58,404 - INFO - 127.0.0.1 - - [10/Jun/2024 10:10:58] "GET /socket.io/?EIO=4&transport=polling&t=P02izLW HTTP/1.1" 200 -
+2024-06-10 10:10:58,409 - INFO - 127.0.0.1 - - [10/Jun/2024 10:10:58] "POST /socket.io/?EIO=4&transport=polling&t=P02izLb&sid=76dYLqa49UDYmktGAAAC HTTP/1.1" 200 -
+2024-06-10 10:10:58,410 - INFO - 127.0.0.1 - - [10/Jun/2024 10:10:58] "GET /socket.io/?EIO=4&transport=polling&t=P02izLc&sid=76dYLqa49UDYmktGAAAC HTTP/1.1" 200 -
+2024-06-10 10:10:58,575 - INFO - 127.0.0.1 - - [10/Jun/2024 10:10:58] "[35m[1mGET /api/data?crypto=ethereum&timescale=day HTTP/1.1[0m" 500 -
+2024-06-10 10:10:58,612 - INFO - 127.0.0.1 - - [10/Jun/2024 10:10:58] "[35m[1mGET /api/data?crypto=bitcoin&timescale=day HTTP/1.1[0m" 500 -
+2024-06-10 10:12:52,015 - INFO - Running scheduled job...
+2024-06-10 10:12:52,210 - ERROR - Error in job execution: 'prices'
+2024-06-10 10:12:53,159 - INFO - Running scheduled job...
+2024-06-10 10:12:53,296 - ERROR - Error in job execution: 'prices'
+2024-06-10 10:15:46,774 - INFO -  * Detected change in '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/scheduler.py', reloading
+2024-06-10 10:15:46,934 - INFO -  * Restarting with stat
+2024-06-10 10:15:48,429 - INFO - Starting Flask server...
+2024-06-10 10:15:48,431 - INFO - Starting scheduler thread...
+2024-06-10 10:15:48,431 - INFO - Scheduler thread started.
+2024-06-10 10:15:48,431 - WARNING -  * Debugger is active!
+2024-06-10 10:15:48,441 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 10:15:48,469 - INFO - 127.0.0.1 - - [10/Jun/2024 10:15:48] "GET /socket.io/?EIO=4&transport=polling&t=P02k409 HTTP/1.1" 200 -
+2024-06-10 10:15:48,470 - INFO - 127.0.0.1 - - [10/Jun/2024 10:15:48] "GET /socket.io/?EIO=4&transport=polling&t=P02k43F HTTP/1.1" 200 -
+2024-06-10 10:15:48,478 - INFO - 127.0.0.1 - - [10/Jun/2024 10:15:48] "POST /socket.io/?EIO=4&transport=polling&t=P02k49u&sid=NGMSaJIbiG4VmyIKAAAA HTTP/1.1" 200 -
+2024-06-10 10:15:48,484 - INFO - 127.0.0.1 - - [10/Jun/2024 10:15:48] "GET /socket.io/?EIO=4&transport=polling&t=P02k49-&sid=NGMSaJIbiG4VmyIKAAAA HTTP/1.1" 200 -
+2024-06-10 10:15:48,489 - INFO - 127.0.0.1 - - [10/Jun/2024 10:15:48] "POST /socket.io/?EIO=4&transport=polling&t=P02k4A4&sid=PAAj1SWKKL-zexMmAAAB HTTP/1.1" 200 -
+2024-06-10 10:15:48,494 - INFO - 127.0.0.1 - - [10/Jun/2024 10:15:48] "GET /socket.io/?EIO=4&transport=polling&t=P02k4A7&sid=PAAj1SWKKL-zexMmAAAB HTTP/1.1" 200 -
+2024-06-10 10:15:48,499 - INFO - 127.0.0.1 - - [10/Jun/2024 10:15:48] "GET /socket.io/?EIO=4&transport=polling&t=P02k4AH&sid=NGMSaJIbiG4VmyIKAAAA HTTP/1.1" 200 -
+2024-06-10 10:15:48,504 - INFO - 127.0.0.1 - - [10/Jun/2024 10:15:48] "GET /socket.io/?EIO=4&transport=polling&t=P02k4AL&sid=PAAj1SWKKL-zexMmAAAB HTTP/1.1" 200 -
+2024-06-10 10:15:48,507 - INFO - 127.0.0.1 - - [10/Jun/2024 10:15:48] "GET /socket.io/?EIO=4&transport=polling&t=P02k4AN&sid=NGMSaJIbiG4VmyIKAAAA HTTP/1.1" 200 -
+2024-06-10 10:15:48,509 - INFO - 127.0.0.1 - - [10/Jun/2024 10:15:48] "GET /socket.io/?EIO=4&transport=polling&t=P02k4AQ&sid=PAAj1SWKKL-zexMmAAAB HTTP/1.1" 200 -
+2024-06-10 10:16:07,980 - INFO -  * Detected change in '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/scheduler.py', reloading
+2024-06-10 10:16:08,139 - INFO -  * Restarting with stat
+2024-06-10 10:16:09,413 - INFO - Starting Flask server...
+2024-06-10 10:16:09,414 - INFO - Starting scheduler thread...
+2024-06-10 10:16:09,414 - INFO - Scheduler thread started.
+2024-06-10 10:16:09,415 - WARNING -  * Debugger is active!
+2024-06-10 10:16:09,425 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 10:16:09,456 - INFO - 127.0.0.1 - - [10/Jun/2024 10:16:09] "GET /socket.io/?EIO=4&transport=polling&t=P02k9DP HTTP/1.1" 200 -
+2024-06-10 10:16:09,457 - INFO - 127.0.0.1 - - [10/Jun/2024 10:16:09] "GET /socket.io/?EIO=4&transport=polling&t=P02k9G9 HTTP/1.1" 200 -
+2024-06-10 10:16:09,467 - INFO - 127.0.0.1 - - [10/Jun/2024 10:16:09] "POST /socket.io/?EIO=4&transport=polling&t=P02k9Hp&sid=0vAJRgtIiKYsj-l3AAAA HTTP/1.1" 200 -
+2024-06-10 10:16:09,468 - INFO - 127.0.0.1 - - [10/Jun/2024 10:16:09] "GET /socket.io/?EIO=4&transport=polling&t=P02k9Hs&sid=0vAJRgtIiKYsj-l3AAAA HTTP/1.1" 200 -
+2024-06-10 10:16:09,474 - INFO - 127.0.0.1 - - [10/Jun/2024 10:16:09] "POST /socket.io/?EIO=4&transport=polling&t=P02k9Hw&sid=D4n6u8ZZm1bPpXfNAAAB HTTP/1.1" 200 -
+2024-06-10 10:16:09,477 - INFO - 127.0.0.1 - - [10/Jun/2024 10:16:09] "GET /socket.io/?EIO=4&transport=polling&t=P02k9H_&sid=D4n6u8ZZm1bPpXfNAAAB HTTP/1.1" 200 -
+2024-06-10 10:16:09,486 - INFO - 127.0.0.1 - - [10/Jun/2024 10:16:09] "GET /socket.io/?EIO=4&transport=polling&t=P02k9IB&sid=0vAJRgtIiKYsj-l3AAAA HTTP/1.1" 200 -
+2024-06-10 10:16:09,490 - INFO - 127.0.0.1 - - [10/Jun/2024 10:16:09] "GET /socket.io/?EIO=4&transport=polling&t=P02k9IE&sid=D4n6u8ZZm1bPpXfNAAAB HTTP/1.1" 200 -
+2024-06-10 10:16:09,493 - INFO - 127.0.0.1 - - [10/Jun/2024 10:16:09] "GET /socket.io/?EIO=4&transport=polling&t=P02k9II&sid=0vAJRgtIiKYsj-l3AAAA HTTP/1.1" 200 -
+2024-06-10 10:16:11,564 - INFO -  * Detected change in '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/scheduler.py', reloading
+2024-06-10 10:16:11,765 - INFO -  * Restarting with stat
+2024-06-10 10:16:13,087 - INFO - Starting Flask server...
+2024-06-10 10:16:13,088 - INFO - Starting scheduler thread...
+2024-06-10 10:16:13,088 - INFO - Scheduler thread started.
+2024-06-10 10:16:13,088 - WARNING -  * Debugger is active!
+2024-06-10 10:16:13,098 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 10:16:13,134 - INFO - 127.0.0.1 - - [10/Jun/2024 10:16:13] "GET /socket.io/?EIO=4&transport=polling&t=P02kA6g HTTP/1.1" 200 -
+2024-06-10 10:16:13,134 - INFO - 127.0.0.1 - - [10/Jun/2024 10:16:13] "GET /socket.io/?EIO=4&transport=polling&t=P02kA6h HTTP/1.1" 200 -
+2024-06-10 10:16:13,145 - INFO - 127.0.0.1 - - [10/Jun/2024 10:16:13] "POST /socket.io/?EIO=4&transport=polling&t=P02kABH&sid=ksUxI1WooxRc-_FyAAAA HTTP/1.1" 200 -
+2024-06-10 10:16:13,148 - INFO - 127.0.0.1 - - [10/Jun/2024 10:16:13] "GET /socket.io/?EIO=4&transport=polling&t=P02kABJ&sid=ksUxI1WooxRc-_FyAAAA HTTP/1.1" 200 -
+2024-06-10 10:16:13,152 - INFO - 127.0.0.1 - - [10/Jun/2024 10:16:13] "POST /socket.io/?EIO=4&transport=polling&t=P02kABP&sid=J3VsRPNvicOwCgg7AAAB HTTP/1.1" 200 -
+2024-06-10 10:16:13,163 - INFO - 127.0.0.1 - - [10/Jun/2024 10:16:13] "GET /socket.io/?EIO=4&transport=polling&t=P02kABT&sid=J3VsRPNvicOwCgg7AAAB HTTP/1.1" 200 -
+2024-06-10 10:16:13,175 - INFO - 127.0.0.1 - - [10/Jun/2024 10:16:13] "GET /socket.io/?EIO=4&transport=polling&t=P02kABk&sid=ksUxI1WooxRc-_FyAAAA HTTP/1.1" 200 -
+2024-06-10 10:16:13,187 - INFO - 127.0.0.1 - - [10/Jun/2024 10:16:13] "GET /socket.io/?EIO=4&transport=polling&t=P02kABx&sid=J3VsRPNvicOwCgg7AAAB HTTP/1.1" 200 -
+2024-06-10 10:16:13,194 - INFO - 127.0.0.1 - - [10/Jun/2024 10:16:13] "GET /socket.io/?EIO=4&transport=polling&t=P02kAC5&sid=ksUxI1WooxRc-_FyAAAA HTTP/1.1" 200 -
+2024-06-10 10:16:13,202 - INFO - 127.0.0.1 - - [10/Jun/2024 10:16:13] "GET /socket.io/?EIO=4&transport=polling&t=P02kACD&sid=J3VsRPNvicOwCgg7AAAB HTTP/1.1" 200 -
+2024-06-10 10:17:52,420 - INFO - Running scheduled job...
+2024-06-10 10:17:52,613 - ERROR - Error in job execution: 'prices'
+2024-06-10 10:21:13,352 - INFO - Running scheduled job...
+2024-06-10 10:21:13,507 - ERROR - Error in job execution: 'prices'
+2024-06-10 10:22:52,983 - INFO - Running scheduled job...
+2024-06-10 10:22:53,139 - ERROR - Error in job execution: 'prices'
+2024-06-10 10:26:13,581 - INFO - Running scheduled job...
+2024-06-10 10:26:13,889 - ERROR - Error in job execution: 'prices'
+2024-06-10 10:27:53,557 - INFO - 127.0.0.1 - - [10/Jun/2024 10:27:53] "GET /socket.io/?EIO=4&transport=websocket&sid=ksUxI1WooxRc-_FyAAAA HTTP/1.1" 200 -
+2024-06-10 10:27:53,605 - INFO - Running scheduled job...
+2024-06-10 10:27:53,740 - ERROR - Error in job execution: 'prices'
+2024-06-10 10:28:03,568 - INFO - 127.0.0.1 - - [10/Jun/2024 10:28:03] "GET /socket.io/?EIO=4&transport=websocket&sid=J3VsRPNvicOwCgg7AAAB HTTP/1.1" 200 -
+2024-06-10 10:31:14,252 - INFO - Running scheduled job...
+2024-06-10 10:31:14,409 - ERROR - Error in job execution: 'prices'
+2024-06-10 10:32:54,130 - INFO - Running scheduled job...
+2024-06-10 10:32:54,338 - ERROR - Error in job execution: 'prices'
+2024-06-10 10:33:10,521 - INFO - 127.0.0.1 - - [10/Jun/2024 10:33:10] "GET /socket.io/?EIO=4&transport=polling&t=P02o2Zo HTTP/1.1" 200 -
+2024-06-10 10:33:10,529 - INFO - 127.0.0.1 - - [10/Jun/2024 10:33:10] "POST /socket.io/?EIO=4&transport=polling&t=P02o2Zy&sid=7cA98L39nnSBdy4kAAAE HTTP/1.1" 200 -
+2024-06-10 10:33:10,530 - INFO - 127.0.0.1 - - [10/Jun/2024 10:33:10] "GET /socket.io/?EIO=4&transport=polling&t=P02o2Zz&sid=7cA98L39nnSBdy4kAAAE HTTP/1.1" 200 -
+2024-06-10 10:33:10,533 - INFO - 127.0.0.1 - - [10/Jun/2024 10:33:10] "GET /socket.io/?EIO=4&transport=polling&t=P02o2a4&sid=7cA98L39nnSBdy4kAAAE HTTP/1.1" 200 -
+2024-06-10 10:33:11,114 - INFO - 127.0.0.1 - - [10/Jun/2024 10:33:11] "GET /socket.io/?EIO=4&transport=polling&t=P02o2j4 HTTP/1.1" 200 -
+2024-06-10 10:33:11,123 - INFO - 127.0.0.1 - - [10/Jun/2024 10:33:11] "POST /socket.io/?EIO=4&transport=polling&t=P02o2jC&sid=3CzpnLuVrUSaoOK-AAAG HTTP/1.1" 200 -
+2024-06-10 10:33:11,125 - INFO - 127.0.0.1 - - [10/Jun/2024 10:33:11] "GET /socket.io/?EIO=4&transport=polling&t=P02o2jF&sid=3CzpnLuVrUSaoOK-AAAG HTTP/1.1" 200 -
+2024-06-10 10:33:25,199 - INFO - 127.0.0.1 - - [10/Jun/2024 10:33:25] "GET /socket.io/?EIO=4&transport=polling&t=P02o69C HTTP/1.1" 200 -
+2024-06-10 10:33:25,203 - INFO - 127.0.0.1 - - [10/Jun/2024 10:33:25] "POST /socket.io/?EIO=4&transport=polling&t=P02o69G&sid=U-_ef7i6tvELB9S0AAAI HTTP/1.1" 200 -
+2024-06-10 10:33:25,206 - INFO - 127.0.0.1 - - [10/Jun/2024 10:33:25] "GET /socket.io/?EIO=4&transport=polling&t=P02o69J&sid=U-_ef7i6tvELB9S0AAAI HTTP/1.1" 200 -
+2024-06-10 10:33:25,209 - INFO - 127.0.0.1 - - [10/Jun/2024 10:33:25] "GET /socket.io/?EIO=4&transport=polling&t=P02o69N&sid=U-_ef7i6tvELB9S0AAAI HTTP/1.1" 200 -
+2024-06-10 10:33:25,500 - INFO - 127.0.0.1 - - [10/Jun/2024 10:33:25] "[35m[1mGET /api/data?crypto=bitcoin&timescale=month HTTP/1.1[0m" 500 -
+2024-06-10 10:33:25,509 - INFO - 127.0.0.1 - - [10/Jun/2024 10:33:25] "[35m[1mGET /api/data?crypto=ethereum&timescale=month HTTP/1.1[0m" 500 -
+2024-06-10 10:34:09,438 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:09] "GET /socket.io/?EIO=4&transport=websocket&sid=3CzpnLuVrUSaoOK-AAAG HTTP/1.1" 200 -
+2024-06-10 10:34:09,439 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:09] "GET /socket.io/?EIO=4&transport=websocket&sid=U-_ef7i6tvELB9S0AAAI HTTP/1.1" 200 -
+2024-06-10 10:34:09,439 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:09] "GET /socket.io/?EIO=4&transport=websocket&sid=7cA98L39nnSBdy4kAAAE HTTP/1.1" 200 -
+2024-06-10 10:34:10,481 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:10] "GET /socket.io/?EIO=4&transport=polling&t=P02oHCg HTTP/1.1" 200 -
+2024-06-10 10:34:10,535 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:10] "GET /socket.io/?EIO=4&transport=polling&t=P02oHDW&sid=VcdXbNt-ShAxKLUPAAAK HTTP/1.1" 200 -
+2024-06-10 10:34:10,536 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:10] "POST /socket.io/?EIO=4&transport=polling&t=P02oHDU&sid=VcdXbNt-ShAxKLUPAAAK HTTP/1.1" 200 -
+2024-06-10 10:34:10,557 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:10] "GET /socket.io/?EIO=4&transport=polling&t=P02oHDv&sid=VcdXbNt-ShAxKLUPAAAK HTTP/1.1" 200 -
+2024-06-10 10:34:10,573 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:10] "GET /socket.io/?EIO=4&transport=polling&t=P02oHEA&sid=VcdXbNt-ShAxKLUPAAAK HTTP/1.1" 200 -
+2024-06-10 10:34:10,790 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:10] "GET /socket.io/?EIO=4&transport=polling&t=P02oHHY&sid=VcdXbNt-ShAxKLUPAAAK HTTP/1.1" 200 -
+2024-06-10 10:34:10,801 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:10] "GET /socket.io/?EIO=4&transport=polling&t=P02oHHk&sid=VcdXbNt-ShAxKLUPAAAK HTTP/1.1" 200 -
+2024-06-10 10:34:10,804 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:10] "GET /socket.io/?EIO=4&transport=polling&t=P02oHHo&sid=VcdXbNt-ShAxKLUPAAAK HTTP/1.1" 200 -
+2024-06-10 10:34:10,829 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:10] "GET /socket.io/?EIO=4&transport=polling&t=P02oHIB&sid=VcdXbNt-ShAxKLUPAAAK HTTP/1.1" 200 -
+2024-06-10 10:34:10,943 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:10] "[35m[1mGET /api/data?crypto=ethereum&timescale=month HTTP/1.1[0m" 500 -
+2024-06-10 10:34:10,950 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:10] "[35m[1mGET /api/data?crypto=bitcoin&timescale=month HTTP/1.1[0m" 500 -
+2024-06-10 10:34:10,963 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:10] "[35m[1mGET /api/data?crypto=ethereum&timescale=month HTTP/1.1[0m" 500 -
+2024-06-10 10:34:11,005 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:11] "[35m[1mGET /api/data?crypto=bitcoin&timescale=month HTTP/1.1[0m" 500 -
+2024-06-10 10:34:20,029 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:20] "GET /socket.io/?EIO=4&transport=websocket&sid=VcdXbNt-ShAxKLUPAAAK HTTP/1.1" 200 -
+2024-06-10 10:34:20,126 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:20] "GET /socket.io/?EIO=4&transport=polling&t=P02oJZR HTTP/1.1" 200 -
+2024-06-10 10:34:20,137 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:20] "POST /socket.io/?EIO=4&transport=polling&t=P02oJZc&sid=H2TAROAacpJHhb8pAAAM HTTP/1.1" 200 -
+2024-06-10 10:34:20,139 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:20] "GET /socket.io/?EIO=4&transport=polling&t=P02oJZc.0&sid=H2TAROAacpJHhb8pAAAM HTTP/1.1" 200 -
+2024-06-10 10:34:20,183 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:20] "GET /socket.io/?EIO=4&transport=polling&t=P02oJaL&sid=H2TAROAacpJHhb8pAAAM HTTP/1.1" 200 -
+2024-06-10 10:34:20,190 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:20] "GET /socket.io/?EIO=4&transport=polling&t=P02oJaR&sid=H2TAROAacpJHhb8pAAAM HTTP/1.1" 200 -
+2024-06-10 10:34:20,197 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:20] "GET /socket.io/?EIO=4&transport=polling&t=P02oJaZ&sid=H2TAROAacpJHhb8pAAAM HTTP/1.1" 200 -
+2024-06-10 10:34:20,206 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:20] "GET /socket.io/?EIO=4&transport=polling&t=P02oJai&sid=H2TAROAacpJHhb8pAAAM HTTP/1.1" 200 -
+2024-06-10 10:34:20,252 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:20] "[35m[1mGET /api/data?crypto=ethereum&timescale=month HTTP/1.1[0m" 500 -
+2024-06-10 10:34:20,253 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:20] "[35m[1mGET /api/data?crypto=bitcoin&timescale=month HTTP/1.1[0m" 500 -
+2024-06-10 10:34:20,262 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:20] "[35m[1mGET /api/data?crypto=ethereum&timescale=month HTTP/1.1[0m" 500 -
+2024-06-10 10:34:20,270 - INFO - 127.0.0.1 - - [10/Jun/2024 10:34:20] "[35m[1mGET /api/data?crypto=bitcoin&timescale=month HTTP/1.1[0m" 500 -
+2024-06-10 10:35:27,438 - INFO - 127.0.0.1 - - [10/Jun/2024 10:35:27] "GET /socket.io/?EIO=4&transport=polling&t=P02oZ_A HTTP/1.1" 200 -
+2024-06-10 10:35:27,452 - INFO - 127.0.0.1 - - [10/Jun/2024 10:35:27] "POST /socket.io/?EIO=4&transport=polling&t=P02oZ_O&sid=lk5Itol9OFC2le9wAAAO HTTP/1.1" 200 -
+2024-06-10 10:35:27,457 - INFO - 127.0.0.1 - - [10/Jun/2024 10:35:27] "GET /socket.io/?EIO=4&transport=polling&t=P02oZ_R&sid=lk5Itol9OFC2le9wAAAO HTTP/1.1" 200 -
+2024-06-10 10:35:27,459 - INFO - 127.0.0.1 - - [10/Jun/2024 10:35:27] "GET /socket.io/?EIO=4&transport=polling&t=P02oZ_Y&sid=lk5Itol9OFC2le9wAAAO HTTP/1.1" 200 -
+2024-06-10 10:35:27,730 - INFO - 127.0.0.1 - - [10/Jun/2024 10:35:27] "[35m[1mGET /api/data?crypto=bitcoin&timescale=month HTTP/1.1[0m" 500 -
+2024-06-10 10:35:27,742 - INFO - 127.0.0.1 - - [10/Jun/2024 10:35:27] "[35m[1mGET /api/data?crypto=ethereum&timescale=month HTTP/1.1[0m" 500 -
+2024-06-10 10:36:15,059 - INFO - Running scheduled job...
+2024-06-10 10:36:15,203 - ERROR - Error in job execution: 'prices'
+2024-06-10 10:37:54,559 - INFO - Running scheduled job...
+2024-06-10 10:37:54,718 - ERROR - Error in job execution: 'prices'
+2024-06-10 10:41:15,420 - INFO - Running scheduled job...
+2024-06-10 10:41:15,584 - ERROR - Error in job execution: 'prices'
+2024-06-10 10:42:04,113 - INFO - Starting Flask server...
+2024-06-10 10:42:04,114 - INFO - Starting scheduler thread...
+2024-06-10 10:42:04,114 - INFO - Scheduler thread started.
+2024-06-10 10:42:04,120 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-10 10:42:04,120 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-10 10:42:04,121 - INFO -  * Restarting with stat
+2024-06-10 10:42:05,084 - INFO - Starting Flask server...
+2024-06-10 10:42:05,084 - INFO - Starting scheduler thread...
+2024-06-10 10:42:05,084 - INFO - Scheduler thread started.
+2024-06-10 10:42:05,085 - WARNING -  * Debugger is active!
+2024-06-10 10:42:05,093 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 10:42:08,254 - INFO - 127.0.0.1 - - [10/Jun/2024 10:42:08] "GET /socket.io/?EIO=4&transport=polling&t=P02q5rt HTTP/1.1" 200 -
+2024-06-10 10:42:08,264 - INFO - 127.0.0.1 - - [10/Jun/2024 10:42:08] "POST /socket.io/?EIO=4&transport=polling&t=P02q5s1&sid=KctLMxlDV3GjtyWpAAAA HTTP/1.1" 200 -
+2024-06-10 10:42:08,285 - INFO - 127.0.0.1 - - [10/Jun/2024 10:42:08] "GET /socket.io/?EIO=4&transport=polling&t=P02q5sN&sid=KctLMxlDV3GjtyWpAAAA HTTP/1.1" 200 -
+2024-06-10 10:42:08,289 - INFO - 127.0.0.1 - - [10/Jun/2024 10:42:08] "GET /socket.io/?EIO=4&transport=polling&t=P02q5sU&sid=KctLMxlDV3GjtyWpAAAA HTTP/1.1" 200 -
+2024-06-10 10:42:08,759 - INFO - 127.0.0.1 - - [10/Jun/2024 10:42:08] "GET /socket.io/?EIO=4&transport=polling&t=P02q5zo HTTP/1.1" 200 -
+2024-06-10 10:42:08,769 - INFO - 127.0.0.1 - - [10/Jun/2024 10:42:08] "POST /socket.io/?EIO=4&transport=polling&t=P02q5zv&sid=FSJuqRvataGxiHsYAAAC HTTP/1.1" 200 -
+2024-06-10 10:42:08,771 - INFO - 127.0.0.1 - - [10/Jun/2024 10:42:08] "GET /socket.io/?EIO=4&transport=polling&t=P02q5zz&sid=FSJuqRvataGxiHsYAAAC HTTP/1.1" 200 -
+2024-06-10 10:42:08,779 - INFO - 127.0.0.1 - - [10/Jun/2024 10:42:08] "GET /socket.io/?EIO=4&transport=polling&t=P02q5-6&sid=FSJuqRvataGxiHsYAAAC HTTP/1.1" 200 -
+2024-06-10 10:47:04,347 - INFO - Running scheduled job...
+2024-06-10 10:47:04,519 - ERROR - Error in job execution: 'prices'
+2024-06-10 10:47:05,346 - INFO - Running scheduled job...
+2024-06-10 10:47:05,512 - ERROR - Error in job execution: 'prices'
+2024-06-10 10:52:10,465 - INFO - Running scheduled job...
+2024-06-10 10:52:10,465 - INFO - Running scheduled job...
+2024-06-10 10:52:11,032 - ERROR - Error in job execution: 'prices'
+2024-06-10 10:52:11,041 - ERROR - Error in job execution: 'prices'
+2024-06-10 11:04:54,488 - INFO - Running scheduled job...
+2024-06-10 11:04:54,488 - INFO - Running scheduled job...
+2024-06-10 11:04:54,973 - ERROR - Error in job execution: 'prices'
+2024-06-10 11:04:54,973 - ERROR - Error in job execution: 'prices'
+2024-06-10 11:09:55,672 - INFO - Running scheduled job...
+2024-06-10 11:09:55,694 - INFO - Running scheduled job...
+2024-06-10 11:09:55,889 - ERROR - Error in job execution: 'prices'
+2024-06-10 11:09:55,898 - ERROR - Error in job execution: 'prices'
+2024-06-10 11:14:00,185 - INFO - 127.0.0.1 - - [10/Jun/2024 11:14:00] "GET /socket.io/?EIO=4&transport=websocket&sid=KctLMxlDV3GjtyWpAAAA HTTP/1.1" 200 -
+2024-06-10 11:14:10,191 - INFO - 127.0.0.1 - - [10/Jun/2024 11:14:10] "GET /socket.io/?EIO=4&transport=websocket&sid=FSJuqRvataGxiHsYAAAC HTTP/1.1" 200 -
+2024-06-10 11:14:56,049 - INFO - Running scheduled job...
+2024-06-10 11:14:56,068 - INFO - Running scheduled job...
+2024-06-10 11:14:56,203 - ERROR - Error in job execution: 'prices'
+2024-06-10 11:14:56,204 - ERROR - Error in job execution: 'prices'
+2024-06-10 11:15:04,062 - INFO - 127.0.0.1 - - [10/Jun/2024 11:15:04] "GET /socket.io/?EIO=4&transport=polling&t=P02xeDu HTTP/1.1" 200 -
+2024-06-10 11:15:04,072 - INFO - 127.0.0.1 - - [10/Jun/2024 11:15:04] "POST /socket.io/?EIO=4&transport=polling&t=P02xeE3&sid=X9cpn1_E_bDUmeugAAAE HTTP/1.1" 200 -
+2024-06-10 11:15:04,076 - INFO - 127.0.0.1 - - [10/Jun/2024 11:15:04] "GET /socket.io/?EIO=4&transport=polling&t=P02xeE8&sid=X9cpn1_E_bDUmeugAAAE HTTP/1.1" 200 -
+2024-06-10 11:15:04,082 - INFO - 127.0.0.1 - - [10/Jun/2024 11:15:04] "GET /socket.io/?EIO=4&transport=polling&t=P02xeEG&sid=X9cpn1_E_bDUmeugAAAE HTTP/1.1" 200 -
+2024-06-10 11:15:04,736 - INFO - 127.0.0.1 - - [10/Jun/2024 11:15:04] "GET /socket.io/?EIO=4&transport=polling&t=P02xeNo HTTP/1.1" 200 -
+2024-06-10 11:15:04,748 - INFO - 127.0.0.1 - - [10/Jun/2024 11:15:04] "POST /socket.io/?EIO=4&transport=polling&t=P02xeOd&sid=xH0aOHbYaI5WkanDAAAG HTTP/1.1" 200 -
+2024-06-10 11:15:04,754 - INFO - 127.0.0.1 - - [10/Jun/2024 11:15:04] "GET /socket.io/?EIO=4&transport=polling&t=P02xeOi&sid=xH0aOHbYaI5WkanDAAAG HTTP/1.1" 200 -
+2024-06-10 11:15:04,760 - INFO - 127.0.0.1 - - [10/Jun/2024 11:15:04] "GET /socket.io/?EIO=4&transport=polling&t=P02xeOq&sid=xH0aOHbYaI5WkanDAAAG HTTP/1.1" 200 -
+2024-06-10 11:19:56,340 - INFO - Running scheduled job...
+2024-06-10 11:19:56,340 - INFO - Running scheduled job...
+2024-06-10 11:19:56,630 - ERROR - Error in job execution: 'prices'
+2024-06-10 11:19:56,630 - ERROR - Error in job execution: 'prices'
+2024-06-10 11:24:57,216 - INFO - Starting Flask server...
+2024-06-10 11:24:57,218 - INFO - Starting scheduler thread...
+2024-06-10 11:24:57,218 - INFO - Scheduler thread started.
+2024-06-10 11:24:57,224 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-10 11:24:57,225 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-10 11:24:57,225 - INFO -  * Restarting with stat
+2024-06-10 11:24:58,162 - INFO - Starting Flask server...
+2024-06-10 11:24:58,162 - INFO - Starting scheduler thread...
+2024-06-10 11:24:58,162 - INFO - Scheduler thread started.
+2024-06-10 11:24:58,162 - WARNING -  * Debugger is active!
+2024-06-10 11:24:58,171 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 11:24:59,064 - INFO - 127.0.0.1 - - [10/Jun/2024 11:24:59] "GET /socket.io/?EIO=4&transport=polling&t=P02zvUo HTTP/1.1" 200 -
+2024-06-10 11:24:59,073 - INFO - 127.0.0.1 - - [10/Jun/2024 11:24:59] "POST /socket.io/?EIO=4&transport=polling&t=P02zvUw&sid=2Ot6siQYQoQGaUPTAAAA HTTP/1.1" 200 -
+2024-06-10 11:24:59,074 - INFO - 127.0.0.1 - - [10/Jun/2024 11:24:59] "GET /socket.io/?EIO=4&transport=polling&t=P02zvUy&sid=2Ot6siQYQoQGaUPTAAAA HTTP/1.1" 200 -
+2024-06-10 11:24:59,879 - INFO - 127.0.0.1 - - [10/Jun/2024 11:24:59] "GET /socket.io/?EIO=4&transport=polling&t=P02zvhV HTTP/1.1" 200 -
+2024-06-10 11:24:59,892 - INFO - 127.0.0.1 - - [10/Jun/2024 11:24:59] "POST /socket.io/?EIO=4&transport=polling&t=P02zvhg&sid=u-xNwKuI5WC12_lrAAAC HTTP/1.1" 200 -
+2024-06-10 11:24:59,895 - INFO - 127.0.0.1 - - [10/Jun/2024 11:24:59] "GET /socket.io/?EIO=4&transport=polling&t=P02zvhk&sid=u-xNwKuI5WC12_lrAAAC HTTP/1.1" 200 -
+2024-06-10 11:24:59,902 - INFO - 127.0.0.1 - - [10/Jun/2024 11:24:59] "GET /socket.io/?EIO=4&transport=polling&t=P02zvhw&sid=u-xNwKuI5WC12_lrAAAC HTTP/1.1" 200 -

@@ -3,10 +3,18 @@ import site
 import os
 import logging
 import matplotlib
+import schedule
+import time
+from scripts.fetch_data import fetch_data
+from scripts.process_data import preprocess_data
+from scripts.train_model import train_model
+import matplotlib.pyplot as plt
+import joblib
+import pandas as pd
 matplotlib.use('Agg')  # Use a non-interactive backend
 
 # Print the Python executable path
-print("Python executable:", sys.executable)
+# print("Python executable:", sys.executable)
 
 # Explicitly add the virtual environment's site-packages directory
 venv_path = os.path.join(os.path.dirname(__file__), '../../venv/lib/python3.12/site-packages')
@@ -24,14 +32,6 @@ logging.basicConfig(level=logging.INFO,
                     ])
 logger = logging.getLogger(__name__)
 
-import schedule
-import time
-from scripts.fetch_data import fetch_data
-from scripts.process_data import preprocess_data
-from scripts.train_model import train_model
-import matplotlib.pyplot as plt
-import joblib
-import pandas as pd
 
 def job():
     try:
