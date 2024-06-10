@@ -423,3 +423,54 @@
 2024-06-09 18:31:03,903 - INFO - Data fetched and saved to backend/data/raw/
 2024-06-09 18:31:03,907 - INFO - Data processed and saved to backend/data/processed/
 2024-06-09 18:31:03,908 - ERROR - Error in job execution: could not convert string to float: '2024-06-09 00:02:08.077'
+2024-06-09 20:38:29,952 - INFO - Starting Flask server...
+2024-06-09 20:38:29,952 - INFO - Starting scheduler thread...
+2024-06-09 20:38:29,952 - INFO - Scheduler thread started.
+2024-06-09 20:38:30,016 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-09 20:38:30,016 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-09 20:38:30,016 - INFO -  * Restarting with stat
+2024-06-09 20:38:31,011 - INFO - Starting Flask server...
+2024-06-09 20:38:31,011 - INFO - Starting scheduler thread...
+2024-06-09 20:38:31,011 - INFO - Scheduler thread started.
+2024-06-09 20:38:31,011 - WARNING -  * Debugger is active!
+2024-06-09 20:38:31,023 - INFO -  * Debugger PIN: 311-105-735
+2024-06-09 20:38:36,078 - INFO - Starting Flask server...
+2024-06-09 20:38:36,079 - INFO - Starting scheduler thread...
+2024-06-09 20:38:36,079 - INFO - Scheduler thread started.
+2024-06-09 20:38:36,084 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-09 20:38:36,084 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-09 20:38:36,084 - INFO -  * Restarting with stat
+2024-06-09 20:38:37,033 - INFO - Starting Flask server...
+2024-06-09 20:38:37,034 - INFO - Starting scheduler thread...
+2024-06-09 20:38:37,034 - INFO - Scheduler thread started.
+2024-06-09 20:38:37,034 - WARNING -  * Debugger is active!
+2024-06-09 20:38:37,040 - INFO -  * Debugger PIN: 311-105-735
+2024-06-09 20:38:37,551 - INFO - 127.0.0.1 - - [09/Jun/2024 20:38:37] "GET /socket.io/?EIO=4&transport=polling&t=O__p1jd HTTP/1.1" 200 -
+2024-06-09 20:38:37,590 - INFO - 127.0.0.1 - - [09/Jun/2024 20:38:37] "POST /socket.io/?EIO=4&transport=polling&t=O__p1kC&sid=LXrJSI4XTo64vv10AAAA HTTP/1.1" 200 -
+2024-06-09 20:38:37,591 - INFO - 127.0.0.1 - - [09/Jun/2024 20:38:37] "GET /socket.io/?EIO=4&transport=polling&t=O__p1kF&sid=LXrJSI4XTo64vv10AAAA HTTP/1.1" 200 -
+2024-06-09 20:38:37,600 - INFO - 127.0.0.1 - - [09/Jun/2024 20:38:37] "GET /socket.io/?EIO=4&transport=polling&t=O__p1kS&sid=LXrJSI4XTo64vv10AAAA HTTP/1.1" 200 -
+2024-06-09 20:38:37,605 - INFO - 127.0.0.1 - - [09/Jun/2024 20:38:37] "GET /socket.io/?EIO=4&transport=polling&t=O__p1kX&sid=LXrJSI4XTo64vv10AAAA HTTP/1.1" 200 -
+2024-06-09 20:39:50,906 - INFO - Starting Flask server...
+2024-06-09 20:39:50,907 - INFO - Starting scheduler thread...
+2024-06-09 20:39:50,907 - INFO - Scheduler thread started.
+2024-06-09 20:39:50,913 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-09 20:39:50,913 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-09 20:39:50,913 - INFO -  * Restarting with stat
+2024-06-09 20:39:51,935 - INFO - Starting Flask server...
+2024-06-09 20:39:51,935 - INFO - Starting scheduler thread...
+2024-06-09 20:39:51,935 - INFO - Scheduler thread started.
+2024-06-09 20:39:51,936 - WARNING -  * Debugger is active!
+2024-06-09 20:39:51,942 - INFO -  * Debugger PIN: 311-105-735
+2024-06-09 20:39:51,964 - INFO - 127.0.0.1 - - [09/Jun/2024 20:39:51] "GET /socket.io/?EIO=4&transport=polling&t=O__pJnb HTTP/1.1" 200 -
+2024-06-09 20:39:51,971 - INFO - 127.0.0.1 - - [09/Jun/2024 20:39:51] "POST /socket.io/?EIO=4&transport=polling&t=O__pJuT&sid=b3BaCkjl7gbyPVRQAAAA HTTP/1.1" 200 -
+2024-06-09 20:39:51,973 - INFO - 127.0.0.1 - - [09/Jun/2024 20:39:51] "GET /socket.io/?EIO=4&transport=polling&t=O__pJuV&sid=b3BaCkjl7gbyPVRQAAAA HTTP/1.1" 200 -
+2024-06-09 20:39:51,976 - INFO - 127.0.0.1 - - [09/Jun/2024 20:39:51] "GET /socket.io/?EIO=4&transport=polling&t=O__pJuc&sid=b3BaCkjl7gbyPVRQAAAA HTTP/1.1" 200 -
