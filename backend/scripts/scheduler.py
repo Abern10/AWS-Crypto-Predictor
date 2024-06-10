@@ -34,29 +34,47 @@ def job():
         print("Running scheduled job...")
         logger.info("Running scheduled job...")
         # Step 1: Fetch data
+        data_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'raw')
+        os.makedirs(data_dir, exist_ok=True)
+
         btc_data = fetch_data('bitcoin', 30)  # Fetch data for the past 30 days
         eth_data = fetch_data('ethereum', 30)
 
-        os.makedirs('backend/data/raw', exist_ok=True)
-        btc_data.to_csv('backend/data/raw/btc_data.csv', index=False)
-        eth_data.to_csv('backend/data/raw/eth_data.csv', index=False)
+        btc_data.to_csv(os.path.join(data_dir, 'btc_data.csv'), index=False)
+        eth_data.to_csv(os.path.join(data_dir, 'eth_data.csv'), index=False)
         logger.info("Data fetched and saved to backend/data/raw/")
 
-        # Step 2: Process data
-        btc_data_processed = preprocess_data('backend/data/raw/btc_data.csv')
-        eth_data_processed = preprocess_data('backend/data/raw/eth_data.csv')
+        # Debugging: Print the head of the fetched data
+        print("BTC data head:", btc_data.head())
+        print("ETH data head:", eth_data.head())
 
-        os.makedirs('backend/data/processed', exist_ok=True)
-        btc_data_processed.to_csv('backend/data/processed/btc_data_processed.csv')
-        eth_data_processed.to_csv('backend/data/processed/eth_data_processed.csv')
+        # Step 2: Process data
+        processed_data_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'processed')
+        os.makedirs(processed_data_dir, exist_ok=True)
+
+        btc_data_processed = preprocess_data(os.path.join(data_dir, 'btc_data.csv'))
+        eth_data_processed = preprocess_data(os.path.join(data_dir, 'eth_data.csv'))
+
+        btc_data_processed.to_csv(os.path.join(processed_data_dir, 'btc_data_processed.csv'))
+        eth_data_processed.to_csv(os.path.join(processed_data_dir, 'eth_data_processed.csv'))
         logger.info("Data processed and saved to backend/data/processed/")
 
-        # Step 3: Train models and predict future prices
-        btc_model_path = 'backend/models/btc_model.pkl'
-        eth_model_path = 'backend/models/eth_model.pkl'
+        # Debugging: Print the head of the processed data
+        print("BTC processed data head:", btc_data_processed.head())
+        print("ETH processed data head:", eth_data_processed.head())
 
-        train_model('backend/data/processed/btc_data_processed.csv', btc_model_path, 'backend/data/predictions/btc_predictions.csv', days_to_predict=5)
-        train_model('backend/data/processed/eth_data_processed.csv', eth_model_path, 'backend/data/predictions/eth_predictions.csv', days_to_predict=5)
+        # Step 3: Train models and predict future prices
+        model_dir = os.path.join(os.path.dirname(__file__), '..', 'models')
+        os.makedirs(model_dir, exist_ok=True)
+
+        prediction_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'predictions')
+        os.makedirs(prediction_dir, exist_ok=True)
+
+        btc_model_path = os.path.join(model_dir, 'btc_model.pkl')
+        eth_model_path = os.path.join(model_dir, 'eth_model.pkl')
+
+        train_model(os.path.join(processed_data_dir, 'btc_data_processed.csv'), btc_model_path, os.path.join(prediction_dir, 'btc_predictions.csv'), days_to_predict=5)
+        train_model(os.path.join(processed_data_dir, 'eth_data_processed.csv'), eth_model_path, os.path.join(prediction_dir, 'eth_predictions.csv'), days_to_predict=5)
         logger.info(f"Models saved to {btc_model_path} and {eth_model_path}")
 
         # Step 4: Visualize predictions
@@ -74,9 +92,11 @@ def job():
             plt.savefig(output_path)
             plt.close()
 
-        os.makedirs('backend/data/visualizations', exist_ok=True)
-        visualize_predictions('backend/data/processed/btc_data_processed.csv', 'backend/data/predictions/btc_predictions.csv', 'Bitcoin Price Prediction', 'backend/data/visualizations/btc_price_prediction.png')
-        visualize_predictions('backend/data/processed/eth_data_processed.csv', 'backend/data/predictions/eth_predictions.csv', 'Ethereum Price Prediction', 'backend/data/visualizations/eth_price_prediction.png')
+        visualization_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'visualizations')
+        os.makedirs(visualization_dir, exist_ok=True)
+
+        visualize_predictions(os.path.join(processed_data_dir, 'btc_data_processed.csv'), os.path.join(prediction_dir, 'btc_predictions.csv'), 'Bitcoin Price Prediction', os.path.join(visualization_dir, 'btc_price_prediction.png'))
+        visualize_predictions(os.path.join(processed_data_dir, 'eth_data_processed.csv'), os.path.join(prediction_dir, 'eth_predictions.csv'), 'Ethereum Price Prediction', os.path.join(visualization_dir, 'eth_price_prediction.png'))
         logger.info("Visualizations generated")
     except Exception as e:
         logger.error(f"Error in job execution: {e}")
@@ -95,10 +115,8 @@ def run_scheduler():
 
 if __name__ == "__main__":
     try:
-        print("Starting initial job execution...")
         job()  # Run job once at startup for immediate effect
-        print("Initial job execution completed.")
         run_scheduler()
-    except Exception as e:
-        print(f"Failed to start job. Error: {e}")
-        logger.error(f"Failed to start job. Error: {e}")
+    except:
+        print("Failed to start job.")
+        logging.info("Failed to start job.")
