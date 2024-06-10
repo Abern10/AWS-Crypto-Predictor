@@ -7,20 +7,31 @@ const socket = io.connect('http://localhost:1111');
 
 function App() {
   const [timescale, setTimescale] = useState('day');
-  const [btcData, setBtcData] = useState({ timestamps: [], prices: [], predictions: [] });
-  const [ethData, setEthData] = useState({ timestamps: [], prices: [], predictions: [] });
+  const [btcData, setBtcData] = useState({ timestamps: [], prices: [], predictions: { timestamps: [], prices: [] } });
+  const [ethData, setEthData] = useState({ timestamps: [], prices: [], predictions: { timestamps: [], prices: [] } });
 
   const fetchData = useCallback((crypto, timescale) => {
     fetch(`http://localhost:1111/api/data?crypto=${crypto}&timescale=${timescale}`)
       .then(response => response.json())
       .then(data => {
-        const timestamps = data.timestamps.map(ts => new Date(ts));
-        if (crypto === 'bitcoin') {
-          setBtcData({ timestamps, prices: data.prices, predictions: data.predictions });
-        } else {
-          setEthData({ timestamps, prices: data.prices, predictions: data.predictions });
+        if (data.error) {
+          console.error('Invalid data structure:', data);
+          return;
         }
-      });
+
+        const timestamps = data.timestamps.map(ts => new Date(ts));
+        const predictions = {
+          timestamps: data.predictions.timestamps.map(ts => new Date(ts)),
+          prices: data.predictions.prices
+        };
+
+        if (crypto === 'bitcoin') {
+          setBtcData({ timestamps, prices: data.prices, predictions: predictions });
+        } else {
+          setEthData({ timestamps, prices: data.prices, predictions: predictions });
+        }
+      })
+      .catch(error => console.error('Error fetching data:', error));
   }, []);
 
   useEffect(() => {
@@ -28,11 +39,21 @@ function App() {
     fetchData('ethereum', timescale);
 
     socket.on('update_graph', (data) => {
+      if (data.error) {
+        console.error('Invalid data structure from socket:', data);
+        return;
+      }
+
       const timestamps = data.timestamps.map(ts => new Date(ts));
+      const predictions = {
+        timestamps: data.predictions.timestamps.map(ts => new Date(ts)),
+        prices: data.predictions.prices
+      };
+
       if (data.crypto === 'bitcoin') {
-        setBtcData({ timestamps, prices: data.prices, predictions: data.predictions });
+        setBtcData({ timestamps, prices: data.prices, predictions: predictions });
       } else {
-        setEthData({ timestamps, prices: data.prices, predictions: data.predictions });
+        setEthData({ timestamps, prices: data.prices, predictions: predictions });
       }
     });
 
@@ -51,10 +72,10 @@ function App() {
       <div className="dropdown">
         <button className="dropbtn">Select Timescale</button>
         <div className="dropdown-content">
-          <a onClick={() => handleTimescaleChange('year')}>1 Year</a>
-          <a onClick={() => handleTimescaleChange('month')}>1 Month</a>
-          <a onClick={() => handleTimescaleChange('day')}>1 Day</a>
-          <a onClick={() => handleTimescaleChange('hour')}>1 Hour</a>
+          <button onClick={() => handleTimescaleChange('year')}>1 Year</button>
+          <button onClick={() => handleTimescaleChange('month')}>1 Month</button>
+          <button onClick={() => handleTimescaleChange('day')}>1 Day</button>
+          <button onClick={() => handleTimescaleChange('hour')}>1 Hour</button>
         </div>
       </div>
       <div className="graph-container">
@@ -70,19 +91,12 @@ function App() {
                 line: { color: 'gold' },
               },
               {
-                x: btcData.timestamps,
-                y: btcData.predictions,
+                x: btcData.predictions.timestamps,
+                y: btcData.predictions.prices,
                 type: 'scatter',
                 mode: 'lines',
-                line: { dash: 'dash', color: 'gold' },
-              },
-              {
-                x: [btcData.timestamps[btcData.timestamps.length - 1]],
-                y: [btcData.prices[btcData.prices.length - 1]],
-                type: 'scatter',
-                mode: 'markers',
-                marker: { color: 'gold', size: 10 },
-              },
+                line: { color: 'red' },
+              }
             ]}
             layout={{
               margin: { t: 0 },
@@ -116,19 +130,12 @@ function App() {
                 line: { color: 'rgba(54, 162, 235, 1)' },
               },
               {
-                x: ethData.timestamps,
-                y: ethData.predictions,
+                x: ethData.predictions.timestamps,
+                y: ethData.predictions.prices,
                 type: 'scatter',
                 mode: 'lines',
-                line: { dash: 'dash', color: 'rgba(54, 162, 235, 1)' },
-              },
-              {
-                x: [ethData.timestamps[ethData.timestamps.length - 1]],
-                y: [ethData.prices[ethData.prices.length - 1]],
-                type: 'scatter',
-                mode: 'markers',
-                marker: { color: 'rgba(54, 162, 235, 1)', size: 10 },
-              },
+                line: { color: 'red' },
+              }
             ]}
             layout={{
               margin: { t: 0 },

@@ -2,6 +2,8 @@ import sys
 import site
 import os
 import logging
+import matplotlib
+matplotlib.use('Agg')  # Use a non-interactive backend
 
 # Print the Python executable path
 print("Python executable:", sys.executable)
@@ -52,31 +54,31 @@ def job():
         eth_data_processed.to_csv('backend/data/processed/eth_data_processed.csv')
         logger.info("Data processed and saved to backend/data/processed/")
 
-        # Step 3: Train models
+        # Step 3: Train models and predict future prices
         btc_model_path = 'backend/models/btc_model.pkl'
         eth_model_path = 'backend/models/eth_model.pkl'
 
-        train_model('backend/data/processed/btc_data_processed.csv', btc_model_path, 'backend/data/predictions/btc_predictions.csv')
-        train_model('backend/data/processed/eth_data_processed.csv', eth_model_path, 'backend/data/predictions/eth_predictions.csv')
+        train_model('backend/data/processed/btc_data_processed.csv', btc_model_path, 'backend/data/predictions/btc_predictions.csv', days_to_predict=30)
+        train_model('backend/data/processed/eth_data_processed.csv', eth_model_path, 'backend/data/predictions/eth_predictions.csv', days_to_predict=30)
         logger.info(f"Models saved to {btc_model_path} and {eth_model_path}")
 
         # Step 4: Visualize predictions
-        def visualize_predictions(data_path, model_path, title):
+        def visualize_predictions(data_path, prediction_path, title, output_path):
             df = pd.read_csv(data_path)
-            model = joblib.load(model_path)
-            df['prediction'] = model.predict(df[['price']])
+            df_predictions = pd.read_csv(prediction_path)
 
             plt.figure(figsize=(14, 7))
             plt.plot(df['timestamp'], df['price'], label='Actual Price')
-            plt.plot(df['timestamp'], df['prediction'], label='Predicted Price', linestyle='--')
+            plt.plot(df_predictions['timestamp'], df_predictions['prediction'], label='Predicted Price', linestyle='--')
             plt.xlabel('Timestamp')
             plt.ylabel('Price (USD)')
             plt.title(title)
             plt.legend()
-            plt.show()
+            plt.savefig(output_path)
+            plt.close()
 
-        visualize_predictions('backend/data/processed/btc_data_processed.csv', btc_model_path, 'Bitcoin Price Prediction')
-        visualize_predictions('backend/data/processed/eth_data_processed.csv', eth_model_path, 'Ethereum Price Prediction')
+        visualize_predictions('backend/data/processed/btc_data_processed.csv', 'backend/data/predictions/btc_predictions.csv', 'Bitcoin Price Prediction', 'backend/data/visualizations/btc_price_prediction.png')
+        visualize_predictions('backend/data/processed/eth_data_processed.csv', 'backend/data/predictions/eth_predictions.csv', 'Ethereum Price Prediction', 'backend/data/visualizations/eth_price_prediction.png')
         logger.info("Visualizations generated")
     except Exception as e:
         logger.error(f"Error in job execution: {e}")
