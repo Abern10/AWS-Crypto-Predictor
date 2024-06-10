@@ -6,7 +6,6 @@ import './App.css';
 const socket = io.connect('http://localhost:1111');
 
 function App() {
-  const [timescale, setTimescale] = useState('day');
   const [btcData, setBtcData] = useState({ timestamps: [], prices: [], predictions: { timestamps: [], prices: [] } });
   const [ethData, setEthData] = useState({ timestamps: [], prices: [], predictions: { timestamps: [], prices: [] } });
 
@@ -60,24 +59,9 @@ function App() {
     return () => socket.off('update_graph');
   }, [fetchData]);
 
-  const handleTimescaleChange = (newTimescale) => {
-    setTimescale(newTimescale);
-    socket.emit('request_update', { crypto: 'bitcoin', timescale: newTimescale });
-    socket.emit('request_update', { crypto: 'ethereum', timescale: newTimescale });
-  };
-
   return (
     <div className="App">
       <h1>Crypto Price Predictor</h1>
-      <div className="dropdown">
-        <button className="dropbtn">Select Timescale</button>
-        <div className="dropdown-content">
-          <a href="#" onClick={() => handleTimescaleChange('year')}>1 Year</a>
-          <a href="#" onClick={() => handleTimescaleChange('month')}>1 Month</a>
-          <a href="#" onClick={() => handleTimescaleChange('day')}>1 Day</a>
-          <a href="#" onClick={() => handleTimescaleChange('hour')}>1 Hour</a>
-        </div>
-      </div>
       <div className="graph-container">
         <div className="graph">
           <h2 style={{ color: 'gold' }}>Bitcoin</h2>
@@ -190,4 +174,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
