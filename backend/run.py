@@ -14,9 +14,15 @@ def start_scheduler():
     logging.info("Starting scheduler thread...")
     scheduler_thread = threading.Thread(target=run_scheduler)
     scheduler_thread.daemon = True  # Daemonize thread to exit with the main program
-    scheduler_thread.start()
-    print("Scheduler thread started.")
-    logging.info("Scheduler thread started.")
+    try:
+        scheduler_thread.start()
+        print("Scheduler thread started.")
+        logging.info("Scheduler thread started.")
+    except:
+        print("Scheduler thread failed to start.")
+        logging.info("Scheduler thread failed to start.")
+
+    
 
 if __name__ == '__main__':
     print("Starting Flask server...")

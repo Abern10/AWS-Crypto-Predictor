@@ -13,10 +13,7 @@ import joblib
 import pandas as pd
 matplotlib.use('Agg')  # Use a non-interactive backend
 
-# Print the Python executable path
-# print("Python executable:", sys.executable)
-
-# Explicitly add the virtual environment's site-packages directory
+# Add the virtual environment's site-packages directory
 venv_path = os.path.join(os.path.dirname(__file__), '../../venv/lib/python3.12/site-packages')
 site.addsitedir(venv_path)
 
@@ -32,13 +29,13 @@ logging.basicConfig(level=logging.INFO,
                     ])
 logger = logging.getLogger(__name__)
 
-
 def job():
     try:
+        print("Running scheduled job...")
         logger.info("Running scheduled job...")
         # Step 1: Fetch data
-        btc_data = fetch_data('bitcoin', 1)  # Fetch data for the past 1 day
-        eth_data = fetch_data('ethereum', 1)
+        btc_data = fetch_data('bitcoin', 30)  # Fetch data for the past 30 days
+        eth_data = fetch_data('ethereum', 30)
 
         os.makedirs('backend/data/raw', exist_ok=True)
         btc_data.to_csv('backend/data/raw/btc_data.csv', index=False)
@@ -58,8 +55,8 @@ def job():
         btc_model_path = 'backend/models/btc_model.pkl'
         eth_model_path = 'backend/models/eth_model.pkl'
 
-        train_model('backend/data/processed/btc_data_processed.csv', btc_model_path, 'backend/data/predictions/btc_predictions.csv', days_to_predict=30)
-        train_model('backend/data/processed/eth_data_processed.csv', eth_model_path, 'backend/data/predictions/eth_predictions.csv', days_to_predict=30)
+        train_model('backend/data/processed/btc_data_processed.csv', btc_model_path, 'backend/data/predictions/btc_predictions.csv', days_to_predict=5)
+        train_model('backend/data/processed/eth_data_processed.csv', eth_model_path, 'backend/data/predictions/eth_predictions.csv', days_to_predict=5)
         logger.info(f"Models saved to {btc_model_path} and {eth_model_path}")
 
         # Step 4: Visualize predictions
@@ -69,7 +66,7 @@ def job():
 
             plt.figure(figsize=(14, 7))
             plt.plot(df['timestamp'], df['price'], label='Actual Price')
-            plt.plot(df_predictions['timestamp'], df_predictions['prediction'], label='Predicted Price', linestyle='--')
+            plt.plot(df_predictions['timestamp'], df_predictions['prediction'], label='Predicted Price', linestyle='--', color='red')
             plt.xlabel('Timestamp')
             plt.ylabel('Price (USD)')
             plt.title(title)
@@ -77,11 +74,13 @@ def job():
             plt.savefig(output_path)
             plt.close()
 
+        os.makedirs('backend/data/visualizations', exist_ok=True)
         visualize_predictions('backend/data/processed/btc_data_processed.csv', 'backend/data/predictions/btc_predictions.csv', 'Bitcoin Price Prediction', 'backend/data/visualizations/btc_price_prediction.png')
         visualize_predictions('backend/data/processed/eth_data_processed.csv', 'backend/data/predictions/eth_predictions.csv', 'Ethereum Price Prediction', 'backend/data/visualizations/eth_price_prediction.png')
         logger.info("Visualizations generated")
     except Exception as e:
         logger.error(f"Error in job execution: {e}")
+        print(f"Error in job execution: {e}")
 
 def run_scheduler():
     # Schedule the job to run every day at midnight
@@ -95,5 +94,11 @@ def run_scheduler():
         time.sleep(1)
 
 if __name__ == "__main__":
-    job()  # Run job once at startup for immediate effect
-    run_scheduler()
+    try:
+        print("Starting initial job execution...")
+        job()  # Run job once at startup for immediate effect
+        print("Initial job execution completed.")
+        run_scheduler()
+    except Exception as e:
+        print(f"Failed to start job. Error: {e}")
+        logger.error(f"Failed to start job. Error: {e}")

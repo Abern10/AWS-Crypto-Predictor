@@ -1571,3 +1571,156 @@
 2024-06-10 11:24:59,892 - INFO - 127.0.0.1 - - [10/Jun/2024 11:24:59] "POST /socket.io/?EIO=4&transport=polling&t=P02zvhg&sid=u-xNwKuI5WC12_lrAAAC HTTP/1.1" 200 -
 2024-06-10 11:24:59,895 - INFO - 127.0.0.1 - - [10/Jun/2024 11:24:59] "GET /socket.io/?EIO=4&transport=polling&t=P02zvhk&sid=u-xNwKuI5WC12_lrAAAC HTTP/1.1" 200 -
 2024-06-10 11:24:59,902 - INFO - 127.0.0.1 - - [10/Jun/2024 11:24:59] "GET /socket.io/?EIO=4&transport=polling&t=P02zvhw&sid=u-xNwKuI5WC12_lrAAAC HTTP/1.1" 200 -
+2024-06-10 11:26:27,189 - INFO - Starting Flask server...
+2024-06-10 11:26:27,189 - INFO - Starting scheduler thread...
+2024-06-10 11:26:27,190 - INFO - Scheduler thread started.
+2024-06-10 11:26:27,196 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-10 11:26:27,196 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-10 11:26:27,196 - INFO -  * Restarting with stat
+2024-06-10 11:26:28,151 - INFO - Starting Flask server...
+2024-06-10 11:26:28,151 - INFO - Starting scheduler thread...
+2024-06-10 11:26:28,151 - INFO - Scheduler thread started.
+2024-06-10 11:26:28,152 - WARNING -  * Debugger is active!
+2024-06-10 11:26:28,160 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 11:26:28,484 - INFO - 127.0.0.1 - - [10/Jun/2024 11:26:28] "GET /socket.io/?EIO=4&transport=polling&t=P02-FJv HTTP/1.1" 200 -
+2024-06-10 11:26:28,497 - INFO - 127.0.0.1 - - [10/Jun/2024 11:26:28] "POST /socket.io/?EIO=4&transport=polling&t=P02-FK7&sid=ozIt9iD4MuuoE4bqAAAA HTTP/1.1" 200 -
+2024-06-10 11:26:28,500 - INFO - 127.0.0.1 - - [10/Jun/2024 11:26:28] "GET /socket.io/?EIO=4&transport=polling&t=P02-FK9&sid=ozIt9iD4MuuoE4bqAAAA HTTP/1.1" 200 -
+2024-06-10 11:26:28,507 - INFO - 127.0.0.1 - - [10/Jun/2024 11:26:28] "GET /socket.io/?EIO=4&transport=polling&t=P02-FKN&sid=ozIt9iD4MuuoE4bqAAAA HTTP/1.1" 200 -
+2024-06-10 11:26:29,095 - INFO - 127.0.0.1 - - [10/Jun/2024 11:26:29] "GET /socket.io/?EIO=4&transport=polling&t=P02-FTU HTTP/1.1" 200 -
+2024-06-10 11:26:29,110 - INFO - 127.0.0.1 - - [10/Jun/2024 11:26:29] "POST /socket.io/?EIO=4&transport=polling&t=P02-FTf&sid=TM9hlzLBJ09fEhQGAAAC HTTP/1.1" 200 -
+2024-06-10 11:26:29,110 - INFO - 127.0.0.1 - - [10/Jun/2024 11:26:29] "GET /socket.io/?EIO=4&transport=polling&t=P02-FTi&sid=TM9hlzLBJ09fEhQGAAAC HTTP/1.1" 200 -
+2024-06-10 11:28:28,531 - INFO - 127.0.0.1 - - [10/Jun/2024 11:28:28] "GET /socket.io/?EIO=4&transport=websocket&sid=ozIt9iD4MuuoE4bqAAAA HTTP/1.1" 200 -
+2024-06-10 11:28:38,537 - INFO - 127.0.0.1 - - [10/Jun/2024 11:28:38] "GET /socket.io/?EIO=4&transport=websocket&sid=TM9hlzLBJ09fEhQGAAAC HTTP/1.1" 200 -
+2024-06-10 11:31:27,438 - INFO - Running scheduled job...
+2024-06-10 11:31:27,723 - ERROR - Error in job execution: 'prices'
+2024-06-10 11:31:28,430 - INFO - Running scheduled job...
+2024-06-10 11:31:28,672 - ERROR - Error in job execution: 'prices'
+2024-06-10 11:36:27,829 - INFO - Running scheduled job...
+2024-06-10 11:36:27,994 - ERROR - Error in job execution: 'prices'
+2024-06-10 11:36:28,799 - INFO - Running scheduled job...
+2024-06-10 11:36:28,938 - ERROR - Error in job execution: 'prices'
+2024-06-10 11:38:19,999 - INFO -  * Detected change in '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/scheduler.py', reloading
+2024-06-10 11:38:20,140 - INFO -  * Restarting with stat
+2024-06-10 11:38:21,391 - INFO - Starting Flask server...
+2024-06-10 11:38:21,391 - INFO - Starting scheduler thread...
+2024-06-10 11:38:21,391 - INFO - Scheduler thread started.
+2024-06-10 11:38:21,391 - WARNING -  * Debugger is active!
+2024-06-10 11:38:21,399 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 11:38:23,488 - INFO -  * Detected change in '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/scheduler.py', reloading
+2024-06-10 11:38:23,637 - INFO -  * Restarting with stat
+2024-06-10 11:38:24,820 - INFO - Starting Flask server...
+2024-06-10 11:38:24,820 - INFO - Starting scheduler thread...
+2024-06-10 11:38:24,820 - INFO - Scheduler thread started.
+2024-06-10 11:38:24,820 - WARNING -  * Debugger is active!
+2024-06-10 11:38:24,827 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 11:40:50,012 - INFO -  * Detected change in '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/scheduler.py', reloading
+2024-06-10 11:40:50,149 - INFO -  * Restarting with stat
+2024-06-10 11:40:51,359 - INFO - Starting Flask server...
+2024-06-10 11:40:51,359 - INFO - Starting scheduler thread...
+2024-06-10 11:40:51,359 - INFO - Scheduler thread started.
+2024-06-10 11:40:51,360 - WARNING -  * Debugger is active!
+2024-06-10 11:40:51,368 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 11:41:28,142 - INFO - Running scheduled job...
+2024-06-10 11:41:28,337 - ERROR - Error in job execution: 'prices'
+2024-06-10 11:41:46,256 - INFO -  * Detected change in '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/scheduler.py', reloading
+2024-06-10 11:41:46,407 - INFO -  * Restarting with stat
+2024-06-10 11:41:47,521 - INFO - Starting Flask server...
+2024-06-10 11:41:47,521 - INFO - Starting scheduler thread...
+2024-06-10 11:41:47,521 - INFO - Scheduler thread started.
+2024-06-10 11:41:47,521 - WARNING -  * Debugger is active!
+2024-06-10 11:41:47,529 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 11:42:09,428 - INFO -  * Detected change in '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/app/routes.py', reloading
+2024-06-10 11:42:09,571 - INFO -  * Restarting with stat
+2024-06-10 11:45:28,415 - INFO - Starting Flask server...
+2024-06-10 11:45:28,416 - INFO - Starting scheduler thread...
+2024-06-10 11:45:28,416 - INFO - Scheduler thread started.
+2024-06-10 11:45:28,423 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-10 11:45:28,423 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-10 11:45:28,423 - INFO -  * Restarting with stat
+2024-06-10 11:45:29,428 - INFO - Starting Flask server...
+2024-06-10 11:45:29,428 - INFO - Starting scheduler thread...
+2024-06-10 11:45:29,428 - INFO - Scheduler thread started.
+2024-06-10 11:45:29,429 - WARNING -  * Debugger is active!
+2024-06-10 11:45:29,436 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 11:47:38,765 - INFO -  * Detected change in '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/run.py', reloading
+2024-06-10 11:47:38,908 - INFO -  * Restarting with stat
+2024-06-10 11:49:00,419 - INFO - Starting Flask server...
+2024-06-10 11:49:00,419 - INFO - Starting scheduler thread...
+2024-06-10 11:49:00,420 - INFO - Scheduler thread started.
+2024-06-10 11:49:00,428 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-10 11:49:00,428 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-10 11:49:00,428 - INFO -  * Restarting with stat
+2024-06-10 11:49:01,366 - INFO - Starting Flask server...
+2024-06-10 11:49:01,366 - INFO - Starting scheduler thread...
+2024-06-10 11:49:01,366 - INFO - Scheduler thread started.
+2024-06-10 11:49:01,366 - WARNING -  * Debugger is active!
+2024-06-10 11:49:01,373 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 11:52:20,079 - INFO -  * Detected change in '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/scheduler.py', reloading
+2024-06-10 11:52:20,232 - INFO -  * Restarting with stat
+2024-06-10 11:54:22,505 - INFO - Starting Flask server...
+2024-06-10 11:54:22,505 - INFO - Starting scheduler thread...
+2024-06-10 11:54:22,506 - INFO - Scheduler thread started.
+2024-06-10 11:54:22,513 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-10 11:54:22,513 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-10 11:54:22,513 - INFO -  * Restarting with stat
+2024-06-10 11:54:23,538 - INFO - Starting Flask server...
+2024-06-10 11:54:23,538 - INFO - Starting scheduler thread...
+2024-06-10 11:54:23,539 - INFO - Scheduler thread started.
+2024-06-10 11:54:23,539 - WARNING -  * Debugger is active!
+2024-06-10 11:54:23,546 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 11:55:26,046 - INFO -  * Detected change in '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/scheduler.py', reloading
+2024-06-10 11:55:26,184 - INFO -  * Restarting with stat
+2024-06-10 11:55:27,159 - INFO - Starting Flask server...
+2024-06-10 11:55:27,160 - INFO - Starting scheduler thread...
+2024-06-10 11:55:27,160 - INFO - Scheduler thread started.
+2024-06-10 11:55:27,160 - WARNING -  * Debugger is active!
+2024-06-10 11:55:27,167 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 11:55:33,359 - INFO -  * Detected change in '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/scheduler.py', reloading
+2024-06-10 11:55:33,504 - INFO -  * Restarting with stat
+2024-06-10 11:55:34,469 - INFO - Starting Flask server...
+2024-06-10 11:55:34,470 - INFO - Starting scheduler thread...
+2024-06-10 11:55:34,470 - INFO - Scheduler thread started.
+2024-06-10 11:55:34,470 - WARNING -  * Debugger is active!
+2024-06-10 11:55:34,477 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 11:55:47,817 - INFO - Starting Flask server...
+2024-06-10 11:55:47,818 - INFO - Starting scheduler thread...
+2024-06-10 11:55:47,818 - INFO - Scheduler thread started.
+2024-06-10 11:55:47,825 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-10 11:55:47,825 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-10 11:55:47,825 - INFO -  * Restarting with stat
+2024-06-10 11:55:48,798 - INFO - Starting Flask server...
+2024-06-10 11:55:48,798 - INFO - Starting scheduler thread...
+2024-06-10 11:55:48,798 - INFO - Scheduler thread started.
+2024-06-10 11:55:48,798 - WARNING -  * Debugger is active!
+2024-06-10 11:55:48,805 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 11:59:21,922 - INFO -  * Detected change in '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/scheduler.py', reloading
+2024-06-10 11:59:22,056 - INFO -  * Restarting with stat
+2024-06-10 11:59:25,829 - INFO - Starting Flask server...
+2024-06-10 11:59:25,830 - INFO - Starting scheduler thread...
+2024-06-10 11:59:25,830 - INFO - Scheduler thread started.
+2024-06-10 11:59:25,837 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-10 11:59:25,837 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-10 11:59:25,837 - INFO -  * Restarting with stat
+2024-06-10 11:59:26,867 - INFO - Starting Flask server...
+2024-06-10 11:59:26,868 - INFO - Starting scheduler thread...
+2024-06-10 11:59:26,868 - INFO - Scheduler thread started.
+2024-06-10 11:59:26,869 - WARNING -  * Debugger is active!
+2024-06-10 11:59:26,877 - INFO -  * Debugger PIN: 311-105-735
