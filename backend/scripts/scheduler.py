@@ -73,19 +73,8 @@ def job():
             'random_forest': os.path.join(model_dir, 'eth_rf_model.pkl')
         }
 
-        btc_predictions = train_model(
-            os.path.join(processed_data_dir, 'btc_data_processed.csv'),
-            btc_model_paths,
-            os.path.join(prediction_dir, 'btc_predictions.csv'),
-            days_to_predict=5
-        )
-
-        eth_predictions = train_model(
-            os.path.join(processed_data_dir, 'eth_data_processed.csv'),
-            eth_model_paths,
-            os.path.join(prediction_dir, 'eth_predictions.csv'),
-            days_to_predict=5
-        )
+        train_model(os.path.join(processed_data_dir, 'btc_data_processed.csv'), btc_model_paths, os.path.join(prediction_dir, 'btc_predictions.csv'), days_to_predict=30)
+        train_model(os.path.join(processed_data_dir, 'eth_data_processed.csv'), eth_model_paths, os.path.join(prediction_dir, 'eth_predictions.csv'), days_to_predict=30)
         logger.info(f"Models saved to {btc_model_paths} and {eth_model_paths}")
 
         # Step 4: Visualize predictions
@@ -106,18 +95,8 @@ def job():
         visualization_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'visualizations')
         os.makedirs(visualization_dir, exist_ok=True)
 
-        visualize_predictions(
-            os.path.join(processed_data_dir, 'btc_data_processed.csv'),
-            os.path.join(prediction_dir, 'btc_predictions.csv'),
-            'Bitcoin Price Prediction',
-            os.path.join(visualization_dir, 'btc_price_prediction.png')
-        )
-        visualize_predictions(
-            os.path.join(processed_data_dir, 'eth_data_processed.csv'),
-            os.path.join(prediction_dir, 'eth_predictions.csv'),
-            'Ethereum Price Prediction',
-            os.path.join(visualization_dir, 'eth_price_prediction.png')
-        )
+        visualize_predictions(os.path.join(processed_data_dir, 'btc_data_processed.csv'), os.path.join(prediction_dir, 'btc_predictions.csv'), 'Bitcoin Price Prediction', os.path.join(visualization_dir, 'btc_price_prediction.png'))
+        visualize_predictions(os.path.join(processed_data_dir, 'eth_data_processed.csv'), os.path.join(prediction_dir, 'eth_predictions.csv'), 'Ethereum Price Prediction', os.path.join(visualization_dir, 'eth_price_prediction.png'))
         logger.info("Visualizations generated")
     except Exception as e:
         logger.error(f"Error in job execution: {e}")
