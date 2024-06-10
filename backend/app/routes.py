@@ -10,10 +10,11 @@ import os
 @app.route('/api/data', methods=['GET'])
 def get_data():
     crypto = request.args.get('crypto')
+    timescale = 'month'  # Always fetch data for the past 30 days
 
     try:
         print(f"Fetching data for {crypto} for the past 30 days")
-        data = fetch_data(crypto, 30)
+        data = fetch_data(crypto)
         print("Data fetched:", data.head())
 
         print("Preprocessing data...")
@@ -57,10 +58,11 @@ def handle_disconnect():
 @socketio.on('request_update')
 def handle_request_update(json):
     crypto = json.get('crypto')
+    timescale = 'month'  # Always fetch data for the past 30 days
 
     try:
         print(f"Fetching data for {crypto} for the past 30 days")
-        data = fetch_data(crypto, 30)
+        data = fetch_data(crypto)
         print("Data fetched:", data.head())
 
         print("Preprocessing data...")

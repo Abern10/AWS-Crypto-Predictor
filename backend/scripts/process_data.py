@@ -5,7 +5,7 @@ def preprocess_data(file_path):
     
     # Debugging: Print the head of the data being processed
     print(f"Preprocessing data from {file_path}:")
-    print(df.head())
+    # print(df.head())
 
     # Example preprocessing steps
     df = df.dropna()
