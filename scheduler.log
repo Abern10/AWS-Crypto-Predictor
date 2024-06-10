@@ -1,0 +1,425 @@
+2024-06-07 10:46:05,399 - WARNING -  * Debugger is active!
+2024-06-07 10:46:05,408 - INFO -  * Debugger PIN: 897-422-663
+2024-06-07 10:46:52,537 - INFO -  * Detected change in '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/scheduler.py', reloading
+2024-06-07 10:47:54,592 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-07 10:47:54,592 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-07 10:47:54,592 - INFO -  * Restarting with stat
+2024-06-07 10:47:55,518 - WARNING -  * Debugger is active!
+2024-06-07 10:47:55,525 - INFO -  * Debugger PIN: 897-422-663
+2024-06-07 10:52:54,681 - INFO - Running scheduled job...
+2024-06-07 10:52:54,963 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-07 10:52:54,968 - INFO - Data processed and saved to backend/data/processed/
+2024-06-07 10:52:54,976 - INFO - Models saved to backend/models/btc_model.pkl and backend/models/eth_model.pkl
+2024-06-07 10:52:55,562 - INFO - Running scheduled job...
+2024-06-07 10:52:55,786 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-07 10:52:55,790 - INFO - Data processed and saved to backend/data/processed/
+2024-06-07 10:52:55,797 - INFO - Models saved to backend/models/btc_model.pkl and backend/models/eth_model.pkl
+2024-06-07 12:04:41,217 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-07 12:04:41,218 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-07 12:04:41,218 - INFO -  * Restarting with stat
+2024-06-07 12:04:42,181 - WARNING -  * Debugger is active!
+2024-06-07 12:04:42,192 - INFO -  * Debugger PIN: 897-422-663
+2024-06-07 12:05:06,192 - INFO - 127.0.0.1 - - [07/Jun/2024 12:05:06] "[33mGET / HTTP/1.1[0m" 404 -
+2024-06-07 17:58:44,238 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-07 17:58:44,239 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-07 17:58:44,239 - INFO -  * Restarting with stat
+2024-06-07 17:58:45,279 - WARNING -  * Debugger is active!
+2024-06-07 17:58:45,291 - INFO -  * Debugger PIN: 897-422-663
+2024-06-09 15:24:36,274 - INFO - Starting Flask server...
+2024-06-09 15:24:36,275 - INFO - Starting scheduler thread...
+2024-06-09 15:24:36,275 - INFO - Scheduler thread started.
+2024-06-09 15:24:36,281 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-09 15:24:36,281 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-09 15:24:36,282 - INFO -  * Restarting with stat
+2024-06-09 15:24:37,226 - INFO - Starting Flask server...
+2024-06-09 15:24:37,226 - INFO - Starting scheduler thread...
+2024-06-09 15:24:37,226 - INFO - Scheduler thread started.
+2024-06-09 15:24:37,226 - WARNING -  * Debugger is active!
+2024-06-09 15:24:37,237 - INFO -  * Debugger PIN: 897-422-663
+2024-06-09 15:25:04,392 - INFO - 127.0.0.1 - - [09/Jun/2024 15:25:04] "GET /socket.io/?EIO=4&transport=polling&t=O_-hGg4 HTTP/1.1" 200 -
+2024-06-09 15:25:04,408 - INFO - 127.0.0.1 - - [09/Jun/2024 15:25:04] "POST /socket.io/?EIO=4&transport=polling&t=O_-hGgG&sid=v1u9092Bvn8K_AJ0AAAA HTTP/1.1" 200 -
+2024-06-09 15:25:04,408 - INFO - 127.0.0.1 - - [09/Jun/2024 15:25:04] "GET /socket.io/?EIO=4&transport=polling&t=O_-hGgH&sid=v1u9092Bvn8K_AJ0AAAA HTTP/1.1" 200 -
+2024-06-09 15:25:04,447 - INFO - 127.0.0.1 - - [09/Jun/2024 15:25:04] "GET /socket.io/?EIO=4&transport=polling&t=O_-hGgz&sid=v1u9092Bvn8K_AJ0AAAA HTTP/1.1" 200 -
+2024-06-09 15:25:04,453 - INFO - 127.0.0.1 - - [09/Jun/2024 15:25:04] "GET /socket.io/?EIO=4&transport=polling&t=O_-hGh3&sid=v1u9092Bvn8K_AJ0AAAA HTTP/1.1" 200 -
+2024-06-09 15:25:04,471 - INFO - 127.0.0.1 - - [09/Jun/2024 15:25:04] "GET /socket.io/?EIO=4&transport=polling&t=O_-hGhJ&sid=v1u9092Bvn8K_AJ0AAAA HTTP/1.1" 200 -
+2024-06-09 15:25:04,706 - INFO - 127.0.0.1 - - [09/Jun/2024 15:25:04] "GET /api/data?crypto=bitcoin&timescale=day HTTP/1.1" 200 -
+2024-06-09 15:25:04,707 - INFO - 127.0.0.1 - - [09/Jun/2024 15:25:04] "GET /api/data?crypto=bitcoin&timescale=day HTTP/1.1" 200 -
+2024-06-09 15:29:36,406 - INFO - Running scheduled job...
+2024-06-09 15:29:36,834 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 15:29:36,843 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 15:29:36,854 - INFO - Models saved to backend/models/btc_model.pkl and backend/models/eth_model.pkl
+2024-06-09 15:29:37,361 - INFO - Running scheduled job...
+2024-06-09 15:29:37,744 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 15:29:37,751 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 15:29:37,761 - INFO - Models saved to backend/models/btc_model.pkl and backend/models/eth_model.pkl
+2024-06-09 15:39:22,306 - INFO - Starting Flask server...
+2024-06-09 15:39:22,307 - INFO - Starting scheduler thread...
+2024-06-09 15:39:22,307 - INFO - Scheduler thread started.
+2024-06-09 15:39:22,313 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-09 15:39:22,313 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-09 15:39:22,313 - INFO -  * Restarting with stat
+2024-06-09 15:39:23,318 - INFO - Starting Flask server...
+2024-06-09 15:39:23,319 - INFO - Starting scheduler thread...
+2024-06-09 15:39:23,319 - INFO - Scheduler thread started.
+2024-06-09 15:39:23,319 - WARNING -  * Debugger is active!
+2024-06-09 15:39:23,328 - INFO -  * Debugger PIN: 897-422-663
+2024-06-09 15:39:23,384 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:23] "GET /socket.io/?EIO=4&transport=polling&t=O_-kYFy HTTP/1.1" 200 -
+2024-06-09 15:39:23,399 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:23] "POST /socket.io/?EIO=4&transport=polling&t=O_-kYNz&sid=TNzn59OBYUkQpqFVAAAA HTTP/1.1" 200 -
+2024-06-09 15:39:23,399 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:23] "GET /socket.io/?EIO=4&transport=polling&t=O_-kYO0&sid=TNzn59OBYUkQpqFVAAAA HTTP/1.1" 200 -
+2024-06-09 15:39:23,404 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:23] "GET /socket.io/?EIO=4&transport=polling&t=O_-kYO9&sid=TNzn59OBYUkQpqFVAAAA HTTP/1.1" 200 -
+2024-06-09 15:39:34,501 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:34] "GET /socket.io/?EIO=4&transport=websocket&sid=TNzn59OBYUkQpqFVAAAA HTTP/1.1" 200 -
+2024-06-09 15:39:34,990 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:34] "GET /socket.io/?EIO=4&transport=polling&t=O_-kbDA HTTP/1.1" 200 -
+2024-06-09 15:39:35,001 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:35] "GET /socket.io/?EIO=4&transport=polling&t=O_-kbDL&sid=Ftl177blDTZ-erqAAAAC HTTP/1.1" 200 -
+2024-06-09 15:39:35,001 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:35] "POST /socket.io/?EIO=4&transport=polling&t=O_-kbDK&sid=Ftl177blDTZ-erqAAAAC HTTP/1.1" 200 -
+2024-06-09 15:39:35,045 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:35] "GET /socket.io/?EIO=4&transport=polling&t=O_-kbE3&sid=Ftl177blDTZ-erqAAAAC HTTP/1.1" 200 -
+2024-06-09 15:39:35,050 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:35] "GET /socket.io/?EIO=4&transport=polling&t=O_-kbE8&sid=Ftl177blDTZ-erqAAAAC HTTP/1.1" 200 -
+2024-06-09 15:39:35,070 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:35] "GET /socket.io/?EIO=4&transport=polling&t=O_-kbES&sid=Ftl177blDTZ-erqAAAAC HTTP/1.1" 200 -
+2024-06-09 15:39:35,073 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:35] "GET /socket.io/?EIO=4&transport=polling&t=O_-kbEW&sid=Ftl177blDTZ-erqAAAAC HTTP/1.1" 200 -
+2024-06-09 15:39:35,331 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:35] "GET /api/data?crypto=bitcoin&timescale=day HTTP/1.1" 200 -
+2024-06-09 15:39:35,336 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:35] "GET /api/data?crypto=bitcoin&timescale=day HTTP/1.1" 200 -
+2024-06-09 15:39:35,336 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:35] "GET /api/data?crypto=ethereum&timescale=day HTTP/1.1" 200 -
+2024-06-09 15:39:35,360 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:35] "GET /api/data?crypto=ethereum&timescale=day HTTP/1.1" 200 -
+2024-06-09 15:39:51,269 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:51] "[35m[1mGET /api/data?crypto=bitcoin&timescale=month HTTP/1.1[0m" 500 -
+2024-06-09 15:39:51,284 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:51] "[35m[1mGET /api/data?crypto=ethereum&timescale=month HTTP/1.1[0m" 500 -
+2024-06-09 15:39:56,284 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:56] "GET /socket.io/?EIO=4&transport=websocket&sid=Ftl177blDTZ-erqAAAAC HTTP/1.1" 200 -
+2024-06-09 15:39:56,496 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:56] "GET /socket.io/?EIO=4&transport=polling&t=O_-kgTD HTTP/1.1" 200 -
+2024-06-09 15:39:56,502 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:56] "POST /socket.io/?EIO=4&transport=polling&t=O_-kgTJ&sid=eeyXfEF_K5JakXeUAAAE HTTP/1.1" 200 -
+2024-06-09 15:39:56,506 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:56] "GET /socket.io/?EIO=4&transport=polling&t=O_-kgTN&sid=eeyXfEF_K5JakXeUAAAE HTTP/1.1" 200 -
+2024-06-09 15:39:56,549 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:56] "GET /socket.io/?EIO=4&transport=polling&t=O_-kgU3&sid=eeyXfEF_K5JakXeUAAAE HTTP/1.1" 200 -
+2024-06-09 15:39:56,556 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:56] "GET /socket.io/?EIO=4&transport=polling&t=O_-kgUB&sid=eeyXfEF_K5JakXeUAAAE HTTP/1.1" 200 -
+2024-06-09 15:39:56,564 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:56] "GET /socket.io/?EIO=4&transport=polling&t=O_-kgUI&sid=eeyXfEF_K5JakXeUAAAE HTTP/1.1" 200 -
+2024-06-09 15:39:56,582 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:56] "GET /socket.io/?EIO=4&transport=polling&t=O_-kgUb&sid=eeyXfEF_K5JakXeUAAAE HTTP/1.1" 200 -
+2024-06-09 15:39:56,829 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:56] "[35m[1mGET /api/data?crypto=bitcoin&timescale=day HTTP/1.1[0m" 500 -
+2024-06-09 15:39:56,831 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:56] "[35m[1mGET /api/data?crypto=ethereum&timescale=day HTTP/1.1[0m" 500 -
+2024-06-09 15:39:56,833 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:56] "[35m[1mGET /api/data?crypto=ethereum&timescale=day HTTP/1.1[0m" 500 -
+2024-06-09 15:39:56,834 - INFO - 127.0.0.1 - - [09/Jun/2024 15:39:56] "[35m[1mGET /api/data?crypto=bitcoin&timescale=day HTTP/1.1[0m" 500 -
+2024-06-09 15:44:12,473 - INFO - Starting Flask server...
+2024-06-09 15:44:12,473 - INFO - Starting scheduler thread...
+2024-06-09 15:44:12,473 - INFO - Scheduler thread started.
+2024-06-09 15:44:12,480 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-09 15:44:12,480 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-09 15:44:12,480 - INFO -  * Restarting with stat
+2024-06-09 15:44:13,458 - INFO - Starting Flask server...
+2024-06-09 15:44:13,458 - INFO - Starting scheduler thread...
+2024-06-09 15:44:13,458 - INFO - Scheduler thread started.
+2024-06-09 15:44:13,458 - WARNING -  * Debugger is active!
+2024-06-09 15:44:13,467 - INFO -  * Debugger PIN: 897-422-663
+2024-06-09 15:44:28,553 - INFO - 127.0.0.1 - - [09/Jun/2024 15:44:28] "GET /socket.io/?EIO=4&transport=polling&t=O_-liu5 HTTP/1.1" 200 -
+2024-06-09 15:44:28,563 - INFO - 127.0.0.1 - - [09/Jun/2024 15:44:28] "POST /socket.io/?EIO=4&transport=polling&t=O_-liuF&sid=qcoBzzm_9X0JVqCFAAAA HTTP/1.1" 200 -
+2024-06-09 15:44:28,566 - INFO - 127.0.0.1 - - [09/Jun/2024 15:44:28] "GET /socket.io/?EIO=4&transport=polling&t=O_-liuG&sid=qcoBzzm_9X0JVqCFAAAA HTTP/1.1" 200 -
+2024-06-09 15:44:28,612 - INFO - 127.0.0.1 - - [09/Jun/2024 15:44:28] "GET /socket.io/?EIO=4&transport=polling&t=O_-liv1&sid=qcoBzzm_9X0JVqCFAAAA HTTP/1.1" 200 -
+2024-06-09 15:44:28,619 - INFO - 127.0.0.1 - - [09/Jun/2024 15:44:28] "GET /socket.io/?EIO=4&transport=polling&t=O_-liv9&sid=qcoBzzm_9X0JVqCFAAAA HTTP/1.1" 200 -
+2024-06-09 15:44:28,640 - INFO - 127.0.0.1 - - [09/Jun/2024 15:44:28] "GET /socket.io/?EIO=4&transport=polling&t=O_-livU&sid=qcoBzzm_9X0JVqCFAAAA HTTP/1.1" 200 -
+2024-06-09 15:44:28,783 - INFO - 127.0.0.1 - - [09/Jun/2024 15:44:28] "GET /api/data?crypto=ethereum&timescale=day HTTP/1.1" 200 -
+2024-06-09 15:44:28,787 - INFO - 127.0.0.1 - - [09/Jun/2024 15:44:28] "GET /api/data?crypto=ethereum&timescale=day HTTP/1.1" 200 -
+2024-06-09 15:44:28,788 - INFO - 127.0.0.1 - - [09/Jun/2024 15:44:28] "GET /api/data?crypto=bitcoin&timescale=day HTTP/1.1" 200 -
+2024-06-09 15:44:28,946 - INFO - 127.0.0.1 - - [09/Jun/2024 15:44:28] "GET /api/data?crypto=bitcoin&timescale=day HTTP/1.1" 200 -
+2024-06-09 15:49:03,571 - INFO - 127.0.0.1 - - [09/Jun/2024 15:49:03] "GET /socket.io/?EIO=4&transport=polling&t=O_-mm1F HTTP/1.1" 200 -
+2024-06-09 15:49:03,578 - INFO - 127.0.0.1 - - [09/Jun/2024 15:49:03] "POST /socket.io/?EIO=4&transport=polling&t=O_-mm1K&sid=6oAz9fwi_EpmFlRTAAAC HTTP/1.1" 200 -
+2024-06-09 15:49:03,580 - INFO - 127.0.0.1 - - [09/Jun/2024 15:49:03] "GET /socket.io/?EIO=4&transport=polling&t=O_-mm1N&sid=6oAz9fwi_EpmFlRTAAAC HTTP/1.1" 200 -
+2024-06-09 15:49:03,582 - INFO - 127.0.0.1 - - [09/Jun/2024 15:49:03] "GET /socket.io/?EIO=4&transport=polling&t=O_-mm1S&sid=6oAz9fwi_EpmFlRTAAAC HTTP/1.1" 200 -
+2024-06-09 15:49:04,245 - INFO - 127.0.0.1 - - [09/Jun/2024 15:49:04] "GET /api/data?crypto=bitcoin&timescale=day HTTP/1.1" 200 -
+2024-06-09 15:49:04,251 - INFO - 127.0.0.1 - - [09/Jun/2024 15:49:04] "GET /api/data?crypto=ethereum&timescale=day HTTP/1.1" 200 -
+2024-06-09 15:49:08,662 - INFO - 127.0.0.1 - - [09/Jun/2024 15:49:08] "GET /socket.io/?EIO=4&transport=websocket&sid=qcoBzzm_9X0JVqCFAAAA HTTP/1.1" 200 -
+2024-06-09 15:49:08,664 - INFO - 127.0.0.1 - - [09/Jun/2024 15:49:08] "GET /socket.io/?EIO=4&transport=websocket&sid=6oAz9fwi_EpmFlRTAAAC HTTP/1.1" 200 -
+2024-06-09 15:49:09,147 - INFO - 127.0.0.1 - - [09/Jun/2024 15:49:09] "GET /socket.io/?EIO=4&transport=polling&t=O_-mnOO HTTP/1.1" 200 -
+2024-06-09 15:49:09,153 - INFO - 127.0.0.1 - - [09/Jun/2024 15:49:09] "POST /socket.io/?EIO=4&transport=polling&t=O_-mnOT&sid=XCw_sjo0Ex93WNUqAAAE HTTP/1.1" 200 -
+2024-06-09 15:49:09,154 - INFO - 127.0.0.1 - - [09/Jun/2024 15:49:09] "GET /socket.io/?EIO=4&transport=polling&t=O_-mnOT.0&sid=XCw_sjo0Ex93WNUqAAAE HTTP/1.1" 200 -
+2024-06-09 15:49:09,206 - INFO - 127.0.0.1 - - [09/Jun/2024 15:49:09] "GET /socket.io/?EIO=4&transport=polling&t=O_-mnPK&sid=XCw_sjo0Ex93WNUqAAAE HTTP/1.1" 200 -
+2024-06-09 15:49:09,213 - INFO - 127.0.0.1 - - [09/Jun/2024 15:49:09] "GET /socket.io/?EIO=4&transport=polling&t=O_-mnPR&sid=XCw_sjo0Ex93WNUqAAAE HTTP/1.1" 200 -
+2024-06-09 15:49:09,235 - INFO - 127.0.0.1 - - [09/Jun/2024 15:49:09] "GET /socket.io/?EIO=4&transport=polling&t=O_-mnPm&sid=XCw_sjo0Ex93WNUqAAAE HTTP/1.1" 200 -
+2024-06-09 15:49:09,445 - INFO - 127.0.0.1 - - [09/Jun/2024 15:49:09] "GET /api/data?crypto=bitcoin&timescale=day HTTP/1.1" 200 -
+2024-06-09 15:49:09,446 - INFO - 127.0.0.1 - - [09/Jun/2024 15:49:09] "GET /api/data?crypto=ethereum&timescale=day HTTP/1.1" 200 -
+2024-06-09 15:49:09,446 - INFO - 127.0.0.1 - - [09/Jun/2024 15:49:09] "GET /api/data?crypto=ethereum&timescale=day HTTP/1.1" 200 -
+2024-06-09 15:49:09,466 - INFO - 127.0.0.1 - - [09/Jun/2024 15:49:09] "[35m[1mGET /api/data?crypto=bitcoin&timescale=day HTTP/1.1[0m" 500 -
+2024-06-09 15:49:12,569 - INFO - Running scheduled job...
+2024-06-09 15:49:12,663 - ERROR - Error in job execution: 'prices'
+2024-06-09 15:49:13,523 - INFO - Running scheduled job...
+2024-06-09 15:49:13,703 - ERROR - Error in job execution: 'prices'
+2024-06-09 15:51:18,370 - INFO - 127.0.0.1 - - [09/Jun/2024 15:51:18] "GET /socket.io/?EIO=4&transport=polling&t=O_-nGxT HTTP/1.1" 200 -
+2024-06-09 15:51:18,379 - INFO - 127.0.0.1 - - [09/Jun/2024 15:51:18] "POST /socket.io/?EIO=4&transport=polling&t=O_-nGxa&sid=cOOP7M-7pzgnlSG0AAAG HTTP/1.1" 200 -
+2024-06-09 15:51:18,380 - INFO - 127.0.0.1 - - [09/Jun/2024 15:51:18] "GET /socket.io/?EIO=4&transport=polling&t=O_-nGxc&sid=cOOP7M-7pzgnlSG0AAAG HTTP/1.1" 200 -
+2024-06-09 15:51:18,383 - INFO - 127.0.0.1 - - [09/Jun/2024 15:51:18] "GET /socket.io/?EIO=4&transport=polling&t=O_-nGxj&sid=cOOP7M-7pzgnlSG0AAAG HTTP/1.1" 200 -
+2024-06-09 15:51:18,628 - INFO - 127.0.0.1 - - [09/Jun/2024 15:51:18] "GET /api/data?crypto=bitcoin&timescale=day HTTP/1.1" 200 -
+2024-06-09 15:51:18,632 - INFO - 127.0.0.1 - - [09/Jun/2024 15:51:18] "GET /api/data?crypto=ethereum&timescale=day HTTP/1.1" 200 -
+2024-06-09 15:51:18,643 - INFO - 127.0.0.1 - - [09/Jun/2024 15:51:18] "GET /api/data?crypto=ethereum&timescale=day HTTP/1.1" 200 -
+2024-06-09 15:51:18,646 - INFO - 127.0.0.1 - - [09/Jun/2024 15:51:18] "GET /api/data?crypto=bitcoin&timescale=day HTTP/1.1" 200 -
+2024-06-09 15:54:12,719 - INFO - Running scheduled job...
+2024-06-09 15:54:13,103 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 15:54:13,118 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 15:54:13,136 - INFO - Models saved to backend/models/btc_model.pkl and backend/models/eth_model.pkl
+2024-06-09 15:54:13,827 - INFO - Running scheduled job...
+2024-06-09 15:54:14,258 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 15:54:14,268 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 15:54:14,281 - INFO - Models saved to backend/models/btc_model.pkl and backend/models/eth_model.pkl
+2024-06-09 15:58:25,516 - INFO - Starting Flask server...
+2024-06-09 15:58:25,516 - INFO - Starting scheduler thread...
+2024-06-09 15:58:25,517 - INFO - Scheduler thread started.
+2024-06-09 15:58:25,524 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-09 15:58:25,524 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-09 15:58:25,524 - INFO -  * Restarting with stat
+2024-06-09 15:58:26,502 - INFO - Starting Flask server...
+2024-06-09 15:58:26,502 - INFO - Starting scheduler thread...
+2024-06-09 15:58:26,502 - INFO - Scheduler thread started.
+2024-06-09 15:58:26,503 - WARNING -  * Debugger is active!
+2024-06-09 15:58:26,513 - INFO -  * Debugger PIN: 897-422-663
+2024-06-09 15:58:28,706 - INFO - 127.0.0.1 - - [09/Jun/2024 15:58:28] "GET /socket.io/?EIO=4&transport=polling&t=O_-ov_P HTTP/1.1" 200 -
+2024-06-09 15:58:28,750 - INFO - 127.0.0.1 - - [09/Jun/2024 15:58:28] "POST /socket.io/?EIO=4&transport=polling&t=O_-ow01&sid=5FPGG5BrF2fjrdD1AAAA HTTP/1.1" 200 -
+2024-06-09 15:58:28,751 - INFO - 127.0.0.1 - - [09/Jun/2024 15:58:28] "GET /socket.io/?EIO=4&transport=polling&t=O_-ow04&sid=5FPGG5BrF2fjrdD1AAAA HTTP/1.1" 200 -
+2024-06-09 15:58:28,754 - INFO - 127.0.0.1 - - [09/Jun/2024 15:58:28] "GET /socket.io/?EIO=4&transport=polling&t=O_-ow0G&sid=5FPGG5BrF2fjrdD1AAAA HTTP/1.1" 200 -
+2024-06-09 15:58:42,394 - INFO - 127.0.0.1 - - [09/Jun/2024 15:58:42] "GET /socket.io/?EIO=4&transport=websocket&sid=5FPGG5BrF2fjrdD1AAAA HTTP/1.1" 200 -
+2024-06-09 15:58:42,873 - INFO - 127.0.0.1 - - [09/Jun/2024 15:58:42] "GET /socket.io/?EIO=4&transport=polling&t=O_-ozSs HTTP/1.1" 200 -
+2024-06-09 15:58:42,882 - INFO - 127.0.0.1 - - [09/Jun/2024 15:58:42] "POST /socket.io/?EIO=4&transport=polling&t=O_-ozSy&sid=XHxBLND0E6C0PjD1AAAC HTTP/1.1" 200 -
+2024-06-09 15:58:42,882 - INFO - 127.0.0.1 - - [09/Jun/2024 15:58:42] "GET /socket.io/?EIO=4&transport=polling&t=O_-ozSz&sid=XHxBLND0E6C0PjD1AAAC HTTP/1.1" 200 -
+2024-06-09 15:58:42,923 - INFO - 127.0.0.1 - - [09/Jun/2024 15:58:42] "GET /socket.io/?EIO=4&transport=polling&t=O_-ozTf&sid=XHxBLND0E6C0PjD1AAAC HTTP/1.1" 200 -
+2024-06-09 15:58:42,932 - INFO - 127.0.0.1 - - [09/Jun/2024 15:58:42] "GET /socket.io/?EIO=4&transport=polling&t=O_-ozTn&sid=XHxBLND0E6C0PjD1AAAC HTTP/1.1" 200 -
+2024-06-09 15:58:42,935 - INFO - 127.0.0.1 - - [09/Jun/2024 15:58:42] "GET /socket.io/?EIO=4&transport=polling&t=O_-ozTr&sid=XHxBLND0E6C0PjD1AAAC HTTP/1.1" 200 -
+2024-06-09 15:58:42,954 - INFO - 127.0.0.1 - - [09/Jun/2024 15:58:42] "GET /socket.io/?EIO=4&transport=polling&t=O_-ozU8&sid=XHxBLND0E6C0PjD1AAAC HTTP/1.1" 200 -
+2024-06-09 15:58:43,226 - INFO - 127.0.0.1 - - [09/Jun/2024 15:58:43] "GET /api/data?crypto=bitcoin&timescale=day HTTP/1.1" 200 -
+2024-06-09 15:58:43,239 - INFO - 127.0.0.1 - - [09/Jun/2024 15:58:43] "GET /api/data?crypto=bitcoin&timescale=day HTTP/1.1" 200 -
+2024-06-09 15:58:43,254 - INFO - 127.0.0.1 - - [09/Jun/2024 15:58:43] "GET /api/data?crypto=ethereum&timescale=day HTTP/1.1" 200 -
+2024-06-09 15:58:43,260 - INFO - 127.0.0.1 - - [09/Jun/2024 15:58:43] "GET /api/data?crypto=ethereum&timescale=day HTTP/1.1" 200 -
+2024-06-09 16:03:25,643 - INFO - Running scheduled job...
+2024-06-09 16:03:25,924 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 16:03:25,944 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 16:03:25,964 - INFO - Models saved to backend/models/btc_model.pkl and backend/models/eth_model.pkl
+2024-06-09 16:03:26,593 - INFO - Running scheduled job...
+2024-06-09 16:03:26,963 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 16:03:26,973 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 16:03:26,985 - INFO - Models saved to backend/models/btc_model.pkl and backend/models/eth_model.pkl
+2024-06-09 16:11:45,063 - INFO - Starting Flask server...
+2024-06-09 16:11:45,064 - INFO - Starting scheduler thread...
+2024-06-09 16:11:45,064 - INFO - Scheduler thread started.
+2024-06-09 16:11:45,070 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-09 16:11:45,070 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-09 16:11:45,070 - INFO -  * Restarting with stat
+2024-06-09 16:11:46,027 - INFO - Starting Flask server...
+2024-06-09 16:11:46,027 - INFO - Starting scheduler thread...
+2024-06-09 16:11:46,027 - INFO - Scheduler thread started.
+2024-06-09 16:11:46,027 - WARNING -  * Debugger is active!
+2024-06-09 16:11:46,036 - INFO -  * Debugger PIN: 897-422-663
+2024-06-09 16:11:47,801 - INFO - 127.0.0.1 - - [09/Jun/2024 16:11:47] "GET /socket.io/?EIO=4&transport=polling&t=O_-rz5J HTTP/1.1" 200 -
+2024-06-09 16:11:47,812 - INFO - 127.0.0.1 - - [09/Jun/2024 16:11:47] "POST /socket.io/?EIO=4&transport=polling&t=O_-rz5S&sid=XFIDYkFWMQAN2MY0AAAA HTTP/1.1" 200 -
+2024-06-09 16:11:47,815 - INFO - 127.0.0.1 - - [09/Jun/2024 16:11:47] "GET /socket.io/?EIO=4&transport=polling&t=O_-rz5T&sid=XFIDYkFWMQAN2MY0AAAA HTTP/1.1" 200 -
+2024-06-09 16:11:47,821 - INFO - 127.0.0.1 - - [09/Jun/2024 16:11:47] "GET /socket.io/?EIO=4&transport=polling&t=O_-rz5f&sid=XFIDYkFWMQAN2MY0AAAA HTTP/1.1" 200 -
+2024-06-09 16:12:00,175 - INFO - 127.0.0.1 - - [09/Jun/2024 16:12:00] "GET /socket.io/?EIO=4&transport=websocket&sid=XFIDYkFWMQAN2MY0AAAA HTTP/1.1" 200 -
+2024-06-09 16:12:00,655 - INFO - 127.0.0.1 - - [09/Jun/2024 16:12:00] "GET /socket.io/?EIO=4&transport=polling&t=O_-s0EB HTTP/1.1" 200 -
+2024-06-09 16:12:00,666 - INFO - 127.0.0.1 - - [09/Jun/2024 16:12:00] "POST /socket.io/?EIO=4&transport=polling&t=O_-s0EK&sid=xw1plKF15zjeudnHAAAC HTTP/1.1" 200 -
+2024-06-09 16:12:00,666 - INFO - 127.0.0.1 - - [09/Jun/2024 16:12:00] "GET /socket.io/?EIO=4&transport=polling&t=O_-s0EL&sid=xw1plKF15zjeudnHAAAC HTTP/1.1" 200 -
+2024-06-09 16:12:00,671 - INFO - 127.0.0.1 - - [09/Jun/2024 16:12:00] "GET /socket.io/?EIO=4&transport=polling&t=O_-s0ES&sid=xw1plKF15zjeudnHAAAC HTTP/1.1" 200 -
+2024-06-09 16:12:00,677 - INFO - 127.0.0.1 - - [09/Jun/2024 16:12:00] "GET /socket.io/?EIO=4&transport=polling&t=O_-s0Ea&sid=xw1plKF15zjeudnHAAAC HTTP/1.1" 200 -
+2024-06-09 16:12:00,690 - INFO - 127.0.0.1 - - [09/Jun/2024 16:12:00] "GET /socket.io/?EIO=4&transport=polling&t=O_-s0Em&sid=xw1plKF15zjeudnHAAAC HTTP/1.1" 200 -
+2024-06-09 16:12:12,105 - INFO - 127.0.0.1 - - [09/Jun/2024 16:12:12] "GET /socket.io/?EIO=4&transport=websocket&sid=xw1plKF15zjeudnHAAAC HTTP/1.1" 200 -
+2024-06-09 16:12:12,586 - INFO - 127.0.0.1 - - [09/Jun/2024 16:12:12] "GET /socket.io/?EIO=4&transport=polling&t=O_-s38d HTTP/1.1" 200 -
+2024-06-09 16:12:12,638 - INFO - 127.0.0.1 - - [09/Jun/2024 16:12:12] "POST /socket.io/?EIO=4&transport=polling&t=O_-s39P&sid=m0W8Y0TNIB2DqiNeAAAE HTTP/1.1" 200 -
+2024-06-09 16:12:12,639 - INFO - 127.0.0.1 - - [09/Jun/2024 16:12:12] "GET /socket.io/?EIO=4&transport=polling&t=O_-s39P.0&sid=m0W8Y0TNIB2DqiNeAAAE HTTP/1.1" 200 -
+2024-06-09 16:12:12,645 - INFO - 127.0.0.1 - - [09/Jun/2024 16:12:12] "GET /socket.io/?EIO=4&transport=polling&t=O_-s39Y&sid=m0W8Y0TNIB2DqiNeAAAE HTTP/1.1" 200 -
+2024-06-09 16:12:12,666 - INFO - 127.0.0.1 - - [09/Jun/2024 16:12:12] "GET /socket.io/?EIO=4&transport=polling&t=O_-s39t&sid=m0W8Y0TNIB2DqiNeAAAE HTTP/1.1" 200 -
+2024-06-09 16:12:12,670 - INFO - 127.0.0.1 - - [09/Jun/2024 16:12:12] "GET /socket.io/?EIO=4&transport=polling&t=O_-s39z&sid=m0W8Y0TNIB2DqiNeAAAE HTTP/1.1" 200 -
+2024-06-09 16:12:12,859 - INFO - 127.0.0.1 - - [09/Jun/2024 16:12:12] "GET /api/data?crypto=ethereum&timescale=day HTTP/1.1" 200 -
+2024-06-09 16:12:12,863 - INFO - 127.0.0.1 - - [09/Jun/2024 16:12:12] "GET /api/data?crypto=bitcoin&timescale=day HTTP/1.1" 200 -
+2024-06-09 16:12:12,863 - INFO - 127.0.0.1 - - [09/Jun/2024 16:12:12] "GET /api/data?crypto=bitcoin&timescale=day HTTP/1.1" 200 -
+2024-06-09 16:12:12,870 - INFO - 127.0.0.1 - - [09/Jun/2024 16:12:12] "GET /api/data?crypto=ethereum&timescale=day HTTP/1.1" 200 -
+2024-06-09 16:16:45,218 - INFO - Running scheduled job...
+2024-06-09 16:16:45,494 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 16:16:45,503 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 16:16:45,516 - INFO - Models saved to backend/models/btc_model.pkl and backend/models/eth_model.pkl
+2024-06-09 16:16:46,129 - INFO - Running scheduled job...
+2024-06-09 16:16:46,479 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 16:16:46,483 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 16:16:46,491 - INFO - Models saved to backend/models/btc_model.pkl and backend/models/eth_model.pkl
+2024-06-09 16:57:39,408 - INFO - Starting Flask server...
+2024-06-09 16:57:39,409 - INFO - Starting scheduler thread...
+2024-06-09 16:57:39,409 - INFO - Scheduler thread started.
+2024-06-09 16:57:39,451 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-09 16:57:39,451 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-09 16:57:39,451 - INFO -  * Restarting with stat
+2024-06-09 16:57:40,364 - INFO - Starting Flask server...
+2024-06-09 16:57:40,364 - INFO - Starting scheduler thread...
+2024-06-09 16:57:40,364 - INFO - Scheduler thread started.
+2024-06-09 16:57:40,364 - WARNING -  * Debugger is active!
+2024-06-09 16:57:40,373 - INFO -  * Debugger PIN: 897-422-663
+2024-06-09 16:57:44,250 - INFO - 127.0.0.1 - - [09/Jun/2024 16:57:44] "GET /socket.io/?EIO=4&transport=polling&t=O__0U2n HTTP/1.1" 200 -
+2024-06-09 16:57:44,287 - INFO - 127.0.0.1 - - [09/Jun/2024 16:57:44] "POST /socket.io/?EIO=4&transport=polling&t=O__0U3L&sid=DiQUtXUK6hH8hcZ1AAAA HTTP/1.1" 200 -
+2024-06-09 16:57:44,289 - INFO - 127.0.0.1 - - [09/Jun/2024 16:57:44] "GET /socket.io/?EIO=4&transport=polling&t=O__0U3P&sid=DiQUtXUK6hH8hcZ1AAAA HTTP/1.1" 200 -
+2024-06-09 16:57:44,296 - INFO - 127.0.0.1 - - [09/Jun/2024 16:57:44] "GET /socket.io/?EIO=4&transport=polling&t=O__0U3b&sid=DiQUtXUK6hH8hcZ1AAAA HTTP/1.1" 200 -
+2024-06-09 16:57:55,451 - INFO - 127.0.0.1 - - [09/Jun/2024 16:57:55] "GET /socket.io/?EIO=4&transport=websocket&sid=DiQUtXUK6hH8hcZ1AAAA HTTP/1.1" 200 -
+2024-06-09 16:57:55,927 - INFO - 127.0.0.1 - - [09/Jun/2024 16:57:55] "GET /socket.io/?EIO=4&transport=polling&t=O__0WvK HTTP/1.1" 200 -
+2024-06-09 16:57:55,936 - INFO - 127.0.0.1 - - [09/Jun/2024 16:57:55] "POST /socket.io/?EIO=4&transport=polling&t=O__0WvQ&sid=m5f0rMcuMsfDQgh_AAAC HTTP/1.1" 200 -
+2024-06-09 16:57:55,936 - INFO - 127.0.0.1 - - [09/Jun/2024 16:57:55] "GET /socket.io/?EIO=4&transport=polling&t=O__0WvR&sid=m5f0rMcuMsfDQgh_AAAC HTTP/1.1" 200 -
+2024-06-09 16:57:55,980 - INFO - 127.0.0.1 - - [09/Jun/2024 16:57:55] "GET /socket.io/?EIO=4&transport=polling&t=O__0WwA&sid=m5f0rMcuMsfDQgh_AAAC HTTP/1.1" 200 -
+2024-06-09 16:57:55,988 - INFO - 127.0.0.1 - - [09/Jun/2024 16:57:55] "GET /socket.io/?EIO=4&transport=polling&t=O__0WwI&sid=m5f0rMcuMsfDQgh_AAAC HTTP/1.1" 200 -
+2024-06-09 16:57:56,005 - INFO - 127.0.0.1 - - [09/Jun/2024 16:57:56] "GET /socket.io/?EIO=4&transport=polling&t=O__0WwZ&sid=m5f0rMcuMsfDQgh_AAAC HTTP/1.1" 200 -
+2024-06-09 16:57:56,293 - INFO - 127.0.0.1 - - [09/Jun/2024 16:57:56] "GET /api/data?crypto=bitcoin&timescale=day HTTP/1.1" 200 -
+2024-06-09 16:57:56,296 - INFO - 127.0.0.1 - - [09/Jun/2024 16:57:56] "GET /api/data?crypto=bitcoin&timescale=day HTTP/1.1" 200 -
+2024-06-09 16:57:56,296 - INFO - 127.0.0.1 - - [09/Jun/2024 16:57:56] "GET /api/data?crypto=ethereum&timescale=day HTTP/1.1" 200 -
+2024-06-09 16:57:56,298 - INFO - 127.0.0.1 - - [09/Jun/2024 16:57:56] "GET /api/data?crypto=ethereum&timescale=day HTTP/1.1" 200 -
+2024-06-09 16:58:30,340 - INFO - 127.0.0.1 - - [09/Jun/2024 16:58:30] "GET /socket.io/?EIO=4&transport=websocket&sid=m5f0rMcuMsfDQgh_AAAC HTTP/1.1" 200 -
+2024-06-09 16:58:30,594 - INFO - 127.0.0.1 - - [09/Jun/2024 16:58:30] "GET /socket.io/?EIO=4&transport=polling&t=O__0fM_ HTTP/1.1" 200 -
+2024-06-09 16:58:30,614 - INFO - 127.0.0.1 - - [09/Jun/2024 16:58:30] "POST /socket.io/?EIO=4&transport=polling&t=O__0fNH&sid=kcO3RQZII31Ykj8zAAAE HTTP/1.1" 200 -
+2024-06-09 16:58:30,615 - INFO - 127.0.0.1 - - [09/Jun/2024 16:58:30] "GET /socket.io/?EIO=4&transport=polling&t=O__0fNI&sid=kcO3RQZII31Ykj8zAAAE HTTP/1.1" 200 -
+2024-06-09 16:58:30,663 - INFO - 127.0.0.1 - - [09/Jun/2024 16:58:30] "GET /socket.io/?EIO=4&transport=polling&t=O__0fO5&sid=kcO3RQZII31Ykj8zAAAE HTTP/1.1" 200 -
+2024-06-09 16:58:30,668 - INFO - 127.0.0.1 - - [09/Jun/2024 16:58:30] "GET /socket.io/?EIO=4&transport=polling&t=O__0fOB&sid=kcO3RQZII31Ykj8zAAAE HTTP/1.1" 200 -
+2024-06-09 16:58:30,689 - INFO - 127.0.0.1 - - [09/Jun/2024 16:58:30] "GET /socket.io/?EIO=4&transport=polling&t=O__0fOW&sid=kcO3RQZII31Ykj8zAAAE HTTP/1.1" 200 -
+2024-06-09 16:58:30,929 - INFO - 127.0.0.1 - - [09/Jun/2024 16:58:30] "GET /api/data?crypto=ethereum&timescale=day HTTP/1.1" 200 -
+2024-06-09 16:58:30,935 - INFO - 127.0.0.1 - - [09/Jun/2024 16:58:30] "GET /api/data?crypto=bitcoin&timescale=day HTTP/1.1" 200 -
+2024-06-09 16:58:30,937 - INFO - 127.0.0.1 - - [09/Jun/2024 16:58:30] "GET /api/data?crypto=ethereum&timescale=day HTTP/1.1" 200 -
+2024-06-09 16:58:30,939 - INFO - 127.0.0.1 - - [09/Jun/2024 16:58:30] "GET /api/data?crypto=bitcoin&timescale=day HTTP/1.1" 200 -
+2024-06-09 17:01:52,970 - INFO - 127.0.0.1 - - [09/Jun/2024 17:01:52] "GET /socket.io/?EIO=4&transport=polling&t=O__1Qn7 HTTP/1.1" 200 -
+2024-06-09 17:01:52,978 - INFO - 127.0.0.1 - - [09/Jun/2024 17:01:52] "POST /socket.io/?EIO=4&transport=polling&t=O__1QnC&sid=92Sl1l7TiguWtllhAAAG HTTP/1.1" 200 -
+2024-06-09 17:01:52,979 - INFO - 127.0.0.1 - - [09/Jun/2024 17:01:52] "GET /socket.io/?EIO=4&transport=polling&t=O__1QnD&sid=92Sl1l7TiguWtllhAAAG HTTP/1.1" 200 -
+2024-06-09 17:01:52,982 - INFO - 127.0.0.1 - - [09/Jun/2024 17:01:52] "GET /socket.io/?EIO=4&transport=polling&t=O__1QnK&sid=92Sl1l7TiguWtllhAAAG HTTP/1.1" 200 -
+2024-06-09 17:01:53,447 - INFO - 127.0.0.1 - - [09/Jun/2024 17:01:53] "GET /api/data?crypto=bitcoin&timescale=day HTTP/1.1" 200 -
+2024-06-09 17:01:53,453 - INFO - 127.0.0.1 - - [09/Jun/2024 17:01:53] "GET /api/data?crypto=ethereum&timescale=day HTTP/1.1" 200 -
+2024-06-09 17:02:39,511 - INFO - Running scheduled job...
+2024-06-09 17:02:39,777 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 17:02:39,788 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 17:02:39,803 - INFO - Models saved to backend/models/btc_model.pkl and backend/models/eth_model.pkl
+2024-06-09 17:02:40,403 - INFO - Running scheduled job...
+2024-06-09 17:02:40,666 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 17:02:40,671 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 17:02:40,680 - INFO - Models saved to backend/models/btc_model.pkl and backend/models/eth_model.pkl
+2024-06-09 17:35:56,617 - INFO - Starting Flask server...
+2024-06-09 17:35:56,619 - INFO - Starting scheduler thread...
+2024-06-09 17:35:56,619 - INFO - Scheduler thread started.
+2024-06-09 17:35:56,625 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-09 17:35:56,625 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-09 17:35:56,625 - INFO -  * Restarting with stat
+2024-06-09 17:35:57,571 - INFO - Starting Flask server...
+2024-06-09 17:35:57,571 - INFO - Starting scheduler thread...
+2024-06-09 17:35:57,572 - INFO - Scheduler thread started.
+2024-06-09 17:35:57,572 - WARNING -  * Debugger is active!
+2024-06-09 17:35:57,580 - INFO -  * Debugger PIN: 897-422-663
+2024-06-09 17:35:58,671 - INFO - 127.0.0.1 - - [09/Jun/2024 17:35:58] "GET /socket.io/?EIO=4&transport=polling&t=O__9ED9 HTTP/1.1" 200 -
+2024-06-09 17:35:58,701 - INFO - 127.0.0.1 - - [09/Jun/2024 17:35:58] "POST /socket.io/?EIO=4&transport=polling&t=O__9EDa&sid=xc-AQ-wTHjwTVf88AAAA HTTP/1.1" 200 -
+2024-06-09 17:35:58,701 - INFO - 127.0.0.1 - - [09/Jun/2024 17:35:58] "GET /socket.io/?EIO=4&transport=polling&t=O__9EDd&sid=xc-AQ-wTHjwTVf88AAAA HTTP/1.1" 200 -
+2024-06-09 17:35:58,708 - INFO - 127.0.0.1 - - [09/Jun/2024 17:35:58] "GET /socket.io/?EIO=4&transport=polling&t=O__9EDn&sid=xc-AQ-wTHjwTVf88AAAA HTTP/1.1" 200 -
+2024-06-09 17:36:14,413 - INFO - 127.0.0.1 - - [09/Jun/2024 17:36:14] "GET /socket.io/?EIO=4&transport=websocket&sid=xc-AQ-wTHjwTVf88AAAA HTTP/1.1" 200 -
+2024-06-09 17:36:14,899 - INFO - 127.0.0.1 - - [09/Jun/2024 17:36:14] "GET /socket.io/?EIO=4&transport=polling&t=O__9IAl HTTP/1.1" 200 -
+2024-06-09 17:36:14,908 - INFO - 127.0.0.1 - - [09/Jun/2024 17:36:14] "POST /socket.io/?EIO=4&transport=polling&t=O__9IAr&sid=u3uyU7ckJzcc4pogAAAC HTTP/1.1" 200 -
+2024-06-09 17:36:14,908 - INFO - 127.0.0.1 - - [09/Jun/2024 17:36:14] "GET /socket.io/?EIO=4&transport=polling&t=O__9IAs&sid=u3uyU7ckJzcc4pogAAAC HTTP/1.1" 200 -
+2024-06-09 17:36:14,958 - INFO - 127.0.0.1 - - [09/Jun/2024 17:36:14] "GET /socket.io/?EIO=4&transport=polling&t=O__9IBi&sid=u3uyU7ckJzcc4pogAAAC HTTP/1.1" 200 -
+2024-06-09 17:36:14,963 - INFO - 127.0.0.1 - - [09/Jun/2024 17:36:14] "GET /socket.io/?EIO=4&transport=polling&t=O__9IBn&sid=u3uyU7ckJzcc4pogAAAC HTTP/1.1" 200 -
+2024-06-09 17:36:14,965 - INFO - 127.0.0.1 - - [09/Jun/2024 17:36:14] "[33mGET /api/data?crypto=bitcoin&timescale=day HTTP/1.1[0m" 404 -
+2024-06-09 17:36:14,966 - INFO - 127.0.0.1 - - [09/Jun/2024 17:36:14] "[33mGET /api/data?crypto=ethereum&timescale=day HTTP/1.1[0m" 404 -
+2024-06-09 17:36:14,967 - INFO - 127.0.0.1 - - [09/Jun/2024 17:36:14] "[33mGET /api/data?crypto=bitcoin&timescale=day HTTP/1.1[0m" 404 -
+2024-06-09 17:36:14,968 - INFO - 127.0.0.1 - - [09/Jun/2024 17:36:14] "[33mGET /api/data?crypto=ethereum&timescale=day HTTP/1.1[0m" 404 -
+2024-06-09 17:36:14,980 - INFO - 127.0.0.1 - - [09/Jun/2024 17:36:14] "GET /socket.io/?EIO=4&transport=polling&t=O__9IC2&sid=u3uyU7ckJzcc4pogAAAC HTTP/1.1" 200 -
+2024-06-09 17:36:14,983 - INFO - 127.0.0.1 - - [09/Jun/2024 17:36:14] "GET /socket.io/?EIO=4&transport=polling&t=O__9IC5&sid=u3uyU7ckJzcc4pogAAAC HTTP/1.1" 200 -
+2024-06-09 17:40:56,752 - INFO - Running scheduled job...
+2024-06-09 17:40:57,214 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 17:40:57,229 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 17:40:57,231 - ERROR - Error in job execution: could not convert string to float: '2024-06-08 23:10:58.975'
+2024-06-09 17:40:57,736 - INFO - Running scheduled job...
+2024-06-09 17:40:58,109 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 17:40:58,119 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 17:40:58,121 - ERROR - Error in job execution: could not convert string to float: '2024-06-08 23:10:58.975'
+2024-06-09 17:45:57,391 - INFO - Running scheduled job...
+2024-06-09 17:45:57,639 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 17:45:57,648 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 17:45:57,650 - ERROR - Error in job execution: could not convert string to float: '2024-06-08 23:16:09.529'
+2024-06-09 17:45:58,319 - INFO - Running scheduled job...
+2024-06-09 17:45:58,526 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 17:45:58,531 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 17:45:58,532 - ERROR - Error in job execution: could not convert string to float: '2024-06-08 23:16:09.529'
+2024-06-09 17:50:58,353 - INFO - Running scheduled job...
+2024-06-09 17:50:58,580 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 17:50:58,589 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 17:50:58,591 - ERROR - Error in job execution: could not convert string to float: '2024-06-08 23:21:25.851'
+2024-06-09 17:50:59,202 - INFO - Running scheduled job...
+2024-06-09 17:50:59,518 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 17:50:59,522 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 17:50:59,523 - ERROR - Error in job execution: could not convert string to float: '2024-06-08 23:21:25.851'
+2024-06-09 17:55:38,878 - INFO - 127.0.0.1 - - [09/Jun/2024 17:55:38] "GET /socket.io/?EIO=4&transport=websocket&sid=u3uyU7ckJzcc4pogAAAC HTTP/1.1" 200 -
+2024-06-09 17:55:58,774 - INFO - Running scheduled job...
+2024-06-09 17:55:59,001 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 17:55:59,010 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 17:55:59,012 - ERROR - Error in job execution: could not convert string to float: '2024-06-08 23:25:32.394'
+2024-06-09 17:55:59,702 - INFO - Running scheduled job...
+2024-06-09 17:56:00,084 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 17:56:00,093 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 17:56:00,095 - ERROR - Error in job execution: could not convert string to float: '2024-06-08 23:25:32.394'
+2024-06-09 18:00:59,239 - INFO - Running scheduled job...
+2024-06-09 18:00:59,482 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 18:00:59,491 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 18:00:59,493 - ERROR - Error in job execution: could not convert string to float: '2024-06-08 23:31:34.553'
+2024-06-09 18:01:00,341 - INFO - Running scheduled job...
+2024-06-09 18:01:00,543 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 18:01:00,552 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 18:01:00,554 - ERROR - Error in job execution: could not convert string to float: '2024-06-08 23:31:34.553'
+2024-06-09 18:05:59,775 - INFO - Running scheduled job...
+2024-06-09 18:06:00,023 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 18:06:00,030 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 18:06:00,032 - ERROR - Error in job execution: could not convert string to float: '2024-06-08 23:36:26.786'
+2024-06-09 18:06:00,832 - INFO - Running scheduled job...
+2024-06-09 18:06:01,052 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 18:06:01,060 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 18:06:01,062 - ERROR - Error in job execution: could not convert string to float: '2024-06-08 23:36:26.786'
+2024-06-09 18:11:00,711 - INFO - Running scheduled job...
+2024-06-09 18:11:00,995 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 18:11:00,998 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 18:11:00,999 - ERROR - Error in job execution: could not convert string to float: '2024-06-08 23:42:48.866'
+2024-06-09 18:11:01,629 - INFO - Running scheduled job...
+2024-06-09 18:11:01,883 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 18:11:01,890 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 18:11:01,891 - ERROR - Error in job execution: could not convert string to float: '2024-06-08 23:42:48.866'
+2024-06-09 18:12:47,640 - INFO - 127.0.0.1 - - [09/Jun/2024 18:12:47] "GET /socket.io/?EIO=4&transport=polling&t=O__HfWK HTTP/1.1" 200 -
+2024-06-09 18:12:47,649 - INFO - 127.0.0.1 - - [09/Jun/2024 18:12:47] "POST /socket.io/?EIO=4&transport=polling&t=O__HfWR&sid=l_j70jdIhJmjZxN9AAAE HTTP/1.1" 200 -
+2024-06-09 18:12:47,649 - INFO - 127.0.0.1 - - [09/Jun/2024 18:12:47] "GET /socket.io/?EIO=4&transport=polling&t=O__HfWT&sid=l_j70jdIhJmjZxN9AAAE HTTP/1.1" 200 -
+2024-06-09 18:16:01,470 - INFO - Running scheduled job...
+2024-06-09 18:16:01,726 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 18:16:01,733 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 18:16:01,735 - ERROR - Error in job execution: could not convert string to float: '2024-06-08 23:45:30.112'
+2024-06-09 18:16:02,401 - INFO - Running scheduled job...
+2024-06-09 18:16:02,617 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 18:16:02,621 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 18:16:02,622 - ERROR - Error in job execution: could not convert string to float: '2024-06-08 23:45:30.112'
+2024-06-09 18:21:01,908 - INFO - Running scheduled job...
+2024-06-09 18:21:02,200 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 18:21:02,209 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 18:21:02,211 - ERROR - Error in job execution: could not convert string to float: '2024-06-08 23:51:30.739'
+2024-06-09 18:21:02,837 - INFO - Running scheduled job...
+2024-06-09 18:21:03,060 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 18:21:03,066 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 18:21:03,067 - ERROR - Error in job execution: could not convert string to float: '2024-06-08 23:51:30.739'
+2024-06-09 18:21:39,257 - INFO - 127.0.0.1 - - [09/Jun/2024 18:21:39] "GET /socket.io/?EIO=4&transport=websocket&sid=l_j70jdIhJmjZxN9AAAE HTTP/1.1" 200 -
+2024-06-09 18:26:02,439 - INFO - Running scheduled job...
+2024-06-09 18:26:02,669 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 18:26:02,673 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 18:26:02,674 - ERROR - Error in job execution: could not convert string to float: '2024-06-09 00:02:08.077'
+2024-06-09 18:26:03,204 - INFO - Running scheduled job...
+2024-06-09 18:26:03,434 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 18:26:03,442 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 18:26:03,444 - ERROR - Error in job execution: could not convert string to float: '2024-06-09 00:02:08.077'
+2024-06-09 18:31:02,910 - INFO - Running scheduled job...
+2024-06-09 18:31:03,174 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 18:31:03,183 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 18:31:03,185 - ERROR - Error in job execution: could not convert string to float: '2024-06-09 00:02:08.077'
+2024-06-09 18:31:03,652 - INFO - Running scheduled job...
+2024-06-09 18:31:03,903 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-09 18:31:03,907 - INFO - Data processed and saved to backend/data/processed/
+2024-06-09 18:31:03,908 - ERROR - Error in job execution: could not convert string to float: '2024-06-09 00:02:08.077'

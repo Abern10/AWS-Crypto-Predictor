@@ -1,0 +1,106 @@
+body {
+  background-color: #1e1e1e;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.graph-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.graph {
+  background-color: #2e2e2e;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 45%;
+}
+
+.table-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.table {
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 45%;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid white;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #333;
+}
+
+td {
+  background-color: #2e2e2e;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(54, 162, 235, 1);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+  transition: max-height 0.6s ease-in-out;
+  overflow: hidden;
+  max-height: 0;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(54, 162, 235, 0.8);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  max-height: 500px; /* Adjust based on content size */
+}
+
+.dropdown:hover .dropbtn {
+  background-color: rgba(54, 162, 235, 0.8);
+}
+
+.dropbtn {
+  background-color: rgba(54, 162, 235, 1);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 300ms ease-in-out;
+}
