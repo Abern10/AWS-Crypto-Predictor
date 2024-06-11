@@ -206,3 +206,741 @@
 2024-06-10 18:27:30,510 - INFO - 127.0.0.1 - - [10/Jun/2024 18:27:30] "[35m[1mGET /api/data?crypto=ethereum&timescale=month HTTP/1.1[0m" 500 -
 2024-06-10 18:27:30,512 - INFO - 127.0.0.1 - - [10/Jun/2024 18:27:30] "[35m[1mGET /api/data?crypto=bitcoin&timescale=month HTTP/1.1[0m" 500 -
 2024-06-10 18:27:30,520 - INFO - 127.0.0.1 - - [10/Jun/2024 18:27:30] "[35m[1mGET /api/data?crypto=bitcoin&timescale=month HTTP/1.1[0m" 500 -
+2024-06-10 18:32:19,198 - INFO - Running scheduled job...
+2024-06-10 18:32:19,508 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 18:32:19,519 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 18:32:19,916 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 18:32:19,945 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:32:19,960 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:32:19,961 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:32:19,964 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:32:20,241 - INFO - Running scheduled job...
+2024-06-10 18:32:20,477 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 18:32:20,481 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 18:32:20,937 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 18:32:20,968 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:32:20,990 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:32:20,991 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:32:20,994 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:32:21,655 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:32:21,673 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:32:21,675 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:32:21,676 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:32:22,400 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:32:22,414 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:32:22,415 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:32:22,416 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:32:22,863 - INFO - Visualizations generated
+2024-06-10 18:32:23,609 - INFO - Visualizations generated
+2024-06-10 18:37:22,952 - INFO - Running scheduled job...
+2024-06-10 18:37:23,311 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 18:37:23,322 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 18:37:23,641 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 18:37:23,675 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:37:23,693 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:37:23,694 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:37:23,695 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:37:23,704 - INFO - Running scheduled job...
+2024-06-10 18:37:23,983 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 18:37:23,988 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 18:37:24,334 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 18:37:24,366 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:37:24,391 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:37:24,394 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:37:24,395 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:37:25,165 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:37:25,180 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:37:25,181 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:37:25,182 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:37:25,959 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:37:25,974 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:37:25,975 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:37:25,976 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:37:26,473 - INFO - Visualizations generated
+2024-06-10 18:37:27,351 - INFO - Visualizations generated
+2024-06-10 18:42:26,656 - INFO - Running scheduled job...
+2024-06-10 18:42:26,997 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 18:42:27,010 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 18:42:27,401 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 18:42:27,429 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:42:27,446 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:42:27,447 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:42:27,448 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:42:27,479 - INFO - Running scheduled job...
+2024-06-10 18:42:27,720 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 18:42:27,724 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 18:42:28,131 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 18:42:28,172 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:42:28,196 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:42:28,197 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:42:28,198 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:42:28,885 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:42:28,899 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:42:28,900 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:42:28,901 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:42:29,470 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:42:29,485 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:42:29,486 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:42:29,487 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:42:30,082 - INFO - Visualizations generated
+2024-06-10 18:42:30,676 - INFO - Visualizations generated
+2024-06-10 18:47:30,231 - INFO - Running scheduled job...
+2024-06-10 18:47:30,567 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 18:47:30,578 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 18:47:30,807 - INFO - Running scheduled job...
+2024-06-10 18:47:30,981 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 18:47:31,012 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:47:31,029 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:47:31,030 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:47:31,031 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:47:31,152 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 18:47:31,157 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 18:47:31,630 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 18:47:31,649 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:47:31,673 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:47:31,674 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:47:31,675 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:47:32,520 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:47:32,535 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:47:32,536 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:47:32,537 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:47:32,996 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:47:33,010 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:47:33,011 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:47:33,012 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:47:33,699 - INFO - Visualizations generated
+2024-06-10 18:47:34,186 - INFO - Visualizations generated
+2024-06-10 18:52:33,902 - INFO - Running scheduled job...
+2024-06-10 18:52:34,192 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 18:52:34,199 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 18:52:34,384 - INFO - Running scheduled job...
+2024-06-10 18:52:34,536 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 18:52:34,569 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:52:34,589 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:52:34,590 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:52:34,591 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:52:34,638 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 18:52:34,642 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 18:52:35,117 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 18:52:35,150 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:52:35,171 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:52:35,176 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:52:35,177 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:52:36,030 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:52:36,045 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:52:36,046 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:52:36,047 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:52:36,505 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:52:36,520 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:52:36,521 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:52:36,522 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:52:37,235 - INFO - Visualizations generated
+2024-06-10 18:52:37,713 - INFO - Visualizations generated
+2024-06-10 18:55:00,955 - INFO - 127.0.0.1 - - [10/Jun/2024 18:55:00] "GET /socket.io/?EIO=4&transport=websocket&sid=RjLkR7MS3XDe3i6dAAAE HTTP/1.1" 200 -
+2024-06-10 18:57:37,313 - INFO - Running scheduled job...
+2024-06-10 18:57:37,598 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 18:57:37,602 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 18:57:37,763 - INFO - Running scheduled job...
+2024-06-10 18:57:38,021 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 18:57:38,026 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 18:57:38,096 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 18:57:38,222 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:57:38,248 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:57:38,250 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:57:38,251 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:57:38,757 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 18:57:38,800 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:57:38,822 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:57:38,825 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:57:38,827 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:57:39,808 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:57:39,824 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:57:39,825 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:57:39,826 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:57:40,282 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:57:40,298 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:57:40,299 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:57:40,299 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 18:57:41,108 - INFO - Visualizations generated
+2024-06-10 18:57:41,691 - INFO - Visualizations generated
+2024-06-10 19:00:18,670 - INFO -  * Detected change in '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/app/routes.py', reloading
+2024-06-10 19:00:18,855 - INFO -  * Restarting with stat
+2024-06-10 19:00:20,221 - INFO - Starting Flask server...
+2024-06-10 19:00:20,221 - INFO - Starting scheduler thread...
+2024-06-10 19:00:20,221 - INFO - Scheduler thread started.
+2024-06-10 19:00:20,221 - WARNING -  * Debugger is active!
+2024-06-10 19:00:20,230 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 19:00:54,933 - INFO - Starting Flask server...
+2024-06-10 19:00:54,933 - INFO - Starting scheduler thread...
+2024-06-10 19:00:54,934 - INFO - Scheduler thread started.
+2024-06-10 19:00:54,940 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-10 19:00:54,941 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-10 19:00:54,941 - INFO -  * Restarting with stat
+2024-06-10 19:00:55,994 - INFO - Starting Flask server...
+2024-06-10 19:00:55,994 - INFO - Starting scheduler thread...
+2024-06-10 19:00:55,994 - INFO - Scheduler thread started.
+2024-06-10 19:00:55,995 - WARNING -  * Debugger is active!
+2024-06-10 19:00:56,002 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 19:01:04,945 - INFO - 127.0.0.1 - - [10/Jun/2024 19:01:04] "GET /socket.io/?EIO=4&transport=polling&t=P04cIcj HTTP/1.1" 200 -
+2024-06-10 19:01:04,959 - INFO - 127.0.0.1 - - [10/Jun/2024 19:01:04] "POST /socket.io/?EIO=4&transport=polling&t=P04cIcw&sid=QggzGRZgUyQlljJ5AAAA HTTP/1.1" 200 -
+2024-06-10 19:01:04,961 - INFO - 127.0.0.1 - - [10/Jun/2024 19:01:04] "GET /socket.io/?EIO=4&transport=polling&t=P04cIcx&sid=QggzGRZgUyQlljJ5AAAA HTTP/1.1" 200 -
+2024-06-10 19:01:05,023 - INFO - 127.0.0.1 - - [10/Jun/2024 19:01:05] "GET /socket.io/?EIO=4&transport=polling&t=P04cIdz&sid=QggzGRZgUyQlljJ5AAAA HTTP/1.1" 200 -
+2024-06-10 19:01:05,032 - INFO - 127.0.0.1 - - [10/Jun/2024 19:01:05] "GET /socket.io/?EIO=4&transport=polling&t=P04cIe6&sid=QggzGRZgUyQlljJ5AAAA HTTP/1.1" 200 -
+2024-06-10 19:01:05,037 - INFO - 127.0.0.1 - - [10/Jun/2024 19:01:05] "[33mGET /api/data?crypto=bitcoin HTTP/1.1[0m" 404 -
+2024-06-10 19:01:05,038 - INFO - 127.0.0.1 - - [10/Jun/2024 19:01:05] "[33mGET /api/data?crypto=ethereum HTTP/1.1[0m" 404 -
+2024-06-10 19:01:05,039 - INFO - 127.0.0.1 - - [10/Jun/2024 19:01:05] "[33mGET /api/data?crypto=bitcoin HTTP/1.1[0m" 404 -
+2024-06-10 19:01:05,041 - INFO - 127.0.0.1 - - [10/Jun/2024 19:01:05] "[33mGET /api/data?crypto=ethereum HTTP/1.1[0m" 404 -
+2024-06-10 19:01:05,053 - INFO - 127.0.0.1 - - [10/Jun/2024 19:01:05] "GET /socket.io/?EIO=4&transport=polling&t=P04cIeR&sid=QggzGRZgUyQlljJ5AAAA HTTP/1.1" 200 -
+2024-06-10 19:05:55,071 - INFO - Running scheduled job...
+2024-06-10 19:05:55,405 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 19:05:55,411 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 19:05:55,902 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 19:05:56,023 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:05:56,038 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:05:56,039 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:05:56,040 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:05:56,161 - INFO - Running scheduled job...
+2024-06-10 19:05:56,436 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 19:05:56,443 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 19:05:57,153 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 19:05:57,188 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:05:57,218 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:05:57,220 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:05:57,220 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:05:57,924 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:05:57,940 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:05:57,941 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:05:57,942 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:05:58,763 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:05:58,779 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:05:58,780 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:05:58,781 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:05:59,251 - INFO - Visualizations generated
+2024-06-10 19:06:00,075 - INFO - Visualizations generated
+2024-06-10 19:10:59,501 - INFO - Running scheduled job...
+2024-06-10 19:11:00,305 - INFO - Running scheduled job...
+2024-06-10 19:11:00,618 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 19:11:00,624 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 19:11:00,705 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 19:11:00,709 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 19:11:01,201 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 19:11:01,264 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:11:01,279 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:11:01,280 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:11:01,281 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:11:01,525 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 19:11:01,562 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:11:01,584 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:11:01,585 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:11:01,586 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:11:02,635 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:11:02,650 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:11:02,651 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:11:02,651 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:11:02,854 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:11:02,870 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:11:02,871 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:11:02,872 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:11:03,814 - INFO - Visualizations generated
+2024-06-10 19:11:04,015 - INFO - Visualizations generated
+2024-06-10 19:16:04,509 - INFO - Running scheduled job...
+2024-06-10 19:16:04,703 - INFO - Running scheduled job...
+2024-06-10 19:16:04,819 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 19:16:04,830 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 19:16:04,940 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 19:16:04,944 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 19:16:05,601 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 19:16:05,652 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:16:05,673 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:16:05,674 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:16:05,675 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:16:05,821 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 19:16:05,857 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:16:05,910 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:16:05,922 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:16:05,923 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:16:07,076 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:16:07,091 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:16:07,091 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:16:07,092 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:16:07,269 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:16:07,286 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:16:07,287 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:16:07,288 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:16:08,321 - INFO - Visualizations generated
+2024-06-10 19:16:08,537 - INFO - Visualizations generated
+2024-06-10 19:21:08,358 - INFO - Running scheduled job...
+2024-06-10 19:21:08,623 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 19:21:08,630 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 19:21:08,654 - INFO - Running scheduled job...
+2024-06-10 19:21:08,888 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 19:21:08,892 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 19:21:08,961 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 19:21:08,995 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:21:09,011 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:21:09,018 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:21:09,020 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:21:09,464 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 19:21:09,493 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:21:09,512 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:21:09,513 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:21:09,515 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:21:10,445 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:21:10,460 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:21:10,461 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:21:10,461 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:21:10,966 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:21:10,982 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:21:10,983 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:21:10,984 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:21:11,679 - INFO - Visualizations generated
+2024-06-10 19:21:12,136 - INFO - Visualizations generated
+2024-06-10 19:26:11,832 - INFO - Running scheduled job...
+2024-06-10 19:26:12,102 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 19:26:12,112 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 19:26:12,274 - INFO - Running scheduled job...
+2024-06-10 19:26:12,433 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 19:26:12,460 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:26:12,480 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:26:12,481 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:26:12,481 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:26:12,494 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 19:26:12,503 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 19:26:13,173 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 19:26:13,201 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:26:13,229 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:26:13,232 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:26:13,235 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:26:13,949 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:26:13,964 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:26:13,965 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:26:13,965 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:26:14,516 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:26:14,531 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:26:14,532 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:26:14,533 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:26:15,140 - INFO - Visualizations generated
+2024-06-10 19:26:15,694 - INFO - Visualizations generated
+2024-06-10 19:30:05,329 - INFO - 127.0.0.1 - - [10/Jun/2024 19:30:05] "GET /socket.io/?EIO=4&transport=websocket&sid=QggzGRZgUyQlljJ5AAAA HTTP/1.1" 200 -
+2024-06-10 19:31:15,547 - INFO - Running scheduled job...
+2024-06-10 19:31:15,849 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 19:31:15,860 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 19:31:16,157 - INFO - Running scheduled job...
+2024-06-10 19:31:16,251 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 19:31:16,275 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:31:16,291 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:31:16,292 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:31:16,292 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:31:16,385 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 19:31:16,408 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 19:31:16,842 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 19:31:16,927 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:31:16,944 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:31:16,947 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:31:16,947 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:31:17,777 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:31:17,791 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:31:17,792 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:31:17,793 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:31:18,167 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:31:18,181 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:31:18,182 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:31:18,183 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:31:18,956 - INFO - Visualizations generated
+2024-06-10 19:31:19,359 - INFO - Visualizations generated
+2024-06-10 19:36:19,187 - INFO - Running scheduled job...
+2024-06-10 19:36:19,468 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 19:36:19,480 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 19:36:19,499 - INFO - Running scheduled job...
+2024-06-10 19:36:19,728 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 19:36:19,733 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 19:36:19,883 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 19:36:19,918 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:36:19,953 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:36:19,956 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:36:19,958 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:36:20,237 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 19:36:20,263 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:36:20,280 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:36:20,281 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:36:20,283 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:36:21,355 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:36:21,370 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:36:21,371 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:36:21,372 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:36:21,664 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:36:21,680 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:36:21,681 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:36:21,682 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:36:22,578 - INFO - Visualizations generated
+2024-06-10 19:36:22,949 - INFO - Visualizations generated
+2024-06-10 19:41:22,594 - INFO - Running scheduled job...
+2024-06-10 19:41:22,988 - INFO - Running scheduled job...
+2024-06-10 19:41:23,059 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 19:41:23,063 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 19:41:23,302 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 19:41:23,306 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 19:41:23,414 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 19:41:23,463 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:41:23,487 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:41:23,490 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:41:23,493 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:41:23,927 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 19:41:23,955 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:41:23,974 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:41:23,975 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:41:23,975 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:41:24,920 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:41:24,934 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:41:24,935 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:41:24,936 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:41:25,249 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:41:25,264 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:41:25,264 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:41:25,265 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:41:26,095 - INFO - Visualizations generated
+2024-06-10 19:41:26,458 - INFO - Visualizations generated
+2024-06-10 19:46:26,295 - INFO - Running scheduled job...
+2024-06-10 19:46:26,597 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 19:46:26,608 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 19:46:26,664 - INFO - Running scheduled job...
+2024-06-10 19:46:26,903 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 19:46:26,912 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 19:46:26,963 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 19:46:27,015 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:46:27,055 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:46:27,056 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:46:27,057 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:46:27,603 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 19:46:27,636 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:46:27,652 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:46:27,653 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:46:27,654 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:46:28,428 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:46:28,443 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:46:28,444 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:46:28,444 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:46:28,918 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:46:28,933 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:46:28,934 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:46:28,934 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:46:29,634 - INFO - Visualizations generated
+2024-06-10 19:46:30,103 - INFO - Visualizations generated
+2024-06-10 19:51:30,478 - INFO - Running scheduled job...
+2024-06-10 19:51:30,790 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 19:51:30,796 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 19:51:30,891 - INFO - Running scheduled job...
+2024-06-10 19:51:31,102 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 19:51:31,121 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:51:31,146 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:51:31,147 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:51:31,148 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:51:31,208 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 19:51:31,218 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 19:51:31,707 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 19:51:31,745 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:51:31,776 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:51:31,782 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:51:31,783 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:51:32,542 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:51:32,556 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:51:32,557 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:51:32,558 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:51:33,001 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:51:33,015 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:51:33,016 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:51:33,017 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:51:33,723 - INFO - Visualizations generated
+2024-06-10 19:51:34,192 - INFO - Visualizations generated
+2024-06-10 19:55:24,255 - INFO -  * Detected change in '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/app/routes.py', reloading
+2024-06-10 19:55:24,427 - INFO -  * Restarting with stat
+2024-06-10 19:55:25,740 - INFO - Starting Flask server...
+2024-06-10 19:55:25,740 - INFO - Starting scheduler thread...
+2024-06-10 19:55:25,740 - INFO - Scheduler thread started.
+2024-06-10 19:55:25,740 - WARNING -  * Debugger is active!
+2024-06-10 19:55:25,748 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 19:56:34,501 - INFO - Running scheduled job...
+2024-06-10 19:56:34,758 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 19:56:34,763 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 19:56:35,146 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 19:56:35,174 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:56:35,198 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:56:35,199 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:56:35,202 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:56:36,404 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:56:36,419 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:56:36,420 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:56:36,421 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 19:56:37,620 - INFO - Visualizations generated
+2024-06-10 20:00:25,863 - INFO - Running scheduled job...
+2024-06-10 20:00:26,331 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 20:00:26,342 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 20:00:26,757 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 20:00:26,781 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:00:26,796 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:00:26,797 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:00:26,798 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:00:28,128 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:00:28,142 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:00:28,143 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:00:28,144 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:00:29,276 - INFO - Visualizations generated
+2024-06-10 20:01:37,773 - INFO - Running scheduled job...
+2024-06-10 20:01:38,016 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 20:01:38,021 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 20:01:38,405 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 20:01:38,432 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:01:38,449 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:01:38,450 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:01:38,450 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:01:39,681 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:01:39,695 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:01:39,696 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:01:39,697 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:01:40,853 - INFO - Visualizations generated
+2024-06-10 20:05:29,362 - INFO - Running scheduled job...
+2024-06-10 20:05:30,023 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 20:05:30,034 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 20:05:30,369 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 20:05:30,397 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:05:30,413 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:05:30,414 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:05:30,415 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:05:31,626 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:05:31,640 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:05:31,641 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:05:31,641 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:05:32,769 - INFO - Visualizations generated
+2024-06-10 20:05:59,270 - INFO -  * Detected change in '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/app/routes.py', reloading
+2024-06-10 20:05:59,478 - INFO -  * Restarting with stat
+2024-06-10 20:06:00,840 - INFO - Starting Flask server...
+2024-06-10 20:06:00,840 - INFO - Starting scheduler thread...
+2024-06-10 20:06:00,840 - INFO - Scheduler thread started.
+2024-06-10 20:06:00,840 - WARNING -  * Debugger is active!
+2024-06-10 20:06:00,848 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 20:06:28,463 - INFO - Starting Flask server...
+2024-06-10 20:06:28,464 - INFO - Starting scheduler thread...
+2024-06-10 20:06:28,464 - INFO - Scheduler thread started.
+2024-06-10 20:06:28,471 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-10 20:06:28,471 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-10 20:06:28,471 - INFO -  * Restarting with stat
+2024-06-10 20:06:29,480 - INFO - Starting Flask server...
+2024-06-10 20:06:29,480 - INFO - Starting scheduler thread...
+2024-06-10 20:06:29,480 - INFO - Scheduler thread started.
+2024-06-10 20:06:29,480 - WARNING -  * Debugger is active!
+2024-06-10 20:06:29,488 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 20:06:39,529 - INFO - 127.0.0.1 - - [10/Jun/2024 20:06:39] "GET /socket.io/?EIO=4&transport=polling&t=P04rJCb HTTP/1.1" 200 -
+2024-06-10 20:06:39,548 - INFO - 127.0.0.1 - - [10/Jun/2024 20:06:39] "POST /socket.io/?EIO=4&transport=polling&t=P04rJCs&sid=yHwJm_vc64pC4MhhAAAA HTTP/1.1" 200 -
+2024-06-10 20:06:39,549 - INFO - 127.0.0.1 - - [10/Jun/2024 20:06:39] "GET /socket.io/?EIO=4&transport=polling&t=P04rJCt&sid=yHwJm_vc64pC4MhhAAAA HTTP/1.1" 200 -
+2024-06-10 20:06:39,608 - INFO - 127.0.0.1 - - [10/Jun/2024 20:06:39] "GET /socket.io/?EIO=4&transport=polling&t=P04rJDr&sid=yHwJm_vc64pC4MhhAAAA HTTP/1.1" 200 -
+2024-06-10 20:06:39,621 - INFO - 127.0.0.1 - - [10/Jun/2024 20:06:39] "GET /socket.io/?EIO=4&transport=polling&t=P04rJE2&sid=yHwJm_vc64pC4MhhAAAA HTTP/1.1" 200 -
+2024-06-10 20:06:39,624 - INFO - 127.0.0.1 - - [10/Jun/2024 20:06:39] "[33mGET /api/data?crypto=bitcoin HTTP/1.1[0m" 404 -
+2024-06-10 20:06:39,626 - INFO - 127.0.0.1 - - [10/Jun/2024 20:06:39] "[33mGET /api/data?crypto=ethereum HTTP/1.1[0m" 404 -
+2024-06-10 20:06:39,629 - INFO - 127.0.0.1 - - [10/Jun/2024 20:06:39] "[33mGET /api/data?crypto=bitcoin HTTP/1.1[0m" 404 -
+2024-06-10 20:06:39,631 - INFO - 127.0.0.1 - - [10/Jun/2024 20:06:39] "[33mGET /api/data?crypto=ethereum HTTP/1.1[0m" 404 -
+2024-06-10 20:06:39,645 - INFO - 127.0.0.1 - - [10/Jun/2024 20:06:39] "GET /socket.io/?EIO=4&transport=polling&t=P04rJER&sid=yHwJm_vc64pC4MhhAAAA HTTP/1.1" 200 -
+2024-06-10 20:10:07,611 - INFO - 127.0.0.1 - - [10/Jun/2024 20:10:07] "GET /socket.io/?EIO=4&transport=polling&t=P04rJ7p HTTP/1.1" 200 -
+2024-06-10 20:10:07,653 - INFO - 127.0.0.1 - - [10/Jun/2024 20:10:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-06-10 20:11:58,647 - INFO - Starting Flask server...
+2024-06-10 20:11:58,648 - INFO - Starting scheduler thread...
+2024-06-10 20:11:58,649 - INFO - Scheduler thread started.
+2024-06-10 20:11:58,656 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-10 20:11:58,656 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-10 20:11:58,656 - INFO -  * Restarting with stat
+2024-06-10 20:11:59,993 - INFO - Starting Flask server...
+2024-06-10 20:11:59,993 - INFO - Starting scheduler thread...
+2024-06-10 20:11:59,993 - INFO - Scheduler thread started.
+2024-06-10 20:11:59,994 - WARNING -  * Debugger is active!
+2024-06-10 20:12:00,002 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 20:12:01,360 - INFO - 127.0.0.1 - - [10/Jun/2024 20:12:01] "GET /socket.io/?EIO=4&transport=polling&t=P04sXnA HTTP/1.1" 200 -
+2024-06-10 20:12:01,370 - INFO - 127.0.0.1 - - [10/Jun/2024 20:12:01] "POST /socket.io/?EIO=4&transport=polling&t=P04sXnI&sid=7CxhCR_1G4OVCSz_AAAA HTTP/1.1" 200 -
+2024-06-10 20:12:01,394 - INFO - 127.0.0.1 - - [10/Jun/2024 20:12:01] "GET /socket.io/?EIO=4&transport=polling&t=P04sXnh&sid=7CxhCR_1G4OVCSz_AAAA HTTP/1.1" 200 -
+2024-06-10 20:12:01,399 - INFO - 127.0.0.1 - - [10/Jun/2024 20:12:01] "GET /socket.io/?EIO=4&transport=polling&t=P04sXnq&sid=7CxhCR_1G4OVCSz_AAAA HTTP/1.1" 200 -
+2024-06-10 20:12:14,613 - INFO - 127.0.0.1 - - [10/Jun/2024 20:12:14] "GET /socket.io/?EIO=4&transport=websocket&sid=7CxhCR_1G4OVCSz_AAAA HTTP/1.1" 200 -
+2024-06-10 20:12:14,840 - INFO - 127.0.0.1 - - [10/Jun/2024 20:12:14] "GET /socket.io/?EIO=4&transport=polling&t=P04sb3r HTTP/1.1" 200 -
+2024-06-10 20:12:14,852 - INFO - 127.0.0.1 - - [10/Jun/2024 20:12:14] "POST /socket.io/?EIO=4&transport=polling&t=P04sb3x&sid=knO7P8y3YEOGZteAAAAC HTTP/1.1" 200 -
+2024-06-10 20:12:14,852 - INFO - 127.0.0.1 - - [10/Jun/2024 20:12:14] "GET /socket.io/?EIO=4&transport=polling&t=P04sb3y&sid=knO7P8y3YEOGZteAAAAC HTTP/1.1" 200 -
+2024-06-10 20:12:14,925 - INFO - 127.0.0.1 - - [10/Jun/2024 20:12:14] "GET /socket.io/?EIO=4&transport=polling&t=P04sb5B&sid=knO7P8y3YEOGZteAAAAC HTTP/1.1" 200 -
+2024-06-10 20:12:14,929 - INFO - 127.0.0.1 - - [10/Jun/2024 20:12:14] "GET /socket.io/?EIO=4&transport=polling&t=P04sb5F&sid=knO7P8y3YEOGZteAAAAC HTTP/1.1" 200 -
+2024-06-10 20:12:14,943 - INFO - 127.0.0.1 - - [10/Jun/2024 20:12:14] "GET /socket.io/?EIO=4&transport=polling&t=P04sb5R&sid=knO7P8y3YEOGZteAAAAC HTTP/1.1" 200 -
+2024-06-10 20:12:14,951 - INFO - 127.0.0.1 - - [10/Jun/2024 20:12:14] "[33mGET /api/data?crypto=ethereum HTTP/1.1[0m" 404 -
+2024-06-10 20:12:14,953 - INFO - 127.0.0.1 - - [10/Jun/2024 20:12:14] "[33mGET /api/data?crypto=bitcoin HTTP/1.1[0m" 404 -
+2024-06-10 20:12:14,954 - INFO - 127.0.0.1 - - [10/Jun/2024 20:12:14] "[33mGET /api/data?crypto=bitcoin HTTP/1.1[0m" 404 -
+2024-06-10 20:12:14,957 - INFO - 127.0.0.1 - - [10/Jun/2024 20:12:14] "[33mGET /api/data?crypto=ethereum HTTP/1.1[0m" 404 -
+2024-06-10 20:12:14,966 - INFO - 127.0.0.1 - - [10/Jun/2024 20:12:14] "GET /socket.io/?EIO=4&transport=polling&t=P04sb5p&sid=knO7P8y3YEOGZteAAAAC HTTP/1.1" 200 -
+2024-06-10 20:16:58,676 - INFO - Running scheduled job...
+2024-06-10 20:16:59,050 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 20:16:59,061 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 20:16:59,482 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 20:16:59,506 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:16:59,521 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:16:59,522 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:16:59,523 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:17:00,060 - INFO - Running scheduled job...
+2024-06-10 20:17:00,415 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 20:17:00,419 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 20:17:00,889 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 20:17:00,911 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:17:00,935 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:17:00,937 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:17:00,938 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:17:01,204 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:17:01,232 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:17:01,233 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:17:01,233 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:17:02,387 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:17:02,397 - INFO - Visualizations generated
+2024-06-10 20:17:02,401 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:17:02,402 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:17:02,403 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:17:03,556 - INFO - Visualizations generated
+2024-06-10 20:21:13,806 - INFO - Starting Flask server...
+2024-06-10 20:21:13,807 - INFO - Starting scheduler thread...
+2024-06-10 20:21:13,807 - INFO - Scheduler thread started.
+2024-06-10 20:21:13,814 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-10 20:21:13,814 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-10 20:21:13,814 - INFO -  * Restarting with stat
+2024-06-10 20:21:14,844 - INFO - Starting Flask server...
+2024-06-10 20:21:14,844 - INFO - Starting scheduler thread...
+2024-06-10 20:21:14,845 - INFO - Scheduler thread started.
+2024-06-10 20:21:14,845 - WARNING -  * Debugger is active!
+2024-06-10 20:21:14,852 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 20:21:16,510 - INFO - 127.0.0.1 - - [10/Jun/2024 20:21:16] "GET /socket.io/?EIO=4&transport=polling&t=P04ufJN HTTP/1.1" 200 -
+2024-06-10 20:21:16,520 - INFO - 127.0.0.1 - - [10/Jun/2024 20:21:16] "POST /socket.io/?EIO=4&transport=polling&t=P04ufJX&sid=gpeGZzSfVsRGfxhWAAAA HTTP/1.1" 200 -
+2024-06-10 20:21:16,541 - INFO - 127.0.0.1 - - [10/Jun/2024 20:21:16] "GET /socket.io/?EIO=4&transport=polling&t=P04ufJt&sid=gpeGZzSfVsRGfxhWAAAA HTTP/1.1" 200 -
+2024-06-10 20:21:16,547 - INFO - 127.0.0.1 - - [10/Jun/2024 20:21:16] "GET /socket.io/?EIO=4&transport=polling&t=P04ufJ_&sid=gpeGZzSfVsRGfxhWAAAA HTTP/1.1" 200 -
+2024-06-10 20:26:13,960 - INFO - Running scheduled job...
+2024-06-10 20:26:14,300 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 20:26:14,311 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 20:26:14,732 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 20:26:14,754 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:26:14,769 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:26:14,770 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:26:14,771 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:26:14,948 - INFO - Running scheduled job...
+2024-06-10 20:26:15,248 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 20:26:15,253 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 20:26:15,726 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 20:26:15,759 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:26:15,780 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:26:15,782 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:26:15,783 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:26:16,535 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:26:16,550 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:26:16,551 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:26:16,551 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:26:17,254 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:26:17,268 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:26:17,269 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:26:17,270 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:26:17,763 - INFO - Visualizations generated
+2024-06-10 20:26:18,469 - INFO - Visualizations generated
+2024-06-10 20:50:49,247 - INFO - Starting Flask server...
+2024-06-10 20:50:49,248 - INFO - Starting scheduler thread...
+2024-06-10 20:50:49,248 - INFO - Scheduler thread started.
+2024-06-10 20:50:49,284 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-10 20:50:49,284 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-10 20:50:49,284 - INFO -  * Restarting with stat
+2024-06-10 20:50:50,356 - INFO - Starting Flask server...
+2024-06-10 20:50:50,356 - INFO - Starting scheduler thread...
+2024-06-10 20:50:50,356 - INFO - Scheduler thread started.
+2024-06-10 20:50:50,357 - WARNING -  * Debugger is active!
+2024-06-10 20:50:50,366 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 20:50:50,425 - INFO - 127.0.0.1 - - [10/Jun/2024 20:50:50] "GET /socket.io/?EIO=4&transport=polling&t=P04_QMp HTTP/1.1" 200 -
+2024-06-10 20:50:50,469 - INFO - 127.0.0.1 - - [10/Jun/2024 20:50:50] "POST /socket.io/?EIO=4&transport=polling&t=P04_QPW&sid=PzC5Iqu7J8dGN00QAAAA HTTP/1.1" 200 -
+2024-06-10 20:50:50,470 - INFO - 127.0.0.1 - - [10/Jun/2024 20:50:50] "GET /socket.io/?EIO=4&transport=polling&t=P04_QPZ&sid=PzC5Iqu7J8dGN00QAAAA HTTP/1.1" 200 -
+2024-06-10 20:50:50,477 - INFO - 127.0.0.1 - - [10/Jun/2024 20:50:50] "GET /socket.io/?EIO=4&transport=polling&t=P04_QPh&sid=PzC5Iqu7J8dGN00QAAAA HTTP/1.1" 200 -
+2024-06-10 20:51:05,952 - INFO - 127.0.0.1 - - [10/Jun/2024 20:51:05] "GET /socket.io/?EIO=4&transport=websocket&sid=PzC5Iqu7J8dGN00QAAAA HTTP/1.1" 200 -
+2024-06-10 20:51:06,176 - INFO - 127.0.0.1 - - [10/Jun/2024 20:51:06] "GET /socket.io/?EIO=4&transport=polling&t=P04_UEz HTTP/1.1" 200 -
+2024-06-10 20:51:06,188 - INFO - 127.0.0.1 - - [10/Jun/2024 20:51:06] "POST /socket.io/?EIO=4&transport=polling&t=P04_UF4&sid=o6XmGeUv2BDKNJmTAAAC HTTP/1.1" 200 -
+2024-06-10 20:51:06,188 - INFO - 127.0.0.1 - - [10/Jun/2024 20:51:06] "GET /socket.io/?EIO=4&transport=polling&t=P04_UF5&sid=o6XmGeUv2BDKNJmTAAAC HTTP/1.1" 200 -
+2024-06-10 20:51:06,194 - INFO - 127.0.0.1 - - [10/Jun/2024 20:51:06] "GET /socket.io/?EIO=4&transport=polling&t=P04_UFG&sid=o6XmGeUv2BDKNJmTAAAC HTTP/1.1" 200 -
+2024-06-10 20:51:06,255 - INFO - 127.0.0.1 - - [10/Jun/2024 20:51:06] "GET /socket.io/?EIO=4&transport=polling&t=P04_UGD&sid=o6XmGeUv2BDKNJmTAAAC HTTP/1.1" 200 -
+2024-06-10 20:51:06,266 - INFO - 127.0.0.1 - - [10/Jun/2024 20:51:06] "GET /socket.io/?EIO=4&transport=polling&t=P04_UGN&sid=o6XmGeUv2BDKNJmTAAAC HTTP/1.1" 200 -
+2024-06-10 20:51:06,271 - INFO - 127.0.0.1 - - [10/Jun/2024 20:51:06] "[33mGET /api/data?crypto=bitcoin HTTP/1.1[0m" 404 -
+2024-06-10 20:51:06,273 - INFO - 127.0.0.1 - - [10/Jun/2024 20:51:06] "[33mGET /api/data?crypto=ethereum HTTP/1.1[0m" 404 -
+2024-06-10 20:51:06,275 - INFO - 127.0.0.1 - - [10/Jun/2024 20:51:06] "[33mGET /api/data?crypto=bitcoin HTTP/1.1[0m" 404 -
+2024-06-10 20:51:06,276 - INFO - 127.0.0.1 - - [10/Jun/2024 20:51:06] "[33mGET /api/data?crypto=ethereum HTTP/1.1[0m" 404 -
+2024-06-10 20:51:06,288 - INFO - 127.0.0.1 - - [10/Jun/2024 20:51:06] "GET /socket.io/?EIO=4&transport=polling&t=P04_UGj&sid=o6XmGeUv2BDKNJmTAAAC HTTP/1.1" 200 -
+2024-06-10 20:55:49,387 - INFO - Running scheduled job...
+2024-06-10 20:55:49,767 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 20:55:49,774 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 20:55:50,322 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 20:55:50,354 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:55:50,378 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:55:50,383 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:55:50,386 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:55:50,534 - INFO - Running scheduled job...
+2024-06-10 20:55:50,929 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 20:55:50,934 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 20:55:51,572 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 20:55:51,631 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:55:51,667 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:55:51,668 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:55:51,669 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:55:52,302 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:55:52,318 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:55:52,319 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:55:52,320 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:55:53,152 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:55:53,168 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:55:53,169 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:55:53,170 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 20:55:53,623 - INFO - Visualizations generated
+2024-06-10 20:55:54,444 - INFO - Visualizations generated
+2024-06-10 21:00:15,122 - INFO -  * Detected change in '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/app/routes.py', reloading
+2024-06-10 21:00:15,284 - INFO -  * Restarting with stat
+2024-06-10 21:00:16,630 - INFO - Starting Flask server...
+2024-06-10 21:00:16,630 - INFO - Starting scheduler thread...
+2024-06-10 21:00:16,630 - INFO - Scheduler thread started.
+2024-06-10 21:00:16,631 - WARNING -  * Debugger is active!
+2024-06-10 21:00:16,640 - INFO -  * Debugger PIN: 311-105-735
+2024-06-10 21:00:16,663 - INFO - 127.0.0.1 - - [10/Jun/2024 21:00:16] "GET /socket.io/?EIO=4&transport=polling&t=P051aXz HTTP/1.1" 200 -
+2024-06-10 21:00:16,675 - INFO - 127.0.0.1 - - [10/Jun/2024 21:00:16] "POST /socket.io/?EIO=4&transport=polling&t=P051aeP&sid=eccGM-m4-qpfeYoAAAAA HTTP/1.1" 200 -
+2024-06-10 21:00:16,676 - INFO - 127.0.0.1 - - [10/Jun/2024 21:00:16] "GET /socket.io/?EIO=4&transport=polling&t=P051aeS&sid=eccGM-m4-qpfeYoAAAAA HTTP/1.1" 200 -
+2024-06-10 21:00:16,679 - INFO - 127.0.0.1 - - [10/Jun/2024 21:00:16] "GET /socket.io/?EIO=4&transport=polling&t=P051aeb&sid=eccGM-m4-qpfeYoAAAAA HTTP/1.1" 200 -
+2024-06-10 21:00:53,674 - INFO - Running scheduled job...
+2024-06-10 21:00:53,953 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-10 21:00:53,963 - INFO - Data processed and saved to backend/data/processed/
+2024-06-10 21:00:54,422 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-10 21:00:54,443 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 21:00:54,462 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 21:00:54,463 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 21:00:54,464 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 21:00:55,735 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 21:00:55,749 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 21:00:55,750 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 21:00:55,751 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-10 21:00:56,896 - INFO - Visualizations generated
+2024-06-10 21:01:35,002 - INFO - 127.0.0.1 - - [10/Jun/2024 21:01:35] "GET /socket.io/?EIO=4&transport=websocket&sid=eccGM-m4-qpfeYoAAAAA HTTP/1.1" 200 -
+2024-06-10 21:02:01,954 - INFO - 127.0.0.1 - - [10/Jun/2024 21:02:01] "GET /socket.io/?EIO=4&transport=polling&t=P051-LS HTTP/1.1" 200 -
+2024-06-10 21:02:02,021 - INFO - 127.0.0.1 - - [10/Jun/2024 21:02:02] "POST /socket.io/?EIO=4&transport=polling&t=P051-MR&sid=oDFYHxSzh-z92gSZAAAC HTTP/1.1" 200 -
+2024-06-10 21:02:02,024 - INFO - 127.0.0.1 - - [10/Jun/2024 21:02:02] "GET /socket.io/?EIO=4&transport=polling&t=P051-MZ&sid=oDFYHxSzh-z92gSZAAAC HTTP/1.1" 200 -
+2024-06-10 21:02:02,031 - INFO - 127.0.0.1 - - [10/Jun/2024 21:02:02] "GET /socket.io/?EIO=4&transport=polling&t=P051-Mi&sid=oDFYHxSzh-z92gSZAAAC HTTP/1.1" 200 -
+2024-06-10 21:02:02,045 - INFO - 127.0.0.1 - - [10/Jun/2024 21:02:02] "GET /socket.io/?EIO=4&transport=polling&t=P051-Mv&sid=oDFYHxSzh-z92gSZAAAC HTTP/1.1" 200 -
+2024-06-10 21:02:02,099 - INFO - 127.0.0.1 - - [10/Jun/2024 21:02:02] "GET /socket.io/?EIO=4&transport=polling&t=P051-Nl&sid=oDFYHxSzh-z92gSZAAAC HTTP/1.1" 200 -
+2024-06-10 21:02:02,116 - INFO - 127.0.0.1 - - [10/Jun/2024 21:02:02] "GET /socket.io/?EIO=4&transport=polling&t=P051-N_&sid=oDFYHxSzh-z92gSZAAAC HTTP/1.1" 200 -
+2024-06-10 21:02:02,316 - INFO - 127.0.0.1 - - [10/Jun/2024 21:02:02] "GET /socket.io/?EIO=4&transport=polling&t=P051-RB&sid=oDFYHxSzh-z92gSZAAAC HTTP/1.1" 200 -
+2024-06-10 21:02:02,325 - INFO - 127.0.0.1 - - [10/Jun/2024 21:02:02] "GET /socket.io/?EIO=4&transport=polling&t=P051-RJ&sid=oDFYHxSzh-z92gSZAAAC HTTP/1.1" 200 -
+2024-06-10 21:02:02,329 - INFO - 127.0.0.1 - - [10/Jun/2024 21:02:02] "GET /socket.io/?EIO=4&transport=polling&t=P051-RN&sid=oDFYHxSzh-z92gSZAAAC HTTP/1.1" 200 -
+2024-06-10 21:02:02,335 - INFO - 127.0.0.1 - - [10/Jun/2024 21:02:02] "GET /socket.io/?EIO=4&transport=polling&t=P051-RT&sid=oDFYHxSzh-z92gSZAAAC HTTP/1.1" 200 -
+2024-06-10 21:02:02,338 - INFO - 127.0.0.1 - - [10/Jun/2024 21:02:02] "[33mGET /api/data?crypto=ethereum HTTP/1.1[0m" 404 -
+2024-06-10 21:02:02,338 - INFO - 127.0.0.1 - - [10/Jun/2024 21:02:02] "[33mGET /api/data?crypto=bitcoin HTTP/1.1[0m" 404 -
+2024-06-10 21:02:02,339 - INFO - 127.0.0.1 - - [10/Jun/2024 21:02:02] "[33mGET /api/data?crypto=bitcoin HTTP/1.1[0m" 404 -
+2024-06-10 21:02:02,340 - INFO - 127.0.0.1 - - [10/Jun/2024 21:02:02] "[33mGET /api/data?crypto=ethereum HTTP/1.1[0m" 404 -
+2024-06-10 21:02:02,354 - INFO - 127.0.0.1 - - [10/Jun/2024 21:02:02] "GET /socket.io/?EIO=4&transport=polling&t=P051-Rm&sid=oDFYHxSzh-z92gSZAAAC HTTP/1.1" 200 -

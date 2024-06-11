@@ -10,7 +10,7 @@ function App() {
   const [ethData, setEthData] = useState({ timestamps: [], prices: [], predictions: { timestamps: [], prices: [] } });
 
   const fetchData = useCallback((crypto) => {
-    fetch(`http://localhost:1111/api/data?crypto=${crypto}&timescale=month`)
+    fetch(`http://localhost:1111/api/data?crypto=${crypto}`)
       .then(response => response.json())
       .then(data => {
         if (data.error) {

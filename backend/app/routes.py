@@ -1,96 +1,50 @@
-from flask import jsonify, request
-from app import app, socketio
-from scripts.fetch_data import fetch_data
-from scripts.process_data import preprocess_data
-from scripts.train_model import train_model
-import pandas as pd
-import joblib
+from flask import Flask, jsonify, request
+from flask_cors import CORS
 import os
+import pandas as pd
+
+app = Flask(__name__)
+CORS(app)
+
+# Define the paths to the data
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # Go up one directory from the current file
+DATA_DIR = os.path.join(BASE_DIR, 'backend', 'data', 'processed')
+PREDICTIONS_DIR = os.path.join(BASE_DIR, 'backend', 'data', 'predictions')
 
 @app.route('/api/data', methods=['GET'])
 def get_data():
     crypto = request.args.get('crypto')
-    timescale = 'month'  # Always fetch data for the past 30 days
+    if not crypto:
+        return jsonify({'error': 'No crypto specified'}), 400
 
     try:
-        print(f"Fetching data for {crypto} for the past 30 days")
-        data = fetch_data(crypto)
-        print("Data fetched:", data.head())
+        # Load the processed data
+        data_path = os.path.join(DATA_DIR, f'{crypto}_data_processed.csv')
+        predictions_path = os.path.join(PREDICTIONS_DIR, f'{crypto}_predictions.csv')
+        
+        if not os.path.exists(data_path):
+            return jsonify({'error': f'Data file for {crypto} not found'}), 404
+        
+        if not os.path.exists(predictions_path):
+            return jsonify({'error': f'Predictions file for {crypto} not found'}), 404
 
-        print("Preprocessing data...")
-        processed_data = preprocess_data(data)
-        print("Processed data:", processed_data.head())
+        data = pd.read_csv(data_path)
+        predictions = pd.read_csv(predictions_path)
 
-        if 'timestamp' not in processed_data.columns or 'price' not in processed_data.columns:
-            raise ValueError("Processed data does not contain required columns 'timestamp' and 'price'")
+        # Convert timestamps to string for JSON serialization
+        data['timestamp'] = data['timestamp'].astype(str)
+        predictions['timestamp'] = predictions['timestamp'].astype(str)
 
-        print("Training model and making predictions...")
-        model_path = f'backend/models/{crypto}_model.pkl'
-        prediction_path = f'backend/data/predictions/{crypto}_predictions.csv'
-        train_model(processed_data, model_path, prediction_path, days_to_predict=5)
-
-        print("Loading predictions...")
-        predictions_df = pd.read_csv(prediction_path)
-        print("Predictions loaded:", predictions_df.head())
-
-        response = {
-            'timestamps': processed_data['timestamp'].tolist(),
-            'prices': processed_data['price'].tolist(),
+        return jsonify({
+            'timestamps': data['timestamp'].tolist(),
+            'prices': data['price'].tolist(),
             'predictions': {
-                'timestamps': predictions_df['timestamp'].tolist(),
-                'prices': predictions_df['prediction'].tolist()
+                'timestamps': predictions['timestamp'].tolist(),
+                'prices': predictions['prediction'].tolist()
             }
-        }
-        print("Sending response...")
-        return jsonify(response)
+        })
     except Exception as e:
-        print(f"Error: {str(e)}")
         return jsonify({'error': str(e)}), 500
 
-@socketio.on('connect')
-def handle_connect():
-    print('Client connected')
-
-@socketio.on('disconnect')
-def handle_disconnect():
-    print('Client disconnected')
-
-@socketio.on('request_update')
-def handle_request_update(json):
-    crypto = json.get('crypto')
-    timescale = 'month'  # Always fetch data for the past 30 days
-
-    try:
-        print(f"Fetching data for {crypto} for the past 30 days")
-        data = fetch_data(crypto)
-        print("Data fetched:", data.head())
-
-        print("Preprocessing data...")
-        processed_data = preprocess_data(data)
-        print("Processed data:", processed_data.head())
-
-        if 'timestamp' not in processed_data.columns or 'price' not in processed_data.columns:
-            raise ValueError("Processed data does not contain required columns 'timestamp' and 'price'")
-
-        print("Training model and making predictions...")
-        model_path = f'backend/models/{crypto}_model.pkl'
-        prediction_path = f'backend/data/predictions/{crypto}_predictions.csv'
-        train_model(processed_data, model_path, prediction_path, days_to_predict=5)
-
-        print("Loading predictions...")
-        predictions_df = pd.read_csv(prediction_path)
-        print("Predictions loaded:", predictions_df.head())
-
-        response = {
-            'timestamps': processed_data['timestamp'].tolist(),
-            'prices': processed_data['price'].tolist(),
-            'predictions': {
-                'timestamps': predictions_df['timestamp'].tolist(),
-                'prices': predictions_df['prediction'].tolist()
-            }
-        }
-        print("Sending response...")
-        socketio.emit('update_graph', response)
-    except Exception as e:
-        print(f"Error: {str(e)}")
-        socketio.emit('error', {'error': str(e)})
+if __name__ == '__main__':
+    app.run(port=1111, debug=True)
