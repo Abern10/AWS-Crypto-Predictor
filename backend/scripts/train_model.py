@@ -1,108 +1,116 @@
+import mysql.connector
 import pandas as pd
 import numpy as np
-from statsmodels.tsa.arima.model import ARIMA
 from sklearn.linear_model import LinearRegression
-from sklearn.ensemble import RandomForestRegressor
-import joblib
-import os
+from datetime import datetime, timedelta
+import logging
 
-def train_model(processed_data_path, model_paths, prediction_path, days_to_predict=5):
-    # Load the processed data
-    df = pd.read_csv(processed_data_path)
+# Set up logging
+logging.basicConfig(level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - %(message)s',
+                    handlers=[
+                        logging.FileHandler("train_model.log"),
+                        logging.StreamHandler()
+                    ])
+logger = logging.getLogger(__name__)
 
-    # Ensure the timestamp is the index
+def fetch_processed_data():
+    conn = mysql.connector.connect(
+        host='cryptodb.cliawc8awtqk.us-east-1.rds.amazonaws.com',  # DB host (endpoint)
+        user='abern8',  # DB username
+        password='JettaGLI17!',  # DB password
+        database='crypto_db'
+    )
+    cursor = conn.cursor()
+    
+    query = "SELECT crypto, timestamp, price, rolling_mean FROM processed_data"
+    cursor.execute(query)
+    rows = cursor.fetchall()
+    
+    cursor.close()
+    conn.close()
+    
+    return pd.DataFrame(rows, columns=['crypto', 'timestamp', 'price', 'rolling_mean'])
+
+def train_and_predict(df):
+    # Example: Using a simple Linear Regression model
     df['timestamp'] = pd.to_datetime(df['timestamp'])
     df.set_index('timestamp', inplace=True)
+    df.sort_index(inplace=True)
+    
+    predictions = []
+    
+    for crypto in df['crypto'].unique():
+        crypto_df = df[df['crypto'] == crypto]
+        crypto_df = crypto_df.dropna()  # Drop rows with missing values
+        
+        X = np.arange(len(crypto_df)).reshape(-1, 1)
+        y = crypto_df['price'].values
+        
+        model = LinearRegression()
+        model.fit(X, y)
+        
+        future_days = 30
+        future_X = np.arange(len(crypto_df), len(crypto_df) + future_days).reshape(-1, 1)
+        future_timestamps = [crypto_df.index[-1] + timedelta(days=i) for i in range(1, future_days + 1)]
+        future_predictions = model.predict(future_X)
+        
+        predictions.extend(zip([crypto] * future_days, future_timestamps, future_predictions))
+    
+    return pd.DataFrame(predictions, columns=['crypto', 'timestamp', 'prediction'])
 
-    # Extract the features and target
-    X = np.arange(len(df)).reshape(-1, 1)  # Time as a feature
-    y = df['price'].values
+def clear_predictions_table():
+    conn = mysql.connector.connect(
+        host='cryptodb.cliawc8awtqk.us-east-1.rds.amazonaws.com',  # DB host (endpoint)
+        user='abern8',  # DB username
+        password='JettaGLI17!',  # DB password
+        database='crypto_db'
+    )
+    cursor = conn.cursor()
+    
+    cursor.execute("DELETE FROM predictions")
+    conn.commit()
+    
+    cursor.close()
+    conn.close()
 
-    # Debugging prints
-    print(f"Feature (X) shape: {X.shape}")
-    print(f"Target (y) shape: {y.shape}")
+def store_predictions(df):
+    conn = mysql.connector.connect(
+        host='cryptodb.cliawc8awtqk.us-east-1.rds.amazonaws.com',  # DB host (endpoint)
+        user='abern8',  # DB username
+        password='JettaGLI17!',  # DB password
+        database='crypto_db'
+    )
+    cursor = conn.cursor()
+    
+    for index, row in df.iterrows():
+        cursor.execute(
+            "INSERT INTO predictions (crypto, timestamp, prediction) VALUES (%s, %s, %s)",
+            (row['crypto'], row['timestamp'], row['prediction'])
+        )
+    
+    conn.commit()
+    cursor.close()
+    conn.close()
 
+def main():
     try:
-        # Train Linear Regression
-        lr_model = LinearRegression()
-        lr_model.fit(X, y)
-        print("Linear Regression model trained successfully.")
+        logger.info("Fetching processed data...")
+        processed_data_df = fetch_processed_data()
         
-        # Train ARIMA
-        arima_model = ARIMA(y, order=(5, 1, 0))
-        arima_model_fit = arima_model.fit()
-        print("ARIMA model trained successfully.")
+        logger.info("Training model and generating predictions...")
+        predictions_df = train_and_predict(processed_data_df)
         
-        # Train Random Forest
-        rf_model = RandomForestRegressor(n_estimators=100)
-        rf_model.fit(X, y)
-        print("Random Forest model trained successfully.")
+        logger.info("Clearing predictions table...")
+        clear_predictions_table()
         
-        try:
-            # Save the models
-            joblib.dump(lr_model, model_paths['linear_regression'])
-            arima_model_fit.save(model_paths['arima'])  # Corrected ARIMA model saving
-            joblib.dump(rf_model, model_paths['random_forest'])
-            print(f"Models saved to {model_paths}")
-        except Exception as e:
-            print(f"Error during model saving: {e}")
-
+        logger.info("Storing new predictions...")
+        store_predictions(predictions_df)
+        
+        logger.info("Model training and prediction storing completed.")
     except Exception as e:
-        print(f"Error during model training: {e}")
-
-    try:
-        # Make predictions for the next 5 days
-        future_dates = pd.date_range(start=df.index[-1] + pd.Timedelta(days=1), periods=days_to_predict)
-        X_future = np.arange(len(df), len(df) + days_to_predict).reshape(-1, 1)
-
-        # Debugging prints
-        print(f"Future feature (X_future) shape: {X_future.shape}")
-
-        # Linear Regression Predictions
-        lr_predictions = lr_model.predict(X_future)
-        print(f"Linear Regression predictions: {lr_predictions}")
-
-        # ARIMA Predictions
-        arima_predictions = arima_model_fit.forecast(steps=days_to_predict)
-        print(f"ARIMA predictions: {arima_predictions}")
-
-        # Random Forest Predictions
-        rf_predictions = rf_model.predict(X_future)
-        print(f"Random Forest predictions: {rf_predictions}")
-
-        # Combine predictions (simple average)
-        combined_predictions = (lr_predictions + arima_predictions + rf_predictions) / 3
-        print(f"Combined predictions: {combined_predictions}")
-
-        # Create a DataFrame for predictions
-        predictions_df = pd.DataFrame({'timestamp': future_dates, 'prediction': combined_predictions})
-
-        # Save predictions
-        predictions_df.to_csv(prediction_path, index=False)
-        print(f"Predictions saved to {prediction_path}")
-        
-        # Print predictions
-        print(f"Predictions for {processed_data_path}:")
-        print(predictions_df)
-        
-    except Exception as e:
-        print(f"Error during predictions: {e}")
-
-    return predictions_df
+        logger.error(f"Error in model training and prediction: {e}")
+        print(f"Error in model training and prediction: {e}")
 
 if __name__ == "__main__":
-    btc_model_paths = {
-        'linear_regression': '../models/btc_lr_model.pkl',
-        'arima': '../models/btc_arima_model.pkl',
-        'random_forest': '../models/btc_rf_model.pkl'
-    }
-    btc_predictions = train_model('../data/processed/btc_data_processed.csv', btc_model_paths, '../data/predictions/btc_predictions.csv')
-    print(btc_predictions.head())
-
-    eth_model_paths = {
-        'linear_regression': '../models/eth_lr_model.pkl',
-        'arima': '../models/eth_arima_model.pkl',
-        'random_forest': '../models/eth_rf_model.pkl'
-    }
-    eth_predictions = train_model('../data/processed/eth_data_processed.csv', eth_model_paths, '../data/predictions/eth_predictions.csv')
-    print(eth_predictions.head())
+    main()

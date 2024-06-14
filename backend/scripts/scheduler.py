@@ -2,16 +2,12 @@ import sys
 import site
 import os
 import logging
-import matplotlib
 import schedule
 import time
-from scripts.fetch_data import fetch_data
-from scripts.process_data import preprocess_data
-from scripts.train_model import train_model
-import matplotlib.pyplot as plt
-import joblib
+import requests
+import mysql.connector
 import pandas as pd
-matplotlib.use('Agg')  # Use a non-interactive backend
+from datetime import datetime
 
 # Add the virtual environment's site-packages directory
 venv_path = os.path.join(os.path.dirname(__file__), '../../venv/lib/python3.12/site-packages')
@@ -19,6 +15,9 @@ site.addsitedir(venv_path)
 
 # Ensure the scripts directory is in the Python path
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
+# Import the process_data main function
+from scripts.process_data import main as process_data_main
 
 # Set up logging
 logging.basicConfig(level=logging.INFO,
@@ -87,7 +86,10 @@ def job():
             df = fetch_data(crypto, days)
             store_data_in_db(crypto, df)
         
-        logger.info("Data fetching and storing completed.")
+        # Process the data after fetching and storing raw data
+        process_data_main()
+        
+        logger.info("Data fetching, processing, and storing completed.")
     except Exception as e:
         logger.error(f"Error in job execution: {e}")
         print(f"Error in job execution: {e}")
