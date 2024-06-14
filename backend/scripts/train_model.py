@@ -1,131 +1,120 @@
-import mysql.connector
 import pandas as pd
 import numpy as np
+from datetime import datetime, timedelta
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
 from statsmodels.tsa.arima.model import ARIMA
-from datetime import datetime, timedelta
+import mysql.connector
 import logging
+import os
 
-# Set up logging
-logging.basicConfig(level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(message)s',
-                    handlers=[
-                        logging.FileHandler("train_model.log"),
-                        logging.StreamHandler()
-                    ])
-logger = logging.getLogger(__name__)
+# Configure logging
+log_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'logs')
+os.makedirs(log_dir, exist_ok=True)
+log_file = os.path.join(log_dir, 'train_model.log')
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s',
+                    handlers=[logging.FileHandler(log_file), logging.StreamHandler()])
 
 def fetch_processed_data():
-    conn = mysql.connector.connect(
-        host='cryptodb.cliawc8awtqk.us-east-1.rds.amazonaws.com',  # DB host (endpoint)
-        user='abern8',  # DB username
-        password='JettaGLI17!',  # DB password
-        database='crypto_db'
-    )
-    cursor = conn.cursor()
-    
-    query = "SELECT crypto, timestamp, price, rolling_mean FROM processed_data"
-    cursor.execute(query)
-    rows = cursor.fetchall()
-    
-    cursor.close()
-    conn.close()
-    
-    return pd.DataFrame(rows, columns=['crypto', 'timestamp', 'price', 'rolling_mean'])
-
-def train_and_predict(df):
-    df['timestamp'] = pd.to_datetime(df['timestamp'])
-    df.set_index('timestamp', inplace=True)
-    df.sort_index(inplace=True)
-    
-    predictions = []
-    
-    for crypto in df['crypto'].unique():
-        crypto_df = df[df['crypto'] == crypto]
-        crypto_df = crypto_df.dropna()  # Drop rows with missing values
-        
-        X = np.arange(len(crypto_df)).reshape(-1, 1)
-        y = crypto_df['price'].values
-        
-        # Linear Regression
-        lr_model = LinearRegression()
-        lr_model.fit(X, y)
-        
-        # ARIMA
-        arima_model = ARIMA(y, order=(5, 1, 0))
-        arima_model_fit = arima_model.fit()
-        
-        # Random Forest
-        rf_model = RandomForestRegressor(n_estimators=100)
-        rf_model.fit(X, y)
-        
-        future_days = 30
-        future_X = np.arange(len(crypto_df), len(crypto_df) + future_days).reshape(-1, 1)
-        future_timestamps = [crypto_df.index[-1] + timedelta(days=i) for i in range(1, future_days + 1)]
-        
-        lr_predictions = lr_model.predict(future_X)
-        arima_predictions = arima_model_fit.forecast(steps=future_days)
-        rf_predictions = rf_model.predict(future_X)
-        
-        combined_predictions = (lr_predictions + arima_predictions + rf_predictions) / 3
-        
-        predictions.extend(zip([crypto] * future_days, future_timestamps, combined_predictions))
-    
-    return pd.DataFrame(predictions, columns=['crypto', 'timestamp', 'prediction'])
-
-def clear_predictions_table():
-    conn = mysql.connector.connect(
-        host='cryptodb.cliawc8awtqk.us-east-1.rds.amazonaws.com',  # DB host (endpoint)
-        user='abern8',  # DB username
-        password='JettaGLI17!',  # DB password
-        database='crypto_db'
-    )
-    cursor = conn.cursor()
-    
-    cursor.execute("DELETE FROM predictions")
-    conn.commit()
-    
-    cursor.close()
-    conn.close()
-
-def store_predictions(df):
-    conn = mysql.connector.connect(
-        host='cryptodb.cliawc8awtqk.us-east-1.rds.amazonaws.com',  # DB host (endpoint)
-        user='abern8',  # DB username
-        password='JettaGLI17!',  # DB password
-        database='crypto_db'
-    )
-    cursor = conn.cursor()
-    
-    for index, row in df.iterrows():
-        cursor.execute(
-            "INSERT INTO predictions (crypto, timestamp, prediction) VALUES (%s, %s, %s)",
-            (row['crypto'], row['timestamp'], row['prediction'])
-        )
-    
-    conn.commit()
-    cursor.close()
-    conn.close()
-
-def main():
     try:
-        logger.info("Fetching processed data...")
-        processed_data_df = fetch_processed_data()
-        
-        logger.info("Training model and generating predictions...")
-        predictions_df = train_and_predict(processed_data_df)
-        
-        logger.info("Clearing predictions table...")
-        clear_predictions_table()
-        
-        logger.info("Storing new predictions...")
-        store_predictions(predictions_df)
-        
-        logger.info("Model training and prediction storing completed.")
-    except Exception as e:
-        logger.error(f"Error in model training and prediction: {e}")
-        print(f"Error in model training and prediction: {e}")
+        db = mysql.connector.connect(
+            host='cryptodb.cliawc8awtqk.us-east-1.rds.amazonaws.com',  # DB host (endpoint)
+            user='abern8',  # DB username
+            password='JettaGLI17!',  # DB password
+            database='crypto_db'
+        )
+        cursor = db.cursor()
+
+        cursor.execute("SELECT id, crypto, timestamp, price FROM processed_data")
+        processed_data = cursor.fetchall()
+        df = pd.DataFrame(processed_data, columns=['id', 'crypto', 'timestamp', 'price'])
+
+        cursor.close()
+        db.close()
+        logging.info(f"Fetched columns: {df.columns}")
+        logging.info(f"Processed data sample: \n{df.head()}")
+        return df
+    except mysql.connector.Error as err:
+        logging.error(f"Error: {err}")
+        raise
+
+def train_and_predict(df, model_type, crypto):
+    df['timestamp'] = pd.to_datetime(df['timestamp'])
+    df = df[df['crypto'] == crypto].copy()
+    df.set_index('timestamp', inplace=True)
+    df['price'] = df['price'].astype(float)  # Ensure price column is float
+
+    X = np.array((df.index - df.index[0]).days).reshape(-1, 1)
+    y = df['price'].values.astype(float)  # Ensure y is float
+
+    if model_type == 'linear_regression':
+        model = LinearRegression()
+    elif model_type == 'random_forest':
+        model = RandomForestRegressor(n_estimators=100)
+    elif model_type == 'arima':
+        model = ARIMA(y, order=(5, 1, 0))
+    else:
+        raise ValueError("Invalid model type specified.")
+
+    if model_type == 'arima':
+        model_fit = model.fit()
+        predictions = model_fit.forecast(steps=30)
+    else:
+        model.fit(X, y)
+        future_X = np.array([len(X) + i for i in range(1, 31)]).reshape(-1, 1)
+        predictions = model.predict(future_X)
+
+    future_dates = [df.index[-1] + timedelta(days=i) for i in range(1, 31)]
+    return pd.DataFrame({'timestamp': future_dates, 'predicted_price': predictions})
+
+def store_predictions(predictions, crypto):
+    try:
+        db = mysql.connector.connect(
+            host='cryptodb.cliawc8awtqk.us-east-1.rds.amazonaws.com',  # DB host (endpoint)
+            user='abern8',  # DB username
+            password='JettaGLI17!',  # DB password
+            database='crypto_db'
+        )
+        cursor = db.cursor()
+
+        cursor.execute("DELETE FROM predictions WHERE crypto=%s", (crypto,))
+        for _, row in predictions.iterrows():
+            cursor.execute(
+                "INSERT INTO predictions (crypto, timestamp, predicted_price) VALUES (%s, %s, %s)",
+                (crypto, row['timestamp'], row['predicted_price'])
+            )
+
+        db.commit()
+        cursor.close()
+        db.close()
+        logging.info(f"Stored predictions for {crypto} in the database.")
+    except mysql.connector.Error as err:
+        logging.error(f"Error: {err}")
+        raise
 
 if __name__ == "__main__":
-    main()
+    try:
+        logging.info("Fetching processed data...")
+        processed_data_df = fetch_processed_data()
+
+        logging.info(f"Processed data: \n{processed_data_df.head()}")
+
+        logging.info("Training and predicting for Bitcoin...")
+        btc_predictions_lr = train_and_predict(processed_data_df, 'linear_regression', 'bitcoin')
+        btc_predictions_rf = train_and_predict(processed_data_df, 'random_forest', 'bitcoin')
+        btc_predictions_arima = train_and_predict(processed_data_df, 'arima', 'bitcoin')
+
+        btc_predictions = pd.concat([btc_predictions_lr, btc_predictions_rf, btc_predictions_arima])
+        store_predictions(btc_predictions, 'bitcoin')
+
+        logging.info("Training and predicting for Ethereum...")
+        eth_predictions_lr = train_and_predict(processed_data_df, 'linear_regression', 'ethereum')
+        eth_predictions_rf = train_and_predict(processed_data_df, 'random_forest', 'ethereum')
+        eth_predictions_arima = train_and_predict(processed_data_df, 'arima', 'ethereum')
+
+        eth_predictions = pd.concat([eth_predictions_lr, eth_predictions_rf, eth_predictions_arima])
+        store_predictions(eth_predictions, 'ethereum')
+    except Exception as e:
+        logging.error(f"Error in training and prediction: {e}")
+        print(f"Error in training and prediction: {e}")

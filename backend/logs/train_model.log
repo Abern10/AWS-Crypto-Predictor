@@ -1,0 +1,194 @@
+2024-06-14 00:48:43,590 - INFO - Fetching processed data...
+2024-06-14 00:52:58,749 - INFO - Fetching processed data...
+2024-06-14 00:52:58,759 - ERROR - Error fetching processed data: 2005 (HY000): Unknown MySQL server host 'your-db-host' (8)
+2024-06-14 00:53:38,336 - INFO - Fetching processed data...
+2024-06-14 00:53:38,761 - INFO - Processed data: 
+   id   crypto  timestamp           price
+0   1  bitcoin 2024-05-15  63914.45034292
+1   2  bitcoin 2024-05-16  65848.33483303
+2   3  bitcoin 2024-05-17  66225.35024645
+3   4  bitcoin 2024-05-18  66969.69683163
+4   5  bitcoin 2024-05-19  66886.07140363
+2024-06-14 00:53:38,762 - INFO - Training and predicting for Bitcoin...
+2024-06-14 00:55:55,326 - INFO - Fetching processed data...
+2024-06-14 00:55:55,336 - ERROR - Error fetching processed data: 2005 (HY000): Unknown MySQL server host 'your-db-host' (8)
+2024-06-14 00:55:55,336 - ERROR - No processed data to train and predict.
+2024-06-14 00:56:36,960 - INFO - Fetching processed data...
+2024-06-14 00:56:37,392 - INFO - Fetched columns: Index(['id', 'crypto', 'timestamp', 'price'], dtype='object')
+2024-06-14 00:56:37,398 - INFO - Processed data sample: 
+   id   crypto  timestamp           price
+0   1  bitcoin 2024-05-15  63914.45034292
+1   2  bitcoin 2024-05-16  65848.33483303
+2   3  bitcoin 2024-05-17  66225.35024645
+3   4  bitcoin 2024-05-18  66969.69683163
+4   5  bitcoin 2024-05-19  66886.07140363
+2024-06-14 00:56:37,402 - INFO - Processed data: 
+   id   crypto  timestamp           price
+0   1  bitcoin 2024-05-15  63914.45034292
+1   2  bitcoin 2024-05-16  65848.33483303
+2   3  bitcoin 2024-05-17  66225.35024645
+3   4  bitcoin 2024-05-18  66969.69683163
+4   5  bitcoin 2024-05-19  66886.07140363
+2024-06-14 00:56:37,402 - INFO - Training and predicting for Bitcoin...
+2024-06-14 00:56:37,402 - INFO - Data columns before processing: Index(['id', 'crypto', 'timestamp', 'price'], dtype='object')
+2024-06-14 00:56:37,404 - INFO - Data columns after setting index: Index(['id', 'crypto', 'price'], dtype='object')
+2024-06-14 00:56:37,407 - INFO - Data columns before processing: Index(['id', 'crypto', 'price'], dtype='object')
+2024-06-14 01:01:16,836 - INFO - Fetching processed data...
+2024-06-14 01:01:17,354 - INFO - Fetched columns: Index(['id', 'crypto', 'timestamp', 'price'], dtype='object')
+2024-06-14 01:01:17,362 - INFO - Processed data sample: 
+   id   crypto  timestamp           price
+0   1  bitcoin 2024-05-15  63914.45034292
+1   2  bitcoin 2024-05-16  65848.33483303
+2   3  bitcoin 2024-05-17  66225.35024645
+3   4  bitcoin 2024-05-18  66969.69683163
+4   5  bitcoin 2024-05-19  66886.07140363
+2024-06-14 01:01:17,366 - INFO - Processed data: 
+   id   crypto  timestamp           price
+0   1  bitcoin 2024-05-15  63914.45034292
+1   2  bitcoin 2024-05-16  65848.33483303
+2   3  bitcoin 2024-05-17  66225.35024645
+3   4  bitcoin 2024-05-18  66969.69683163
+4   5  bitcoin 2024-05-19  66886.07140363
+2024-06-14 01:01:17,366 - INFO - Training and predicting for Bitcoin...
+2024-06-14 01:01:17,366 - INFO - Data columns before processing: Index(['id', 'crypto', 'timestamp', 'price'], dtype='object')
+2024-06-14 01:01:17,368 - INFO - Data columns after setting index: Index(['id', 'crypto', 'timestamp', 'price'], dtype='object')
+2024-06-14 01:01:17,373 - INFO - Data columns before processing: Index(['id', 'crypto', 'timestamp', 'price'], dtype='object')
+2024-06-14 01:01:17,374 - INFO - Data columns after setting index: Index(['id', 'crypto', 'timestamp', 'price'], dtype='object')
+2024-06-14 01:01:17,436 - INFO - Data columns before processing: Index(['id', 'crypto', 'timestamp', 'price'], dtype='object')
+2024-06-14 01:01:17,436 - INFO - Data columns after setting index: Index(['id', 'crypto', 'timestamp', 'price'], dtype='object')
+2024-06-14 01:03:13,428 - INFO - Fetching processed data...
+2024-06-14 01:03:13,903 - INFO - Fetched columns: Index(['id', 'crypto', 'timestamp', 'price'], dtype='object')
+2024-06-14 01:03:13,912 - INFO - Processed data sample: 
+   id   crypto  timestamp           price
+0   1  bitcoin 2024-05-15  63914.45034292
+1   2  bitcoin 2024-05-16  65848.33483303
+2   3  bitcoin 2024-05-17  66225.35024645
+3   4  bitcoin 2024-05-18  66969.69683163
+4   5  bitcoin 2024-05-19  66886.07140363
+2024-06-14 01:03:13,916 - INFO - Processed data: 
+   id   crypto  timestamp           price
+0   1  bitcoin 2024-05-15  63914.45034292
+1   2  bitcoin 2024-05-16  65848.33483303
+2   3  bitcoin 2024-05-17  66225.35024645
+3   4  bitcoin 2024-05-18  66969.69683163
+4   5  bitcoin 2024-05-19  66886.07140363
+2024-06-14 01:03:13,916 - INFO - Training and predicting for Bitcoin...
+2024-06-14 01:03:13,916 - INFO - Data columns before processing: Index(['id', 'crypto', 'timestamp', 'price'], dtype='object')
+2024-06-14 01:03:13,918 - INFO - Data columns after setting index: Index(['id', 'crypto', 'timestamp', 'price'], dtype='object')
+2024-06-14 01:03:13,922 - INFO - Data columns before processing: Index(['id', 'crypto', 'timestamp', 'price'], dtype='object')
+2024-06-14 01:03:13,922 - INFO - Data columns after setting index: Index(['id', 'crypto', 'timestamp', 'price'], dtype='object')
+2024-06-14 01:03:13,986 - INFO - Data columns before processing: Index(['id', 'crypto', 'timestamp', 'price'], dtype='object')
+2024-06-14 01:03:13,986 - INFO - Data columns after setting index: Index(['id', 'crypto', 'timestamp', 'price'], dtype='object')
+2024-06-14 01:06:42,032 - INFO - Fetching processed data...
+2024-06-14 01:06:42,500 - INFO - Fetched columns: Index(['id', 'crypto', 'timestamp', 'price'], dtype='object')
+2024-06-14 01:06:42,504 - INFO - Processed data sample: 
+   id   crypto  timestamp           price
+0   1  bitcoin 2024-05-15  63914.45034292
+1   2  bitcoin 2024-05-16  65848.33483303
+2   3  bitcoin 2024-05-17  66225.35024645
+3   4  bitcoin 2024-05-18  66969.69683163
+4   5  bitcoin 2024-05-19  66886.07140363
+2024-06-14 01:06:42,506 - INFO - Processed data: 
+   id   crypto  timestamp           price
+0   1  bitcoin 2024-05-15  63914.45034292
+1   2  bitcoin 2024-05-16  65848.33483303
+2   3  bitcoin 2024-05-17  66225.35024645
+3   4  bitcoin 2024-05-18  66969.69683163
+4   5  bitcoin 2024-05-19  66886.07140363
+2024-06-14 01:06:42,506 - INFO - Training and predicting for Bitcoin...
+2024-06-14 01:06:42,514 - ERROR - Error in training and prediction: 'timestamp'
+2024-06-14 01:11:46,449 - INFO - Fetching processed data...
+2024-06-14 01:11:46,968 - INFO - Fetched columns: Index(['id', 'crypto', 'timestamp', 'price'], dtype='object')
+2024-06-14 01:11:46,977 - INFO - Processed data sample: 
+   id   crypto  timestamp           price
+0   1  bitcoin 2024-05-15  63914.45034292
+1   2  bitcoin 2024-05-16  65848.33483303
+2   3  bitcoin 2024-05-17  66225.35024645
+3   4  bitcoin 2024-05-18  66969.69683163
+4   5  bitcoin 2024-05-19  66886.07140363
+2024-06-14 01:11:46,981 - INFO - Processed data: 
+   id   crypto  timestamp           price
+0   1  bitcoin 2024-05-15  63914.45034292
+1   2  bitcoin 2024-05-16  65848.33483303
+2   3  bitcoin 2024-05-17  66225.35024645
+3   4  bitcoin 2024-05-18  66969.69683163
+4   5  bitcoin 2024-05-19  66886.07140363
+2024-06-14 01:11:46,981 - INFO - Training and predicting for Bitcoin...
+2024-06-14 01:11:47,052 - ERROR - Error in training and prediction: ufunc 'isnan' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+2024-06-14 01:13:27,638 - INFO - Fetching processed data...
+2024-06-14 01:13:28,149 - INFO - Fetched columns: Index(['id', 'crypto', 'timestamp', 'price'], dtype='object')
+2024-06-14 01:13:28,156 - INFO - Processed data sample: 
+   id   crypto  timestamp           price
+0   1  bitcoin 2024-05-15  63914.45034292
+1   2  bitcoin 2024-05-16  65848.33483303
+2   3  bitcoin 2024-05-17  66225.35024645
+3   4  bitcoin 2024-05-18  66969.69683163
+4   5  bitcoin 2024-05-19  66886.07140363
+2024-06-14 01:13:28,160 - INFO - Processed data: 
+   id   crypto  timestamp           price
+0   1  bitcoin 2024-05-15  63914.45034292
+1   2  bitcoin 2024-05-16  65848.33483303
+2   3  bitcoin 2024-05-17  66225.35024645
+3   4  bitcoin 2024-05-18  66969.69683163
+4   5  bitcoin 2024-05-19  66886.07140363
+2024-06-14 01:13:28,161 - INFO - Training and predicting for Bitcoin...
+2024-06-14 01:13:28,697 - ERROR - Error: 1054 (42S22): Unknown column 'prediction' in 'field list'
+2024-06-14 01:13:28,697 - ERROR - Error in training and prediction: 1054 (42S22): Unknown column 'prediction' in 'field list'
+2024-06-14 01:20:17,812 - INFO - Fetching processed data...
+2024-06-14 01:20:18,288 - INFO - Fetched columns: Index(['id', 'crypto', 'timestamp', 'price'], dtype='object')
+2024-06-14 01:20:18,295 - INFO - Processed data sample: 
+   id   crypto  timestamp           price
+0   1  bitcoin 2024-05-15  63914.45034292
+1   2  bitcoin 2024-05-16  65848.33483303
+2   3  bitcoin 2024-05-17  66225.35024645
+3   4  bitcoin 2024-05-18  66969.69683163
+4   5  bitcoin 2024-05-19  66886.07140363
+2024-06-14 01:20:18,299 - INFO - Processed data: 
+   id   crypto  timestamp           price
+0   1  bitcoin 2024-05-15  63914.45034292
+1   2  bitcoin 2024-05-16  65848.33483303
+2   3  bitcoin 2024-05-17  66225.35024645
+3   4  bitcoin 2024-05-18  66969.69683163
+4   5  bitcoin 2024-05-19  66886.07140363
+2024-06-14 01:20:18,299 - INFO - Training and predicting for Bitcoin...
+2024-06-14 01:20:18,367 - ERROR - Error in training and prediction: ufunc 'isnan' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+2024-06-14 01:21:45,501 - INFO - Fetching processed data...
+2024-06-14 01:21:45,931 - INFO - Fetched columns: Index(['id', 'crypto', 'timestamp', 'price'], dtype='object')
+2024-06-14 01:21:45,939 - INFO - Processed data sample: 
+   id   crypto  timestamp           price
+0   1  bitcoin 2024-05-15  63914.45034292
+1   2  bitcoin 2024-05-16  65848.33483303
+2   3  bitcoin 2024-05-17  66225.35024645
+3   4  bitcoin 2024-05-18  66969.69683163
+4   5  bitcoin 2024-05-19  66886.07140363
+2024-06-14 01:21:45,943 - INFO - Processed data: 
+   id   crypto  timestamp           price
+0   1  bitcoin 2024-05-15  63914.45034292
+1   2  bitcoin 2024-05-16  65848.33483303
+2   3  bitcoin 2024-05-17  66225.35024645
+3   4  bitcoin 2024-05-18  66969.69683163
+4   5  bitcoin 2024-05-19  66886.07140363
+2024-06-14 01:21:45,944 - INFO - Training and predicting for Bitcoin...
+2024-06-14 01:21:50,481 - INFO - Stored predictions for bitcoin in the database.
+2024-06-14 01:21:50,482 - INFO - Training and predicting for Ethereum...
+2024-06-14 01:21:55,031 - INFO - Stored predictions for ethereum in the database.
+2024-06-14 01:27:00,514 - INFO - Fetching processed data...
+2024-06-14 01:27:00,917 - INFO - Fetched columns: Index(['id', 'crypto', 'timestamp', 'price'], dtype='object')
+2024-06-14 01:27:00,921 - INFO - Processed data sample: 
+   id   crypto  timestamp           price
+0   1  bitcoin 2024-05-15  63914.45034292
+1   2  bitcoin 2024-05-16  65848.33483303
+2   3  bitcoin 2024-05-17  66225.35024645
+3   4  bitcoin 2024-05-18  66969.69683163
+4   5  bitcoin 2024-05-19  66886.07140363
+2024-06-14 01:27:00,923 - INFO - Processed data: 
+   id   crypto  timestamp           price
+0   1  bitcoin 2024-05-15  63914.45034292
+1   2  bitcoin 2024-05-16  65848.33483303
+2   3  bitcoin 2024-05-17  66225.35024645
+3   4  bitcoin 2024-05-18  66969.69683163
+4   5  bitcoin 2024-05-19  66886.07140363
+2024-06-14 01:27:00,923 - INFO - Training and predicting for Bitcoin...
+2024-06-14 01:27:05,549 - INFO - Stored predictions for bitcoin in the database.
+2024-06-14 01:27:05,550 - INFO - Training and predicting for Ethereum...
+2024-06-14 01:27:10,334 - INFO - Stored predictions for ethereum in the database.
