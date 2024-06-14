@@ -1,34 +1,56 @@
 import requests
+import mysql.connector
 import pandas as pd
-import os
+from datetime import datetime
 
-def fetch_data(crypto, days=30):
+def fetch_data(crypto, days):
     url = f'https://api.coingecko.com/api/v3/coins/{crypto}/market_chart'
-    params = {
-        'vs_currency': 'usd',
-        'days': days
-    }
+    params = {'vs_currency': 'usd', 'days': days}
     response = requests.get(url, params=params)
-    
     data = response.json()
     
-    # Debugging print to show the API response
-    # print(f"API Response for {crypto}:", data)
-
-    if 'prices' not in data:
-        raise KeyError("'prices' key not found in the API response")
-
     prices = data['prices']
-    df = pd.DataFrame(prices, columns=['timestamp', 'price'])
-    df['timestamp'] = pd.to_datetime(df['timestamp'], unit='ms')
-
+    timestamps = [datetime.utcfromtimestamp(price[0] / 1000).strftime('%Y-%m-%d %H:%M:%S') for price in prices]
+    prices = [price[1] for price in prices]
+    
+    df = pd.DataFrame({
+        'timestamp': timestamps,
+        'price': prices
+    })
     return df
 
-if __name__ == "__main__":
-    data_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'raw')
-    os.makedirs(data_dir, exist_ok=True)
+def store_data_in_db(crypto, df):
+    conn = mysql.connector.connect(
+        host='cryptodb.cliawc8awtqk.us-east-1.rds.amazonaws.com',  # DB host (endpoint)
+        user='abern8',  # DB username
+        password='JettaGLI17!',  # DB password
+        database='crypto_db'
+    )
+    cursor = conn.cursor()
+    
+    for index, row in df.iterrows():
+        # Check if the record already exists
+        cursor.execute(
+            "SELECT COUNT(*) FROM raw_data WHERE crypto = %s AND timestamp = %s",
+            (crypto, row['timestamp'])
+        )
+        count = cursor.fetchone()[0]
+        
+        if count == 0:
+            # Insert the new record if it doesn't exist
+            cursor.execute(
+                "INSERT INTO raw_data (crypto, timestamp, price) VALUES (%s, %s, %s)",
+                (crypto, row['timestamp'], row['price'])
+            )
+    
+    conn.commit()
+    cursor.close()
+    conn.close()
 
-    btc_data = fetch_data('bitcoin')
-    btc_data.to_csv(os.path.join(data_dir, 'btc_data.csv'), index=False)
-    eth_data = fetch_data('ethereum')
-    eth_data.to_csv(os.path.join(data_dir, 'eth_data.csv'), index=False)
+if __name__ == '__main__':
+    crypto_list = ['bitcoin', 'ethereum']
+    days = 30
+    
+    for crypto in crypto_list:
+        df = fetch_data(crypto, days)
+        store_data_in_db(crypto, df)

@@ -29,85 +29,73 @@ logging.basicConfig(level=logging.INFO,
                     ])
 logger = logging.getLogger(__name__)
 
+# Function to fetch data
+def fetch_data(crypto, days):
+    url = f'https://api.coingecko.com/api/v3/coins/{crypto}/market_chart'
+    params = {'vs_currency': 'usd', 'days': days}
+    response = requests.get(url, params=params)
+    data = response.json()
+    
+    prices = data['prices']
+    timestamps = [datetime.utcfromtimestamp(price[0] / 1000).strftime('%Y-%m-%d %H:%M:%S') for price in prices]
+    prices = [price[1] for price in prices]
+    
+    df = pd.DataFrame({
+        'timestamp': timestamps,
+        'price': prices
+    })
+    return df
+
+# Function to store data in the database
+def store_data_in_db(crypto, df):
+    conn = mysql.connector.connect(
+        host='aws-crypto-predictor-instance-1.cv60mwqgqo4b.us-east-2.rds.amazonaws.com',  # Replace with your DB host
+        user='your-db-username',  # Replace with your DB username
+        password='your-db-password',  # Replace with your DB password
+        database='crypto_db'
+    )
+    cursor = conn.cursor()
+    
+    for index, row in df.iterrows():
+        # Check if the record already exists
+        cursor.execute(
+            "SELECT COUNT(*) FROM raw_data WHERE crypto = %s AND timestamp = %s",
+            (crypto, row['timestamp'])
+        )
+        count = cursor.fetchone()[0]
+        
+        if count == 0:
+            # Insert the new record if it doesn't exist
+            cursor.execute(
+                "INSERT INTO raw_data (crypto, timestamp, price) VALUES (%s, %s, %s)",
+                (crypto, row['timestamp'], row['price'])
+            )
+    
+    conn.commit()
+    cursor.close()
+    conn.close()
+
+# Scheduled job function
 def job():
     try:
-        print("Running scheduled job...")
         logger.info("Running scheduled job...")
-        # Step 1: Fetch data
-        data_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'raw')
-        os.makedirs(data_dir, exist_ok=True)
-
-        btc_data = fetch_data('bitcoin', 30)  # Fetch data for the past 30 days
-        eth_data = fetch_data('ethereum', 30)
-
-        btc_data.to_csv(os.path.join(data_dir, 'btc_data.csv'), index=False)
-        eth_data.to_csv(os.path.join(data_dir, 'eth_data.csv'), index=False)
-        logger.info("Data fetched and saved to backend/data/raw/")
-
-        # Step 2: Process data
-        processed_data_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'processed')
-        os.makedirs(processed_data_dir, exist_ok=True)
-
-        btc_data_processed = preprocess_data(os.path.join(data_dir, 'btc_data.csv'))
-        eth_data_processed = preprocess_data(os.path.join(data_dir, 'eth_data.csv'))
-
-        btc_data_processed.to_csv(os.path.join(processed_data_dir, 'btc_data_processed.csv'))
-        eth_data_processed.to_csv(os.path.join(processed_data_dir, 'eth_data_processed.csv'))
-        logger.info("Data processed and saved to backend/data/processed/")
-
-        # Step 3: Train models and predict future prices
-        model_dir = os.path.join(os.path.dirname(__file__), '..', 'models')
-        os.makedirs(model_dir, exist_ok=True)
-
-        prediction_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'predictions')
-        os.makedirs(prediction_dir, exist_ok=True)
-
-        btc_model_paths = {
-            'linear_regression': os.path.join(model_dir, 'btc_lr_model.pkl'),
-            'arima': os.path.join(model_dir, 'btc_arima_model.pkl'),
-            'random_forest': os.path.join(model_dir, 'btc_rf_model.pkl')
-        }
-        eth_model_paths = {
-            'linear_regression': os.path.join(model_dir, 'eth_lr_model.pkl'),
-            'arima': os.path.join(model_dir, 'eth_arima_model.pkl'),
-            'random_forest': os.path.join(model_dir, 'eth_rf_model.pkl')
-        }
-
-        train_model(os.path.join(processed_data_dir, 'btc_data_processed.csv'), btc_model_paths, os.path.join(prediction_dir, 'btc_predictions.csv'), days_to_predict=30)
-        train_model(os.path.join(processed_data_dir, 'eth_data_processed.csv'), eth_model_paths, os.path.join(prediction_dir, 'eth_predictions.csv'), days_to_predict=30)
-        logger.info(f"Models saved to {btc_model_paths} and {eth_model_paths}")
-
-        # Step 4: Visualize predictions
-        def visualize_predictions(data_path, prediction_path, title, output_path):
-            df = pd.read_csv(data_path)
-            df_predictions = pd.read_csv(prediction_path)
-
-            plt.figure(figsize=(14, 7))
-            plt.plot(df['timestamp'], df['price'], label='Actual Price')
-            plt.plot(df_predictions['timestamp'], df_predictions['prediction'], label='Predicted Price', linestyle='--', color='red')
-            plt.xlabel('Timestamp')
-            plt.ylabel('Price (USD)')
-            plt.title(title)
-            plt.legend()
-            plt.savefig(output_path)
-            plt.close()
-
-        visualization_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'visualizations')
-        os.makedirs(visualization_dir, exist_ok=True)
-
-        visualize_predictions(os.path.join(processed_data_dir, 'btc_data_processed.csv'), os.path.join(prediction_dir, 'btc_predictions.csv'), 'Bitcoin Price Prediction', os.path.join(visualization_dir, 'btc_price_prediction.png'))
-        visualize_predictions(os.path.join(processed_data_dir, 'eth_data_processed.csv'), os.path.join(prediction_dir, 'eth_predictions.csv'), 'Ethereum Price Prediction', os.path.join(visualization_dir, 'eth_price_prediction.png'))
-        logger.info("Visualizations generated")
+        
+        crypto_list = ['bitcoin', 'ethereum']
+        days = 30
+        
+        for crypto in crypto_list:
+            df = fetch_data(crypto, days)
+            store_data_in_db(crypto, df)
+        
+        logger.info("Data fetching and storing completed.")
     except Exception as e:
         logger.error(f"Error in job execution: {e}")
         print(f"Error in job execution: {e}")
 
+# Function to run the scheduler
 def run_scheduler():
     # Schedule the job to run every day at midnight
-    # schedule.every().day.at("00:00").do(job)
-
-    # Schedule the job to run every five minutes for testing purposes
-    schedule.every(5).minutes.do(job)
+    schedule.every().day.at("00:00").do(job)
 
     while True:
         schedule.run_pending()
@@ -117,6 +105,6 @@ if __name__ == "__main__":
     try:
         job()  # Run job once at startup for immediate effect
         run_scheduler()
-    except:
-        print("Failed to start job.")
-        logging.info("Failed to start job.")
+    except Exception as e:
+        logger.error(f"Failed to start job: {e}")
+        print(f"Failed to start job: {e}")
