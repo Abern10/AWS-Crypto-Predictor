@@ -11,8 +11,15 @@ function App() {
 
   const fetchData = useCallback((crypto) => {
     fetch(`http://localhost:1111/api/data?crypto=${crypto}`)
-      .then(response => response.json())
+      .then(response => {
+        console.log(`Response status for ${crypto}: ${response.status}`);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
       .then(data => {
+        console.log(`Data received for ${crypto}:`, data);
         if (data.error) {
           console.error('Invalid data structure:', data);
           return;
@@ -38,6 +45,7 @@ function App() {
     fetchData('ethereum');
 
     socket.on('update_graph', (data) => {
+      console.log('Socket data received:', data);
       if (data.error) {
         console.error('Invalid data structure from socket:', data);
         return;

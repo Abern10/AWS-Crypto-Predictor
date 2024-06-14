@@ -18,11 +18,9 @@ def start_scheduler():
         scheduler_thread.start()
         print("Scheduler thread started.")
         logging.info("Scheduler thread started.")
-    except:
-        print("Scheduler thread failed to start.")
-        logging.info("Scheduler thread failed to start.")
-
-    
+    except Exception as e:
+        print(f"Scheduler thread failed to start: {e}")
+        logging.info(f"Scheduler thread failed to start: {e}")
 
 if __name__ == '__main__':
     print("Starting Flask server...")

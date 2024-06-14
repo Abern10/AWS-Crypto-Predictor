@@ -944,3 +944,67 @@
 2024-06-10 21:02:02,339 - INFO - 127.0.0.1 - - [10/Jun/2024 21:02:02] "[33mGET /api/data?crypto=bitcoin HTTP/1.1[0m" 404 -
 2024-06-10 21:02:02,340 - INFO - 127.0.0.1 - - [10/Jun/2024 21:02:02] "[33mGET /api/data?crypto=ethereum HTTP/1.1[0m" 404 -
 2024-06-10 21:02:02,354 - INFO - 127.0.0.1 - - [10/Jun/2024 21:02:02] "GET /socket.io/?EIO=4&transport=polling&t=P051-Rm&sid=oDFYHxSzh-z92gSZAAAC HTTP/1.1" 200 -
+2024-06-12 09:44:57,305 - INFO - Starting Flask server...
+2024-06-12 09:44:57,308 - INFO - Starting scheduler thread...
+2024-06-12 09:44:57,308 - INFO - Scheduler thread started.
+2024-06-12 09:44:57,316 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1111
+ * Running on http://192.168.1.9:1111
+2024-06-12 09:44:57,316 - INFO - [33mPress CTRL+C to quit[0m
+2024-06-12 09:44:57,316 - INFO -  * Restarting with stat
+2024-06-12 09:44:58,336 - INFO - Starting Flask server...
+2024-06-12 09:44:58,336 - INFO - Starting scheduler thread...
+2024-06-12 09:44:58,337 - INFO - Scheduler thread started.
+2024-06-12 09:44:58,337 - WARNING -  * Debugger is active!
+2024-06-12 09:44:58,346 - INFO -  * Debugger PIN: 311-105-735
+2024-06-12 09:45:22,288 - INFO - 127.0.0.1 - - [12/Jun/2024 09:45:22] "GET /socket.io/?EIO=4&transport=polling&t=P0CwHpj HTTP/1.1" 200 -
+2024-06-12 09:45:22,307 - INFO - 127.0.0.1 - - [12/Jun/2024 09:45:22] "POST /socket.io/?EIO=4&transport=polling&t=P0CwHpx&sid=8rCPNSK-8snI6PQSAAAA HTTP/1.1" 200 -
+2024-06-12 09:45:22,308 - INFO - 127.0.0.1 - - [12/Jun/2024 09:45:22] "GET /socket.io/?EIO=4&transport=polling&t=P0CwHpy&sid=8rCPNSK-8snI6PQSAAAA HTTP/1.1" 200 -
+2024-06-12 09:45:22,318 - INFO - 127.0.0.1 - - [12/Jun/2024 09:45:22] "GET /socket.io/?EIO=4&transport=polling&t=P0CwHqC&sid=8rCPNSK-8snI6PQSAAAA HTTP/1.1" 200 -
+2024-06-12 09:45:22,379 - INFO - 127.0.0.1 - - [12/Jun/2024 09:45:22] "GET /socket.io/?EIO=4&transport=polling&t=P0CwHr9&sid=8rCPNSK-8snI6PQSAAAA HTTP/1.1" 200 -
+2024-06-12 09:45:22,385 - INFO - 127.0.0.1 - - [12/Jun/2024 09:45:22] "GET /socket.io/?EIO=4&transport=polling&t=P0CwHrE&sid=8rCPNSK-8snI6PQSAAAA HTTP/1.1" 200 -
+2024-06-12 09:45:22,395 - INFO - 127.0.0.1 - - [12/Jun/2024 09:45:22] "GET /socket.io/?EIO=4&transport=polling&t=P0CwHrP&sid=8rCPNSK-8snI6PQSAAAA HTTP/1.1" 200 -
+2024-06-12 09:45:22,400 - INFO - 127.0.0.1 - - [12/Jun/2024 09:45:22] "[33mGET /api/data?crypto=bitcoin HTTP/1.1[0m" 404 -
+2024-06-12 09:45:22,401 - INFO - 127.0.0.1 - - [12/Jun/2024 09:45:22] "[33mGET /api/data?crypto=ethereum HTTP/1.1[0m" 404 -
+2024-06-12 09:45:22,403 - INFO - 127.0.0.1 - - [12/Jun/2024 09:45:22] "[33mGET /api/data?crypto=bitcoin HTTP/1.1[0m" 404 -
+2024-06-12 09:45:22,404 - INFO - 127.0.0.1 - - [12/Jun/2024 09:45:22] "[33mGET /api/data?crypto=ethereum HTTP/1.1[0m" 404 -
+2024-06-12 09:45:22,418 - INFO - 127.0.0.1 - - [12/Jun/2024 09:45:22] "GET /socket.io/?EIO=4&transport=polling&t=P0CwHrm&sid=8rCPNSK-8snI6PQSAAAA HTTP/1.1" 200 -
+2024-06-12 09:49:57,441 - INFO - Running scheduled job...
+2024-06-12 09:49:57,749 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-12 09:49:57,762 - INFO - Data processed and saved to backend/data/processed/
+2024-06-12 09:49:58,223 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-12 09:49:58,252 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-12 09:49:58,272 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-12 09:49:58,278 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-12 09:49:58,280 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-12 09:49:58,425 - INFO - Running scheduled job...
+2024-06-12 09:49:58,684 - INFO - Data fetched and saved to backend/data/raw/
+2024-06-12 09:49:58,689 - INFO - Data processed and saved to backend/data/processed/
+2024-06-12 09:49:59,339 - INFO - Models saved to {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/btc_rf_model.pkl'} and {'linear_regression': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_lr_model.pkl', 'arima': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_arima_model.pkl', 'random_forest': '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/scripts/../models/eth_rf_model.pkl'}
+2024-06-12 09:49:59,387 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-12 09:49:59,402 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-12 09:49:59,403 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-12 09:49:59,405 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-12 09:50:00,115 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-12 09:50:00,131 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-12 09:50:00,134 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-12 09:50:00,135 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-12 09:50:00,832 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-12 09:50:00,846 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-12 09:50:00,847 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-12 09:50:00,848 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-12 09:50:01,330 - INFO - Visualizations generated
+2024-06-12 09:50:01,973 - INFO - Visualizations generated
+2024-06-12 09:50:41,237 - INFO -  * Detected change in '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/app/routes.py', reloading
+2024-06-12 09:50:41,435 - INFO -  * Restarting with stat
+2024-06-12 10:00:40,807 - INFO - Starting Flask server...
+2024-06-12 10:00:40,809 - INFO - Starting scheduler thread...
+2024-06-12 10:00:40,809 - INFO - Scheduler thread started.
+2024-06-12 10:00:40,809 - WARNING -  * Debugger is active!
+2024-06-12 10:00:40,817 - INFO -  * Debugger PIN: 311-105-735
+2024-06-12 10:00:40,841 - INFO - 127.0.0.1 - - [12/Jun/2024 10:00:40] "GET /socket.io/?EIO=4&transport=polling&t=P0CznzY HTTP/1.1" 200 -
+2024-06-12 10:00:40,851 - INFO - 127.0.0.1 - - [12/Jun/2024 10:00:40] "POST /socket.io/?EIO=4&transport=polling&t=P0Czo4C&sid=ZMfYzYGmOALD1a_fAAAA HTTP/1.1" 200 -
+2024-06-12 10:00:40,852 - INFO - 127.0.0.1 - - [12/Jun/2024 10:00:40] "GET /socket.io/?EIO=4&transport=polling&t=P0Czo4E&sid=ZMfYzYGmOALD1a_fAAAA HTTP/1.1" 200 -
+2024-06-12 10:00:40,855 - INFO - 127.0.0.1 - - [12/Jun/2024 10:00:40] "GET /socket.io/?EIO=4&transport=polling&t=P0Czo4L&sid=ZMfYzYGmOALD1a_fAAAA HTTP/1.1" 200 -
+2024-06-12 10:00:45,011 - INFO -  * Detected change in '/Users/AlexBernatowicz/Desktop/Projects/AWS-Crypto-Predictor/backend/app/routes.py', reloading
