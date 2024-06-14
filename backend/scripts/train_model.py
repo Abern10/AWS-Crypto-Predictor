@@ -2,6 +2,8 @@ import mysql.connector
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import RandomForestRegressor
+from statsmodels.tsa.arima.model import ARIMA
 from datetime import datetime, timedelta
 import logging
 
@@ -33,7 +35,6 @@ def fetch_processed_data():
     return pd.DataFrame(rows, columns=['crypto', 'timestamp', 'price', 'rolling_mean'])
 
 def train_and_predict(df):
-    # Example: Using a simple Linear Regression model
     df['timestamp'] = pd.to_datetime(df['timestamp'])
     df.set_index('timestamp', inplace=True)
     df.sort_index(inplace=True)
@@ -47,15 +48,29 @@ def train_and_predict(df):
         X = np.arange(len(crypto_df)).reshape(-1, 1)
         y = crypto_df['price'].values
         
-        model = LinearRegression()
-        model.fit(X, y)
+        # Linear Regression
+        lr_model = LinearRegression()
+        lr_model.fit(X, y)
+        
+        # ARIMA
+        arima_model = ARIMA(y, order=(5, 1, 0))
+        arima_model_fit = arima_model.fit()
+        
+        # Random Forest
+        rf_model = RandomForestRegressor(n_estimators=100)
+        rf_model.fit(X, y)
         
         future_days = 30
         future_X = np.arange(len(crypto_df), len(crypto_df) + future_days).reshape(-1, 1)
         future_timestamps = [crypto_df.index[-1] + timedelta(days=i) for i in range(1, future_days + 1)]
-        future_predictions = model.predict(future_X)
         
-        predictions.extend(zip([crypto] * future_days, future_timestamps, future_predictions))
+        lr_predictions = lr_model.predict(future_X)
+        arima_predictions = arima_model_fit.forecast(steps=future_days)
+        rf_predictions = rf_model.predict(future_X)
+        
+        combined_predictions = (lr_predictions + arima_predictions + rf_predictions) / 3
+        
+        predictions.extend(zip([crypto] * future_days, future_timestamps, combined_predictions))
     
     return pd.DataFrame(predictions, columns=['crypto', 'timestamp', 'prediction'])
 

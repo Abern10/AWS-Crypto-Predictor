@@ -16,8 +16,9 @@ site.addsitedir(venv_path)
 # Ensure the scripts directory is in the Python path
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
-# Import the process_data main function
+# Import the process_data main function and train_model main function
 from scripts.process_data import main as process_data_main
+from scripts.train_model import main as train_model_main
 
 # Set up logging
 logging.basicConfig(level=logging.INFO,
@@ -48,9 +49,9 @@ def fetch_data(crypto, days):
 # Function to store data in the database
 def store_data_in_db(crypto, df):
     conn = mysql.connector.connect(
-        host='aws-crypto-predictor-instance-1.cv60mwqgqo4b.us-east-2.rds.amazonaws.com',  # Replace with your DB host
-        user='your-db-username',  # Replace with your DB username
-        password='your-db-password',  # Replace with your DB password
+        host='cryptodb.cliawc8awtqk.us-east-1.rds.amazonaws.com',  # DB host (endpoint)
+        user='abern8',  # DB username
+        password='JettaGLI17!',  # DB password
         database='crypto_db'
     )
     cursor = conn.cursor()
@@ -89,7 +90,10 @@ def job():
         # Process the data after fetching and storing raw data
         process_data_main()
         
-        logger.info("Data fetching, processing, and storing completed.")
+        # Train the model and store predictions after processing data
+        train_model_main()
+        
+        logger.info("Data fetching, processing, model training, and prediction storing completed.")
     except Exception as e:
         logger.error(f"Error in job execution: {e}")
         print(f"Error in job execution: {e}")
@@ -108,5 +112,5 @@ if __name__ == "__main__":
         job()  # Run job once at startup for immediate effect
         run_scheduler()
     except Exception as e:
-        logger.error(f"Failed to start job: {e}")
-        print(f"Failed to start job: {e}")
+        logger.error(f"Failed to start scheduler: {e}")
+        print(f"Failed to start scheduler: {e}")
