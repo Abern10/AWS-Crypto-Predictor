@@ -9,7 +9,7 @@ def query_raw_data():
     )
     cursor = db.cursor()
 
-    cursor.execute("SELECT * FROM raw_data LIMIT 10")
+    cursor.execute("SELECT * FROM raw_data")
     results = cursor.fetchall()
 
     for row in results:

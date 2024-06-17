@@ -1,81 +1,63 @@
 import requests
-import pandas as pd
-from datetime import datetime
 import mysql.connector
+from datetime import datetime, timezone
 import logging
-import os
-import time
 
-# Configure logging
-log_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'logs')
-os.makedirs(log_dir, exist_ok=True)
-log_file = os.path.join(log_dir, 'fetch_data.log')
+# Set up logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[
+    logging.FileHandler("../logs/fetch_data.log"),
+    logging.StreamHandler()
+])
+logger = logging.getLogger(__name__)
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s',
-                    handlers=[logging.FileHandler(log_file), logging.StreamHandler()])
-
-# Replace with your actual API URL and key
-API_URL = 'https://api.coingecko.com/api/v3/coins/markets'
-API_KEY = 'your_api_key'  # Not used in this example as CoinGecko doesn't require it
-
-def fetch_data(crypto: str, days: int):
-    params = {
-        'vs_currency': 'usd',
-        'days': days,
-        'interval': 'daily',
-        'ids': crypto
-    }
-
-    response = requests.get(API_URL, params=params)
-    data = response.json()
-
-    prices = data['prices']
-    timestamps = [datetime.utcfromtimestamp(price[0] / 1000).strftime('%Y-%m-%d %H:%M:%S') for price in prices]
-    values = [price[1] for price in prices]
-
-    df = pd.DataFrame({
-        'timestamp': timestamps,
-        'price': values
-    })
-
-    return df
-
-def store_data(df: pd.DataFrame, crypto: str):
+def fetch_and_store_data(crypto_name, table_name):
     db = mysql.connector.connect(
-        host='cryptodb.cliawc8awtqk.us-east-1.rds.amazonaws.com',  # DB host (endpoint)
-        user='abern8',  # DB username
-        password='JettaGLI17!',  # DB password
+        host='cryptodb.cliawc8awtqk.us-east-1.rds.amazonaws.com',
+        user='abern8',
+        password='JettaGLI17!',
         database='crypto_db'
     )
-
     cursor = db.cursor()
 
-    for index, row in df.iterrows():
-        timestamp = row['timestamp']
-        price = row['price']
+    # Fetch existing timestamps to avoid duplicates
+    cursor.execute(f"SELECT DISTINCT DATE(timestamp) FROM {table_name}")
+    existing_dates = {row[0] for row in cursor.fetchall()}
 
-        cursor.execute(f"SELECT COUNT(*) FROM raw_data WHERE crypto='{crypto}' AND timestamp='{timestamp}'")
-        result = cursor.fetchone()
+    # Fetch data from CoinGecko API
+    url = f'https://api.coingecko.com/api/v3/coins/{crypto_name}/market_chart'
+    params = {
+        'vs_currency': 'usd',
+        'days': '30',
+        'interval': 'daily'
+    }
 
-        if result[0] == 0:
-            cursor.execute(f"INSERT INTO raw_data (crypto, timestamp, price) VALUES (%s, %s, %s)", (crypto, timestamp, price))
-    
-    db.commit()
+    response = requests.get(url, params=params)
+
+    if response.status_code == 200:
+        data = response.json()
+        prices = data['prices']
+
+        # Store data in database
+        for price in prices:
+            timestamp = datetime.fromtimestamp(price[0] / 1000, tz=timezone.utc)
+            date_only = timestamp.date()
+            if date_only not in existing_dates:
+                existing_dates.add(date_only)
+                cursor.execute(
+                    f"INSERT INTO {table_name} (timestamp, price) VALUES (%s, %s)",
+                    (timestamp, price[1])
+                )
+        db.commit()
+        logger.info(f"Data fetching and storing completed successfully for {crypto_name}.")
+    else:
+        logger.error(f"Error fetching data from CoinGecko API for {crypto_name}: {response.text}")
+
     cursor.close()
     db.close()
 
-if __name__ == '__main__':
-    try:
-        logging.info("Fetching data for Bitcoin...")
-        btc_data = fetch_data('bitcoin', 30)
-        store_data(btc_data, 'bitcoin')
-        logging.info("Data for Bitcoin fetched and stored successfully.")
+if __name__ == "__main__":
+    logger.info("Fetching data for Bitcoin...")
+    fetch_and_store_data('bitcoin', 'raw_data_bitcoin')
 
-        logging.info("Fetching data for Ethereum...")
-        eth_data = fetch_data('ethereum', 30)
-        store_data(eth_data, 'ethereum')
-        logging.info("Data for Ethereum fetched and stored successfully.")
-
-    except Exception as e:
-        logging.error(f"Error in fetching or storing data: {e}")
-        print(f"Error in fetching or storing data: {e}")
+    logger.info("Fetching data for Ethereum...")
+    fetch_and_store_data('ethereum', 'raw_data_ethereum')

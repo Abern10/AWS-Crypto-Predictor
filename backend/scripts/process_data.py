@@ -1,74 +1,77 @@
 import mysql.connector
 import pandas as pd
+from datetime import datetime
 import logging
-import os
 
-# Configure logging
-log_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'logs')
-os.makedirs(log_dir, exist_ok=True)
-log_file = os.path.join(log_dir, 'process_data.log')
+# Set up logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[
+    logging.FileHandler("../logs/process_data.log"),
+    logging.StreamHandler()
+])
+logger = logging.getLogger(__name__)
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s',
-                    handlers=[logging.FileHandler(log_file), logging.StreamHandler()])
-
-def fetch_raw_data():
-    try:
-        db = mysql.connector.connect(
-            host='cryptodb.cliawc8awtqk.us-east-1.rds.amazonaws.com',  # DB host (endpoint)
-            user='abern8',  # DB username
-            password='JettaGLI17!',  # DB password
-            database='crypto_db'
-        )
-        cursor = db.cursor()
-
-        cursor.execute("SELECT * FROM raw_data")
-        raw_data = cursor.fetchall()
-        df = pd.DataFrame(raw_data, columns=['id', 'crypto', 'timestamp', 'price'])
-
-        cursor.close()
-        db.close()
-        return df
-    except mysql.connector.Error as err:
-        logging.error(f"Error fetching raw data: {err}")
-        return None
-
-def process_data(df):
-    df['timestamp'] = pd.to_datetime(df['timestamp'])
-    df = df.set_index('timestamp')
-    df = df.groupby('crypto')['price'].resample('D').mean().reset_index()
+def fetch_raw_data(table_name):
+    db = mysql.connector.connect(
+        host='cryptodb.cliawc8awtqk.us-east-1.rds.amazonaws.com',
+        user='abern8',
+        password='JettaGLI17!',
+        database='crypto_db'
+    )
+    cursor = db.cursor()
+    
+    query = f"SELECT * FROM {table_name}"
+    cursor.execute(query)
+    data = cursor.fetchall()
+    
+    columns = [desc[0] for desc in cursor.description]
+    df = pd.DataFrame(data, columns=columns)
+    cursor.close()
+    db.close()
     return df
 
-def store_processed_data(df):
-    try:
-        db = mysql.connector.connect(
-                host='cryptodb.cliawc8awtqk.us-east-1.rds.amazonaws.com',  # DB host (endpoint)
-                user='abern8',  # DB username
-                password='JettaGLI17!',  # DB password
-                database='crypto_db'
+def store_processed_data(df, table_name):
+    db = mysql.connector.connect(
+        host='cryptodb.cliawc8awtqk.us-east-1.rds.amazonaws.com',
+        user='abern8',
+        password='JettaGLI17!',
+        database='crypto_db'
+    )
+    cursor = db.cursor()
+    
+    for index, row in df.iterrows():
+        cursor.execute(
+            f"INSERT INTO {table_name} (timestamp, price) VALUES (%s, %s)",
+            (row['timestamp'], row['price'])
         )
-        cursor = db.cursor()
+    
+    db.commit()
+    cursor.close()
+    db.close()
 
-        for _, row in df.iterrows():
-            cursor.execute("""
-                INSERT INTO processed_data (crypto, timestamp, price)
-                VALUES (%s, %s, %s)
-                ON DUPLICATE KEY UPDATE price = VALUES(price)
-            """, (row['crypto'], row['timestamp'], row['price']))
-
-        db.commit()
-        cursor.close()
-        db.close()
-        logging.info("Processed data stored successfully.")
-    except mysql.connector.Error as err:
-        logging.error(f"Error storing processed data: {err}")
+def process_and_store_data(raw_table, processed_table):
+    logger.info(f"Fetching raw data from {raw_table}...")
+    raw_data_df = fetch_raw_data(raw_table)
+    
+    # Convert timestamp to datetime
+    raw_data_df['timestamp'] = pd.to_datetime(raw_data_df['timestamp'])
+    
+    # Clean and preprocess data
+    # Remove duplicates if any
+    raw_data_df = raw_data_df.drop_duplicates(subset=['timestamp'])
+    
+    # Sort data by timestamp
+    raw_data_df = raw_data_df.sort_values(by='timestamp')
+    
+    # Reset index
+    raw_data_df = raw_data_df.reset_index(drop=True)
+    
+    logger.info(f"Storing processed data into {processed_table}...")
+    store_processed_data(raw_data_df, processed_table)
+    logger.info(f"Data processing and storing completed for {processed_table}.")
 
 if __name__ == "__main__":
-    logging.info("Fetching raw data...")
-    raw_data_df = fetch_raw_data()
-    if raw_data_df is not None:
-        logging.info("Processing data...")
-        processed_data_df = process_data(raw_data_df)
-        logging.info("Storing processed data...")
-        store_processed_data(processed_data_df)
-    else:
-        logging.error("No raw data to process.")
+    logger.info("Processing data for Bitcoin...")
+    process_and_store_data('raw_data_bitcoin', 'processed_data_bitcoin')
+
+    logger.info("Processing data for Ethereum...")
+    process_and_store_data('raw_data_ethereum', 'processed_data_ethereum')
