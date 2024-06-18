@@ -429,3 +429,169 @@
 4   5 2024-05-23  3741.89774056
 2024-06-17 22:24:50,216 - INFO - Training and predicting for Ethereum...
 2024-06-17 22:24:52,596 - INFO - Training and prediction completed.
+2024-06-17 22:26:29,277 - INFO - Fetching processed data for Bitcoin...
+2024-06-17 22:26:29,721 - INFO - Fetched columns: Index(['id', 'timestamp', 'price'], dtype='object')
+2024-06-17 22:26:29,731 - INFO - Processed data sample: 
+   id  timestamp           price
+0   1 2024-05-19  66912.61861404
+1   2 2024-05-20  66252.71259592
+2   3 2024-05-21  71430.29700215
+3   4 2024-05-22  70189.83581770
+4   5 2024-05-23  69181.20085678
+2024-06-17 22:26:29,731 - INFO - Training and predicting for Bitcoin...
+2024-06-17 22:26:32,075 - INFO - Fetching processed data for Ethereum...
+2024-06-17 22:26:32,474 - INFO - Fetched columns: Index(['id', 'timestamp', 'price'], dtype='object')
+2024-06-17 22:26:32,481 - INFO - Processed data sample: 
+   id  timestamp          price
+0   1 2024-05-19  3120.54937825
+1   2 2024-05-20  3071.32441809
+2   3 2024-05-21  3656.39009030
+3   4 2024-05-22  3792.48622021
+4   5 2024-05-23  3741.89774056
+2024-06-17 22:26:32,481 - INFO - Training and predicting for Ethereum...
+2024-06-17 22:26:34,698 - INFO - Training and prediction completed.
+2024-06-17 22:34:36,492 - INFO - Fetching processed data for Bitcoin...
+2024-06-17 22:34:37,025 - INFO - Fetched columns: Index(['id', 'timestamp', 'price'], dtype='object')
+2024-06-17 22:34:37,034 - INFO - Processed data sample: 
+   id  timestamp           price
+0   1 2024-05-19  66912.61861404
+1   2 2024-05-20  66252.71259592
+2   3 2024-05-21  71430.29700215
+3   4 2024-05-22  70189.83581770
+4   5 2024-05-23  69181.20085678
+2024-06-17 22:34:37,034 - INFO - Training and predicting for Bitcoin...
+2024-06-17 22:34:39,345 - INFO - Fetching processed data for Ethereum...
+2024-06-17 22:34:39,753 - INFO - Fetched columns: Index(['id', 'timestamp', 'price'], dtype='object')
+2024-06-17 22:34:39,755 - INFO - Processed data sample: 
+   id  timestamp          price
+0   1 2024-05-19  3120.54937825
+1   2 2024-05-20  3071.32441809
+2   3 2024-05-21  3656.39009030
+3   4 2024-05-22  3792.48622021
+4   5 2024-05-23  3741.89774056
+2024-06-17 22:34:39,755 - INFO - Training and predicting for Ethereum...
+2024-06-17 22:34:42,345 - INFO - Training and prediction completed.
+2024-06-17 22:43:25,506 - INFO - Fetching processed data for Bitcoin...
+2024-06-17 22:43:26,012 - INFO - Fetched columns: Index(['id', 'timestamp', 'price'], dtype='object')
+2024-06-17 22:43:26,021 - INFO - Processed data sample: 
+   id  timestamp           price
+0   1 2024-05-19  66912.61861404
+1   2 2024-05-20  66252.71259592
+2   3 2024-05-21  71430.29700215
+3   4 2024-05-22  70189.83581770
+4   5 2024-05-23  69181.20085678
+2024-06-17 22:43:26,022 - INFO - Training and predicting for Bitcoin...
+2024-06-17 22:45:09,311 - INFO - Fetching processed data for Bitcoin...
+2024-06-17 22:45:09,799 - INFO - Fetched columns: Index(['id', 'timestamp', 'price'], dtype='object')
+2024-06-17 22:45:09,807 - INFO - Processed data sample: 
+   id  timestamp           price
+0   1 2024-05-19  66912.61861404
+1   2 2024-05-20  66252.71259592
+2   3 2024-05-21  71430.29700215
+3   4 2024-05-22  70189.83581770
+4   5 2024-05-23  69181.20085678
+2024-06-17 22:45:09,807 - INFO - Training and predicting for Bitcoin...
+2024-06-17 22:45:12,079 - INFO - Fetching processed data for Ethereum...
+2024-06-17 22:45:12,484 - INFO - Fetched columns: Index(['id', 'timestamp', 'price'], dtype='object')
+2024-06-17 22:45:12,490 - INFO - Processed data sample: 
+   id  timestamp          price
+0   1 2024-05-19  3120.54937825
+1   2 2024-05-20  3071.32441809
+2   3 2024-05-21  3656.39009030
+3   4 2024-05-22  3792.48622021
+4   5 2024-05-23  3741.89774056
+2024-06-17 22:45:12,491 - INFO - Training and predicting for Ethereum...
+2024-06-17 22:45:14,884 - INFO - Training and prediction completed.
+2024-06-17 22:46:56,343 - INFO - Fetching processed data for Bitcoin...
+2024-06-17 22:46:56,805 - INFO - Fetched columns: Index(['id', 'timestamp', 'price'], dtype='object')
+2024-06-17 22:46:56,810 - INFO - Processed data sample: 
+   id  timestamp           price
+0   1 2024-05-19  66912.61861404
+1   2 2024-05-20  66252.71259592
+2   3 2024-05-21  71430.29700215
+3   4 2024-05-22  70189.83581770
+4   5 2024-05-23  69181.20085678
+2024-06-17 22:46:56,810 - INFO - Training and predicting for Bitcoin...
+2024-06-17 22:48:14,622 - INFO - Fetching processed data for Bitcoin...
+2024-06-17 22:48:15,070 - INFO - Fetched columns: Index(['id', 'timestamp', 'price'], dtype='object')
+2024-06-17 22:48:15,077 - INFO - Processed data sample: 
+   id  timestamp           price
+0   1 2024-05-19  66912.61861404
+1   2 2024-05-20  66252.71259592
+2   3 2024-05-21  71430.29700215
+3   4 2024-05-22  70189.83581770
+4   5 2024-05-23  69181.20085678
+2024-06-17 22:48:15,077 - INFO - Training and predicting for Bitcoin...
+2024-06-17 22:48:27,787 - INFO - Fetching processed data for Bitcoin...
+2024-06-17 22:48:28,207 - INFO - Fetched columns: Index(['id', 'timestamp', 'price'], dtype='object')
+2024-06-17 22:48:28,216 - INFO - Processed data sample: 
+   id  timestamp           price
+0   1 2024-05-19  66912.61861404
+1   2 2024-05-20  66252.71259592
+2   3 2024-05-21  71430.29700215
+3   4 2024-05-22  70189.83581770
+4   5 2024-05-23  69181.20085678
+2024-06-17 22:48:28,216 - INFO - Training and predicting for Bitcoin...
+2024-06-17 22:49:51,559 - INFO - Fetching processed data for Bitcoin...
+2024-06-17 22:49:52,013 - INFO - Fetched columns: Index(['id', 'timestamp', 'price'], dtype='object')
+2024-06-17 22:49:52,022 - INFO - Processed data sample: 
+   id  timestamp           price
+0   1 2024-05-19  66912.61861404
+1   2 2024-05-20  66252.71259592
+2   3 2024-05-21  71430.29700215
+3   4 2024-05-22  70189.83581770
+4   5 2024-05-23  69181.20085678
+2024-06-17 22:49:52,022 - INFO - Training and predicting for Bitcoin...
+2024-06-17 22:49:54,224 - INFO - Fetching processed data for Ethereum...
+2024-06-17 22:49:54,623 - INFO - Fetched columns: Index(['id', 'timestamp', 'price'], dtype='object')
+2024-06-17 22:49:54,629 - INFO - Processed data sample: 
+   id  timestamp          price
+0   1 2024-05-19  3120.54937825
+1   2 2024-05-20  3071.32441809
+2   3 2024-05-21  3656.39009030
+3   4 2024-05-22  3792.48622021
+4   5 2024-05-23  3741.89774056
+2024-06-17 22:49:54,629 - INFO - Training and predicting for Ethereum...
+2024-06-17 22:49:56,816 - INFO - Training and prediction completed.
+2024-06-17 22:54:18,205 - INFO - Fetching processed data for Bitcoin...
+2024-06-17 22:54:18,686 - INFO - Fetched columns: Index(['id', 'timestamp', 'price'], dtype='object')
+2024-06-17 22:54:18,696 - INFO - Processed data sample: 
+   id  timestamp           price
+0   1 2024-05-19  66912.61861404
+1   2 2024-05-20  66252.71259592
+2   3 2024-05-21  71430.29700215
+3   4 2024-05-22  70189.83581770
+4   5 2024-05-23  69181.20085678
+2024-06-17 22:54:18,696 - INFO - Training and predicting for Bitcoin...
+2024-06-17 22:54:21,353 - INFO - Fetching processed data for Ethereum...
+2024-06-17 22:54:21,758 - INFO - Fetched columns: Index(['id', 'timestamp', 'price'], dtype='object')
+2024-06-17 22:54:21,765 - INFO - Processed data sample: 
+   id  timestamp          price
+0   1 2024-05-19  3120.54937825
+1   2 2024-05-20  3071.32441809
+2   3 2024-05-21  3656.39009030
+3   4 2024-05-22  3792.48622021
+4   5 2024-05-23  3741.89774056
+2024-06-17 22:54:21,765 - INFO - Training and predicting for Ethereum...
+2024-06-17 22:54:24,656 - INFO - Training and prediction completed.
+2024-06-17 22:59:29,311 - INFO - Fetching processed data for Bitcoin...
+2024-06-17 22:59:29,904 - INFO - Fetched columns: Index(['id', 'timestamp', 'price'], dtype='object')
+2024-06-17 22:59:29,915 - INFO - Processed data sample: 
+   id  timestamp           price
+0   1 2024-05-19  66912.61861404
+1   2 2024-05-20  66252.71259592
+2   3 2024-05-21  71430.29700215
+3   4 2024-05-22  70189.83581770
+4   5 2024-05-23  69181.20085678
+2024-06-17 22:59:29,915 - INFO - Training and predicting for Bitcoin...
+2024-06-17 22:59:34,087 - INFO - Fetching processed data for Ethereum...
+2024-06-17 22:59:34,696 - INFO - Fetched columns: Index(['id', 'timestamp', 'price'], dtype='object')
+2024-06-17 22:59:34,700 - INFO - Processed data sample: 
+   id  timestamp          price
+0   1 2024-05-19  3120.54937825
+1   2 2024-05-20  3071.32441809
+2   3 2024-05-21  3656.39009030
+3   4 2024-05-22  3792.48622021
+4   5 2024-05-23  3741.89774056
+2024-06-17 22:59:34,700 - INFO - Training and predicting for Ethereum...
+2024-06-17 22:59:38,147 - INFO - Training and prediction completed.
