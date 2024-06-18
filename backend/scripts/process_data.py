@@ -40,9 +40,8 @@ def store_processed_data(df, table_name):
     
     for index, row in df.iterrows():
         cursor.execute(
-            f"""INSERT INTO {table_name} (timestamp, price, timestamp_arima, timestamp_lr_rf)
-                VALUES (%s, %s, %s, %s)""",
-            (row['timestamp'], row['price'], row['timestamp_arima'], row['timestamp_lr_rf'])
+            f"INSERT INTO {table_name} (timestamp, price_arima, price_other) VALUES (%s, %s, %s)",
+            (row['timestamp'], row['price_arima'], row['price_other'])
         )
     
     db.commit()
@@ -63,12 +62,12 @@ def process_and_store_data(raw_table, processed_table):
     # Sort data by timestamp
     raw_data_df = raw_data_df.sort_values(by='timestamp')
     
-    # Create new columns for ARIMA and Linear Regression/Random Forest
-    raw_data_df['timestamp_arima'] = raw_data_df['timestamp']
-    raw_data_df['timestamp_lr_rf'] = raw_data_df['timestamp'].astype(int) // 10**9  # Convert to Unix timestamp
-    
     # Reset index
     raw_data_df = raw_data_df.reset_index(drop=True)
+    
+    # Assuming 'price' is the column in raw data that needs to be split
+    raw_data_df['price_arima'] = raw_data_df['price']
+    raw_data_df['price_other'] = raw_data_df['price']
     
     logger.info(f"Storing processed data into {processed_table}...")
     store_processed_data(raw_data_df, processed_table)
