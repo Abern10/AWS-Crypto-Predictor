@@ -354,3 +354,78 @@
 2024-06-16 17:45:22,481 - INFO - Training and predicting for Ethereum...
 2024-06-16 17:45:24,970 - INFO - Training and prediction completed.
 2024-06-17 11:33:42,740 - INFO - Fetching processed data for Bitcoin...
+2024-06-17 11:41:22,680 - INFO - Fetching processed data for Bitcoin...
+2024-06-17 19:30:10,850 - INFO - Fetching processed data for Bitcoin...
+2024-06-17 19:35:55,227 - INFO - Fetching processed data for Bitcoin...
+2024-06-17 22:15:32,469 - INFO - Fetching processed data for Bitcoin...
+2024-06-17 22:15:32,906 - INFO - Fetched columns: Index(['id', 'timestamp', 'price'], dtype='object')
+2024-06-17 22:15:32,913 - INFO - Processed data sample: 
+   id  timestamp           price
+0   1 2024-05-19  66912.61861404
+1   2 2024-05-20  66252.71259592
+2   3 2024-05-21  71430.29700215
+3   4 2024-05-22  70189.83581770
+4   5 2024-05-23  69181.20085678
+2024-06-17 22:15:32,913 - INFO - Training and predicting for Bitcoin...
+2024-06-17 22:18:07,078 - INFO - Fetching processed data for Bitcoin...
+2024-06-17 22:18:07,528 - INFO - Fetched columns: Index(['id', 'timestamp', 'price'], dtype='object')
+2024-06-17 22:18:07,538 - INFO - Processed data sample: 
+   id  timestamp           price
+0   1 2024-05-19  66912.61861404
+1   2 2024-05-20  66252.71259592
+2   3 2024-05-21  71430.29700215
+3   4 2024-05-22  70189.83581770
+4   5 2024-05-23  69181.20085678
+2024-06-17 22:18:07,538 - INFO - Training and predicting for Bitcoin...
+2024-06-17 22:18:09,993 - INFO - Fetching processed data for Ethereum...
+2024-06-17 22:18:10,394 - INFO - Fetched columns: Index(['id', 'timestamp', 'price'], dtype='object')
+2024-06-17 22:18:10,396 - INFO - Processed data sample: 
+   id  timestamp          price
+0   1 2024-05-19  3120.54937825
+1   2 2024-05-20  3071.32441809
+2   3 2024-05-21  3656.39009030
+3   4 2024-05-22  3792.48622021
+4   5 2024-05-23  3741.89774056
+2024-06-17 22:18:10,396 - INFO - Training and predicting for Ethereum...
+2024-06-17 22:18:12,705 - INFO - Training and prediction completed.
+2024-06-17 22:21:48,129 - INFO - Fetching processed data for Bitcoin...
+2024-06-17 22:21:48,634 - INFO - Fetched columns: Index(['id', 'timestamp', 'price'], dtype='object')
+2024-06-17 22:21:48,644 - INFO - Processed data sample: 
+   id  timestamp           price
+0   1 2024-05-19  66912.61861404
+1   2 2024-05-20  66252.71259592
+2   3 2024-05-21  71430.29700215
+3   4 2024-05-22  70189.83581770
+4   5 2024-05-23  69181.20085678
+2024-06-17 22:21:48,644 - INFO - Training and predicting for Bitcoin...
+2024-06-17 22:23:19,986 - INFO - Fetching processed data for Bitcoin...
+2024-06-17 22:23:20,460 - INFO - Fetched columns: Index(['id', 'timestamp', 'price'], dtype='object')
+2024-06-17 22:23:20,471 - INFO - Processed data sample: 
+   id  timestamp           price
+0   1 2024-05-19  66912.61861404
+1   2 2024-05-20  66252.71259592
+2   3 2024-05-21  71430.29700215
+3   4 2024-05-22  70189.83581770
+4   5 2024-05-23  69181.20085678
+2024-06-17 22:23:20,471 - INFO - Training and predicting for Bitcoin...
+2024-06-17 22:24:47,023 - INFO - Fetching processed data for Bitcoin...
+2024-06-17 22:24:47,427 - INFO - Fetched columns: Index(['id', 'timestamp', 'price'], dtype='object')
+2024-06-17 22:24:47,436 - INFO - Processed data sample: 
+   id  timestamp           price
+0   1 2024-05-19  66912.61861404
+1   2 2024-05-20  66252.71259592
+2   3 2024-05-21  71430.29700215
+3   4 2024-05-22  70189.83581770
+4   5 2024-05-23  69181.20085678
+2024-06-17 22:24:47,436 - INFO - Training and predicting for Bitcoin...
+2024-06-17 22:24:49,833 - INFO - Fetching processed data for Ethereum...
+2024-06-17 22:24:50,211 - INFO - Fetched columns: Index(['id', 'timestamp', 'price'], dtype='object')
+2024-06-17 22:24:50,216 - INFO - Processed data sample: 
+   id  timestamp          price
+0   1 2024-05-19  3120.54937825
+1   2 2024-05-20  3071.32441809
+2   3 2024-05-21  3656.39009030
+3   4 2024-05-22  3792.48622021
+4   5 2024-05-23  3741.89774056
+2024-06-17 22:24:50,216 - INFO - Training and predicting for Ethereum...
+2024-06-17 22:24:52,596 - INFO - Training and prediction completed.

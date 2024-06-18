@@ -53,7 +53,9 @@ def store_predictions(predictions, table_name):
     db.close()
 
 def train_and_predict_stacked(df, table_name, days_to_predict=30):
-    df['timestamp'] = df['timestamp'].astype('int64') // 10**9  # Convert datetime to Unix timestamp
+    df['timestamp'] = pd.to_datetime(df['timestamp'], utc=True)  # Convert to datetime
+    df['timestamp'] = df['timestamp'].apply(lambda x: x.timestamp())  # Convert to Unix time
+    df['price'] = pd.to_numeric(df['price'])  # Ensure price is numeric
     
     kf = KFold(n_splits=5, shuffle=True, random_state=42)
     meta_features = np.zeros((len(df), 3))
@@ -68,7 +70,7 @@ def train_and_predict_stacked(df, table_name, days_to_predict=30):
         meta_features[valid_idx, 0] = lr.predict(valid_df[['timestamp']])
 
         # ARIMA
-        arima = ARIMA(train_df['price'].astype(float), order=(5, 1, 0))
+        arima = ARIMA(train_df['price'], order=(5, 1, 0))
         arima_fit = arima.fit()
         arima_forecast = arima_fit.forecast(len(valid_df))
         meta_features[valid_idx, 1] = arima_forecast.values
@@ -86,17 +88,18 @@ def train_and_predict_stacked(df, table_name, days_to_predict=30):
 
     # Make predictions
     final_predictions = []
-    future_timestamps = pd.date_range(datetime.fromtimestamp(df['timestamp'].max(), tz=timezone.utc), periods=days_to_predict, freq='D').astype('int64') // 10**9
+    last_timestamp = df['timestamp'].iloc[-1]
+    future_timestamps = [last_timestamp + i * 86400 for i in range(1, days_to_predict + 1)]  # Add days in seconds
 
-    for timestamp in future_timestamps:
-        lr_pred = lr.predict([[timestamp]])
+    for ts in future_timestamps:
+        lr_pred = lr.predict([[ts]])[0]
         arima_pred = arima_fit.forecast(steps=1).values[0]
-        rf_pred = rf.predict([[timestamp]])
+        rf_pred = rf.predict([[ts]])[0]
         meta_feature = np.array([lr_pred, arima_pred, rf_pred]).reshape(1, -1)
         final_pred = meta_model.predict(meta_feature)[0]
 
         final_predictions.append({
-            'timestamp': datetime.fromtimestamp(timestamp, tz=timezone.utc).strftime('%Y-%m-%d %H:%M:%S'),
+            'timestamp': datetime.fromtimestamp(ts, tz=timezone.utc).strftime('%Y-%m-%d %H:%M:%S'),
             'predicted_price': final_pred
         })
 
