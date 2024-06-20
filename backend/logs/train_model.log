@@ -600,3 +600,860 @@
 2024-06-17 23:35:40,430 - INFO - Training and predicting for bitcoin...
 2024-06-17 23:37:04,082 - INFO - Processing data for Bitcoin...
 2024-06-17 23:37:04,083 - INFO - Fetching processed data for bitcoin...
+2024-06-19 23:08:58,495 - INFO - Processing data for Bitcoin...
+2024-06-19 23:08:58,496 - INFO - Fetching processed data for bitcoin...
+2024-06-19 23:08:58,962 - INFO - Training and predicting for bitcoin...
+2024-06-19 23:08:59,107 - INFO - Storing final predictions for bitcoin...
+2024-06-19 23:09:05,210 - INFO - Training and prediction completed for bitcoin.
+2024-06-19 23:09:05,211 - INFO - Processing data for Ethereum...
+2024-06-19 23:09:05,211 - INFO - Fetching processed data for ethereum...
+2024-06-19 23:09:05,580 - INFO - Training and predicting for ethereum...
+2024-06-19 23:09:05,710 - INFO - Storing final predictions for ethereum...
+2024-06-19 23:09:12,051 - INFO - Training and prediction completed for ethereum.
+2024-06-19 23:29:29,287 - INFO - Processing data for Bitcoin...
+2024-06-19 23:29:29,289 - INFO - Fetching processed data for bitcoin...
+2024-06-19 23:29:29,781 - INFO - Training and predicting for bitcoin...
+2024-06-19 23:29:29,943 - INFO - Storing past predictions for bitcoin...
+2024-06-19 23:29:33,278 - INFO - Storing final predictions for bitcoin...
+2024-06-19 23:29:34,923 - INFO - Training and prediction completed for bitcoin.
+2024-06-19 23:29:34,923 - INFO - Processing data for Ethereum...
+2024-06-19 23:29:34,924 - INFO - Fetching processed data for ethereum...
+2024-06-19 23:29:35,284 - INFO - Training and predicting for ethereum...
+2024-06-19 23:29:35,406 - INFO - Storing past predictions for ethereum...
+2024-06-19 23:29:38,486 - INFO - Storing final predictions for ethereum...
+2024-06-19 23:29:39,993 - INFO - Training and prediction completed for ethereum.
+2024-06-20 00:41:29,704 - INFO - Processing data for Bitcoin...
+2024-06-20 00:41:29,705 - INFO - Fetching processed data for bitcoin...
+2024-06-20 00:41:30,213 - INFO - Training and predicting for bitcoin...
+2024-06-20 00:44:55,898 - INFO - Processing data for Bitcoin...
+2024-06-20 00:44:55,899 - INFO - Fetching processed data for bitcoin...
+2024-06-20 00:44:56,367 - INFO - Training and predicting for bitcoin...
+2024-06-20 00:44:56,455 - INFO - X_train shape: (365, 6), y_train shape: (365,)
+2024-06-20 00:44:56,455 - INFO - Features columns: Index(['volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:38:36,865 - INFO - Processing data for Bitcoin...
+2024-06-20 01:38:36,866 - INFO - Fetching processed data for bitcoin...
+2024-06-20 01:38:37,349 - INFO - Training and predicting for bitcoin...
+2024-06-20 01:38:37,416 - INFO - X_train shape: (365, 7), y_train shape: (365,)
+2024-06-20 01:38:37,416 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:38:37,586 - INFO - X_train shape: (365, 7), y_train shape: (365,)
+2024-06-20 01:38:37,586 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:38:37,589 - INFO - Storing final predictions for bitcoin...
+2024-06-20 01:38:40,835 - INFO - Training and prediction completed for bitcoin.
+2024-06-20 01:38:40,835 - INFO - Processing data for Ethereum...
+2024-06-20 01:38:40,836 - INFO - Fetching processed data for ethereum...
+2024-06-20 01:38:41,267 - INFO - Training and predicting for ethereum...
+2024-06-20 01:38:41,348 - INFO - X_train shape: (365, 7), y_train shape: (365,)
+2024-06-20 01:38:41,348 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:38:41,481 - INFO - X_train shape: (365, 7), y_train shape: (365,)
+2024-06-20 01:38:41,481 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:38:41,483 - INFO - Storing final predictions for ethereum...
+2024-06-20 01:38:44,756 - INFO - Training and prediction completed for ethereum.
+2024-06-20 01:44:01,585 - INFO - Processing data for Bitcoin...
+2024-06-20 01:44:01,586 - INFO - Fetching processed data for bitcoin...
+2024-06-20 01:44:02,092 - INFO - Training and predicting for bitcoin...
+2024-06-20 01:44:02,162 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 01:44:02,162 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:44:02,304 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 01:44:02,304 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:44:02,310 - INFO - Storing final predictions for bitcoin...
+2024-06-20 01:44:05,447 - INFO - Training and prediction completed for bitcoin.
+2024-06-20 01:44:05,447 - INFO - Processing data for Ethereum...
+2024-06-20 01:44:05,448 - INFO - Fetching processed data for ethereum...
+2024-06-20 01:44:05,853 - INFO - Training and predicting for ethereum...
+2024-06-20 01:44:05,908 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 01:44:05,909 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:44:06,007 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 01:44:06,007 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:44:06,010 - INFO - Storing final predictions for ethereum...
+2024-06-20 01:44:09,109 - INFO - Training and prediction completed for ethereum.
+2024-06-20 01:45:47,657 - INFO - Processing data for Bitcoin...
+2024-06-20 01:45:47,657 - INFO - Fetching processed data for bitcoin...
+2024-06-20 01:45:48,138 - INFO - Training and predicting for bitcoin...
+2024-06-20 01:45:48,189 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 01:45:48,189 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:45:48,308 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 01:45:48,308 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:45:48,316 - INFO - Storing final predictions for bitcoin...
+2024-06-20 01:45:51,394 - INFO - Training and prediction completed for bitcoin.
+2024-06-20 01:45:51,394 - INFO - Processing data for Ethereum...
+2024-06-20 01:45:51,394 - INFO - Fetching processed data for ethereum...
+2024-06-20 01:45:51,785 - INFO - Training and predicting for ethereum...
+2024-06-20 01:45:51,838 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 01:45:51,838 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:45:51,934 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 01:45:51,934 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:45:51,939 - INFO - Storing final predictions for ethereum...
+2024-06-20 01:45:55,186 - INFO - Training and prediction completed for ethereum.
+2024-06-20 01:50:09,007 - INFO - Processing data for Bitcoin...
+2024-06-20 01:50:09,007 - INFO - Fetching processed data for bitcoin...
+2024-06-20 01:50:09,473 - INFO - Training and predicting for bitcoin...
+2024-06-20 01:50:09,519 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 01:50:09,519 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:50:09,651 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 01:50:09,651 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:50:09,664 - INFO - Storing final predictions for bitcoin...
+2024-06-20 01:50:12,752 - INFO - Training and prediction completed for bitcoin.
+2024-06-20 01:50:12,752 - INFO - Processing data for Ethereum...
+2024-06-20 01:50:12,753 - INFO - Fetching processed data for ethereum...
+2024-06-20 01:50:13,173 - INFO - Training and predicting for ethereum...
+2024-06-20 01:50:13,229 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 01:50:13,229 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:50:13,335 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 01:50:13,335 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:50:13,342 - INFO - Storing final predictions for ethereum...
+2024-06-20 01:50:16,549 - INFO - Training and prediction completed for ethereum.
+2024-06-20 01:51:19,131 - INFO - Processing data for Bitcoin...
+2024-06-20 01:51:19,131 - INFO - Fetching processed data for bitcoin...
+2024-06-20 01:51:19,657 - INFO - Training and predicting for bitcoin...
+2024-06-20 01:51:19,714 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 01:51:19,714 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:51:19,847 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 01:51:19,847 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:51:19,851 - INFO - Storing final predictions for bitcoin...
+2024-06-20 01:51:22,863 - INFO - Training and prediction completed for bitcoin.
+2024-06-20 01:51:22,864 - INFO - Processing data for Ethereum...
+2024-06-20 01:51:22,864 - INFO - Fetching processed data for ethereum...
+2024-06-20 01:51:23,266 - INFO - Training and predicting for ethereum...
+2024-06-20 01:51:23,315 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 01:51:23,316 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:51:23,414 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 01:51:23,414 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:51:23,421 - INFO - Storing final predictions for ethereum...
+2024-06-20 01:51:26,538 - INFO - Training and prediction completed for ethereum.
+2024-06-20 01:56:48,221 - INFO - Processing data for Bitcoin...
+2024-06-20 01:56:48,222 - INFO - Fetching processed data for bitcoin...
+2024-06-20 01:56:48,683 - INFO - Training and predicting for bitcoin...
+2024-06-20 01:56:48,727 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 01:56:48,727 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:56:48,856 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 01:56:48,856 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:56:48,864 - INFO - Storing final predictions for bitcoin...
+2024-06-20 01:56:51,872 - INFO - Training and prediction completed for bitcoin.
+2024-06-20 01:56:51,873 - INFO - Processing data for Ethereum...
+2024-06-20 01:56:51,873 - INFO - Fetching processed data for ethereum...
+2024-06-20 01:56:52,274 - INFO - Training and predicting for ethereum...
+2024-06-20 01:56:52,329 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 01:56:52,329 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:56:52,435 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 01:56:52,435 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 01:56:52,438 - INFO - Storing final predictions for ethereum...
+2024-06-20 01:56:55,484 - INFO - Training and prediction completed for ethereum.
+2024-06-20 09:00:19,112 - INFO - Processing data for Bitcoin...
+2024-06-20 09:00:19,114 - INFO - Fetching processed data for bitcoin...
+2024-06-20 09:00:19,650 - INFO - Training and predicting for bitcoin...
+2024-06-20 09:00:19,712 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:00:19,712 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:00:19,843 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:00:19,843 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:00:19,853 - INFO - Storing final predictions for bitcoin...
+2024-06-20 09:00:23,715 - INFO - Training and prediction completed for bitcoin.
+2024-06-20 09:00:23,716 - INFO - Processing data for Ethereum...
+2024-06-20 09:00:23,716 - INFO - Fetching processed data for ethereum...
+2024-06-20 09:00:24,299 - INFO - Training and predicting for ethereum...
+2024-06-20 09:00:24,337 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:00:24,338 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:00:24,431 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:00:24,432 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:00:24,436 - INFO - Storing final predictions for ethereum...
+2024-06-20 09:00:29,019 - INFO - Training and prediction completed for ethereum.
+2024-06-20 09:22:55,213 - INFO - Processing data for Bitcoin...
+2024-06-20 09:22:55,213 - INFO - Fetching processed data for bitcoin...
+2024-06-20 09:22:55,664 - INFO - Training and predicting for bitcoin...
+2024-06-20 09:22:55,721 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:22:55,721 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:22:55,862 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:22:55,863 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:22:55,865 - INFO - Storing final predictions for bitcoin...
+2024-06-20 09:22:59,090 - INFO - Training and prediction completed for bitcoin.
+2024-06-20 09:22:59,091 - INFO - Processing data for Ethereum...
+2024-06-20 09:22:59,091 - INFO - Fetching processed data for ethereum...
+2024-06-20 09:22:59,530 - INFO - Training and predicting for ethereum...
+2024-06-20 09:22:59,584 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:22:59,585 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:22:59,698 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:22:59,699 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:22:59,701 - INFO - Storing final predictions for ethereum...
+2024-06-20 09:23:03,128 - INFO - Training and prediction completed for ethereum.
+2024-06-20 09:34:06,211 - INFO - Processing data for Bitcoin...
+2024-06-20 09:34:06,212 - INFO - Fetching processed data for bitcoin...
+2024-06-20 09:34:06,693 - INFO - Training and predicting for bitcoin...
+2024-06-20 09:34:06,763 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:34:06,764 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:34:06,918 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:34:06,918 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:34:06,921 - INFO - Storing final predictions for bitcoin...
+2024-06-20 09:34:10,526 - INFO - Training and prediction completed for bitcoin.
+2024-06-20 09:34:10,526 - INFO - Processing data for Ethereum...
+2024-06-20 09:34:10,527 - INFO - Fetching processed data for ethereum...
+2024-06-20 09:34:10,970 - INFO - Training and predicting for ethereum...
+2024-06-20 09:34:11,005 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:34:11,006 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:34:11,105 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:34:11,105 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:34:11,115 - INFO - Storing final predictions for ethereum...
+2024-06-20 09:34:31,254 - INFO - Processing data for Bitcoin...
+2024-06-20 09:34:31,254 - INFO - Fetching processed data for bitcoin...
+2024-06-20 09:34:31,713 - INFO - Training and predicting for bitcoin...
+2024-06-20 09:34:31,771 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:34:31,772 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:34:31,893 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:34:31,893 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:34:31,896 - INFO - Storing final predictions for bitcoin...
+2024-06-20 09:34:35,082 - INFO - Training and prediction completed for bitcoin.
+2024-06-20 09:34:35,082 - INFO - Processing data for Ethereum...
+2024-06-20 09:34:35,082 - INFO - Fetching processed data for ethereum...
+2024-06-20 09:34:35,511 - INFO - Training and predicting for ethereum...
+2024-06-20 09:34:35,552 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:34:35,552 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:34:35,669 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:34:35,669 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:34:35,672 - INFO - Storing final predictions for ethereum...
+2024-06-20 09:34:38,955 - INFO - Training and prediction completed for ethereum.
+2024-06-20 09:43:08,180 - INFO - Processing data for Bitcoin...
+2024-06-20 09:43:08,181 - INFO - Fetching processed data for bitcoin...
+2024-06-20 09:43:08,694 - INFO - Training and predicting for bitcoin...
+2024-06-20 09:43:08,763 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:43:08,763 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:43:08,879 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:43:08,880 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:43:08,887 - INFO - ARIMA predictions: 2024-06-20 19:00:00    65374.760216
+2024-06-21 19:00:00    65294.395604
+2024-06-22 19:00:00    65325.813797
+2024-06-23 19:00:00    65353.608741
+2024-06-24 19:00:00    65335.732857
+2024-06-25 19:00:00    65334.442542
+2024-06-26 19:00:00    65338.836247
+2024-06-27 19:00:00    65338.904398
+2024-06-28 19:00:00    65337.406750
+2024-06-29 19:00:00    65337.855627
+2024-06-30 19:00:00    65338.116225
+2024-07-01 19:00:00    65337.971378
+2024-07-02 19:00:00    65337.911906
+2024-07-03 19:00:00    65337.974199
+2024-07-04 19:00:00    65337.973431
+2024-07-05 19:00:00    65337.958303
+2024-07-06 19:00:00    65337.960636
+2024-07-07 19:00:00    65337.964949
+2024-07-08 19:00:00    65337.963106
+2024-07-09 19:00:00    65337.962422
+2024-07-10 19:00:00    65337.963016
+2024-07-11 19:00:00    65337.963118
+2024-07-12 19:00:00    65337.962912
+2024-07-13 19:00:00    65337.962936
+2024-07-14 19:00:00    65337.962984
+2024-07-15 19:00:00    65337.962969
+2024-07-16 19:00:00    65337.962958
+2024-07-17 19:00:00    65337.962965
+2024-07-18 19:00:00    65337.962966
+2024-07-19 19:00:00    65337.962964
+Freq: D, Name: predicted_mean, dtype: float64
+2024-06-20 09:43:08,892 - INFO - Linear Regression predictions: [69156.7 67900.1 68497.5 69244.3 68555.5 69438.5 68340.7 67621.7 68430.5
+ 67570.  67858.3 67820.8 68824.3 70559.1 71111.7 70840.8 69376.8 69347.3
+ 69670.  69510.1 67391.7 68215.5 66774.8 66034.1 66250.  66751.5 66494.5
+ 65219.9 64943.3 65465.8]
+2024-06-20 09:43:08,892 - INFO - Random Forest predictions: [69202.117 67852.691 68452.284 69195.988 68560.174 69422.526 68404.211
+ 67609.261 68418.462 67577.777 67855.128 67831.981 68763.578 70603.824
+ 71148.715 70852.08  69377.979 69349.671 69689.71  69489.94  67447.064
+ 68294.091 66864.624 66068.893 66299.033 66794.965 66436.875 65226.46
+ 65012.816 65368.038]
+2024-06-20 09:46:59,363 - INFO - Storing final predictions for bitcoin...
+2024-06-20 09:47:02,939 - INFO - Training and prediction completed for bitcoin.
+2024-06-20 09:47:02,940 - INFO - Processing data for Ethereum...
+2024-06-20 09:47:02,940 - INFO - Fetching processed data for ethereum...
+2024-06-20 09:47:03,350 - INFO - Training and predicting for ethereum...
+2024-06-20 09:47:03,392 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:47:03,392 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:47:03,483 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:47:03,483 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:47:03,485 - INFO - ARIMA predictions: 2024-06-20 19:00:00    3563.327495
+2024-06-21 19:00:00    3572.324827
+2024-06-22 19:00:00    3581.255023
+2024-06-23 19:00:00    3577.777177
+2024-06-24 19:00:00    3577.321025
+2024-06-25 19:00:00    3579.618398
+2024-06-26 19:00:00    3579.402801
+2024-06-27 19:00:00    3578.871792
+2024-06-28 19:00:00    3579.268669
+2024-06-29 19:00:00    3579.387667
+2024-06-30 19:00:00    3579.233676
+2024-07-01 19:00:00    3579.264155
+2024-07-02 19:00:00    3579.319805
+2024-07-03 19:00:00    3579.293716
+2024-07-04 19:00:00    3579.285411
+2024-07-05 19:00:00    3579.299500
+2024-07-06 19:00:00    3579.298252
+2024-07-07 19:00:00    3579.293923
+2024-07-08 19:00:00    3579.296166
+2024-07-09 19:00:00    3579.297067
+2024-07-10 19:00:00    3579.295977
+2024-07-11 19:00:00    3579.296071
+2024-07-12 19:00:00    3579.296456
+2024-07-13 19:00:00    3579.296292
+2024-07-14 19:00:00    3579.296214
+2024-07-15 19:00:00    3579.296305
+2024-07-16 19:00:00    3579.296302
+2024-07-17 19:00:00    3579.296270
+2024-07-18 19:00:00    3579.296283
+2024-07-19 19:00:00    3579.296291
+Freq: D, Name: predicted_mean, dtype: float64
+2024-06-20 09:47:03,485 - INFO - Linear Regression predictions: [3741.27 3782.63 3733.79 3748.19 3828.23 3891.97 3841.22 3768.18 3751.63
+ 3766.81 3816.22 3785.36 3775.62 3813.47 3860.76 3813.78 3677.7  3684.98
+ 3711.62 3666.01 3501.13 3561.35 3467.97 3480.36 3565.48 3623.11 3512.94
+ 3483.02 3557.69 3581.44]
+2024-06-20 09:47:03,485 - INFO - Random Forest predictions: [3738.6605 3785.0679 3736.1674 3743.4991 3822.7622 3878.685  3843.1282
+ 3773.5969 3745.1759 3767.5739 3815.1389 3783.9947 3777.8992 3815.3681
+ 3849.5393 3816.7401 3677.1986 3678.4084 3708.5801 3659.7055 3503.7911
+ 3560.1633 3478.2864 3482.111  3562.284  3627.9244 3512.7688 3483.4409
+ 3559.8925 3583.9223]
+2024-06-20 09:47:07,893 - INFO - Storing final predictions for ethereum...
+2024-06-20 09:47:11,760 - INFO - Training and prediction completed for ethereum.
+2024-06-20 09:50:13,512 - INFO - Processing data for Bitcoin...
+2024-06-20 09:50:13,516 - INFO - Fetching processed data for bitcoin...
+2024-06-20 09:50:13,955 - INFO - Training and predicting for bitcoin...
+2024-06-20 09:50:14,010 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:50:14,010 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:50:14,140 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:50:14,140 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:50:14,143 - INFO - ARIMA predictions: 2024-06-20 19:00:00    65374.760216
+2024-06-21 19:00:00    65294.395604
+2024-06-22 19:00:00    65325.813797
+2024-06-23 19:00:00    65353.608741
+2024-06-24 19:00:00    65335.732857
+2024-06-25 19:00:00    65334.442542
+2024-06-26 19:00:00    65338.836247
+2024-06-27 19:00:00    65338.904398
+2024-06-28 19:00:00    65337.406750
+2024-06-29 19:00:00    65337.855627
+2024-06-30 19:00:00    65338.116225
+2024-07-01 19:00:00    65337.971378
+2024-07-02 19:00:00    65337.911906
+2024-07-03 19:00:00    65337.974199
+2024-07-04 19:00:00    65337.973431
+2024-07-05 19:00:00    65337.958303
+2024-07-06 19:00:00    65337.960636
+2024-07-07 19:00:00    65337.964949
+2024-07-08 19:00:00    65337.963106
+2024-07-09 19:00:00    65337.962422
+2024-07-10 19:00:00    65337.963016
+2024-07-11 19:00:00    65337.963118
+2024-07-12 19:00:00    65337.962912
+2024-07-13 19:00:00    65337.962936
+2024-07-14 19:00:00    65337.962984
+2024-07-15 19:00:00    65337.962969
+2024-07-16 19:00:00    65337.962958
+2024-07-17 19:00:00    65337.962965
+2024-07-18 19:00:00    65337.962966
+2024-07-19 19:00:00    65337.962964
+Freq: D, Name: predicted_mean, dtype: float64
+2024-06-20 09:50:14,143 - INFO - Linear Regression predictions: [69156.7 67900.1 68497.5 69244.3 68555.5 69438.5 68340.7 67621.7 68430.5
+ 67570.  67858.3 67820.8 68824.3 70559.1 71111.7 70840.8 69376.8 69347.3
+ 69670.  69510.1 67391.7 68215.5 66774.8 66034.1 66250.  66751.5 66494.5
+ 65219.9 64943.3 65465.8]
+2024-06-20 09:50:14,143 - INFO - Random Forest predictions: [69201.527 67901.495 68428.896 69225.925 68546.694 69425.484 68383.156
+ 67617.53  68385.902 67582.71  67837.041 67808.782 68824.105 70606.126
+ 71134.718 70870.838 69388.408 69330.931 69687.083 69449.296 67462.722
+ 68307.906 66826.235 66103.432 66271.19  66765.985 66446.069 65254.667
+ 64978.729 65372.656]
+2024-06-20 09:50:24,081 - INFO - Storing final predictions for bitcoin...
+2024-06-20 09:50:27,305 - INFO - Training and prediction completed for bitcoin.
+2024-06-20 09:50:27,306 - INFO - Processing data for Ethereum...
+2024-06-20 09:50:27,306 - INFO - Fetching processed data for ethereum...
+2024-06-20 09:50:27,743 - INFO - Training and predicting for ethereum...
+2024-06-20 09:50:27,777 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:50:27,777 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:50:27,861 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:50:27,861 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:50:27,864 - INFO - ARIMA predictions: 2024-06-20 19:00:00    3563.327495
+2024-06-21 19:00:00    3572.324827
+2024-06-22 19:00:00    3581.255023
+2024-06-23 19:00:00    3577.777177
+2024-06-24 19:00:00    3577.321025
+2024-06-25 19:00:00    3579.618398
+2024-06-26 19:00:00    3579.402801
+2024-06-27 19:00:00    3578.871792
+2024-06-28 19:00:00    3579.268669
+2024-06-29 19:00:00    3579.387667
+2024-06-30 19:00:00    3579.233676
+2024-07-01 19:00:00    3579.264155
+2024-07-02 19:00:00    3579.319805
+2024-07-03 19:00:00    3579.293716
+2024-07-04 19:00:00    3579.285411
+2024-07-05 19:00:00    3579.299500
+2024-07-06 19:00:00    3579.298252
+2024-07-07 19:00:00    3579.293923
+2024-07-08 19:00:00    3579.296166
+2024-07-09 19:00:00    3579.297067
+2024-07-10 19:00:00    3579.295977
+2024-07-11 19:00:00    3579.296071
+2024-07-12 19:00:00    3579.296456
+2024-07-13 19:00:00    3579.296292
+2024-07-14 19:00:00    3579.296214
+2024-07-15 19:00:00    3579.296305
+2024-07-16 19:00:00    3579.296302
+2024-07-17 19:00:00    3579.296270
+2024-07-18 19:00:00    3579.296283
+2024-07-19 19:00:00    3579.296291
+Freq: D, Name: predicted_mean, dtype: float64
+2024-06-20 09:50:27,864 - INFO - Linear Regression predictions: [3741.27 3782.63 3733.79 3748.19 3828.23 3891.97 3841.22 3768.18 3751.63
+ 3766.81 3816.22 3785.36 3775.62 3813.47 3860.76 3813.78 3677.7  3684.98
+ 3711.62 3666.01 3501.13 3561.35 3467.97 3480.36 3565.48 3623.11 3512.94
+ 3483.02 3557.69 3581.44]
+2024-06-20 09:50:27,864 - INFO - Random Forest predictions: [3738.6994 3781.1418 3736.3765 3742.6894 3818.0045 3878.1237 3843.6042
+ 3769.7126 3744.8669 3766.0508 3810.9485 3783.3431 3775.4475 3810.7319
+ 3853.8486 3814.0861 3692.2995 3686.6637 3706.6569 3663.7072 3501.8297
+ 3561.4943 3478.0606 3482.9469 3564.1146 3625.4379 3511.0193 3484.1925
+ 3559.3118 3581.0849]
+2024-06-20 09:50:41,378 - INFO - Storing final predictions for ethereum...
+2024-06-20 09:50:44,740 - INFO - Training and prediction completed for ethereum.
+2024-06-20 09:58:21,743 - INFO - Processing data for Bitcoin...
+2024-06-20 09:58:21,746 - INFO - Fetching processed data for bitcoin...
+2024-06-20 09:58:22,344 - INFO - Training and predicting for bitcoin...
+2024-06-20 09:58:22,424 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:58:22,424 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:58:22,563 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 09:58:22,563 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 09:58:22,567 - INFO - ARIMA predictions: 2024-06-20 19:00:00    65374.760216
+2024-06-21 19:00:00    65294.395604
+2024-06-22 19:00:00    65325.813797
+2024-06-23 19:00:00    65353.608741
+2024-06-24 19:00:00    65335.732857
+2024-06-25 19:00:00    65334.442542
+2024-06-26 19:00:00    65338.836247
+2024-06-27 19:00:00    65338.904398
+2024-06-28 19:00:00    65337.406750
+2024-06-29 19:00:00    65337.855627
+2024-06-30 19:00:00    65338.116225
+2024-07-01 19:00:00    65337.971378
+2024-07-02 19:00:00    65337.911906
+2024-07-03 19:00:00    65337.974199
+2024-07-04 19:00:00    65337.973431
+2024-07-05 19:00:00    65337.958303
+2024-07-06 19:00:00    65337.960636
+2024-07-07 19:00:00    65337.964949
+2024-07-08 19:00:00    65337.963106
+2024-07-09 19:00:00    65337.962422
+2024-07-10 19:00:00    65337.963016
+2024-07-11 19:00:00    65337.963118
+2024-07-12 19:00:00    65337.962912
+2024-07-13 19:00:00    65337.962936
+2024-07-14 19:00:00    65337.962984
+2024-07-15 19:00:00    65337.962969
+2024-07-16 19:00:00    65337.962958
+2024-07-17 19:00:00    65337.962965
+2024-07-18 19:00:00    65337.962966
+2024-07-19 19:00:00    65337.962964
+Freq: D, Name: predicted_mean, dtype: float64
+2024-06-20 09:58:22,568 - INFO - Linear Regression predictions: [69156.7 67900.1 68497.5 69244.3 68555.5 69438.5 68340.7 67621.7 68430.5
+ 67570.  67858.3 67820.8 68824.3 70559.1 71111.7 70840.8 69376.8 69347.3
+ 69670.  69510.1 67391.7 68215.5 66774.8 66034.1 66250.  66751.5 66494.5
+ 65219.9 64943.3 65465.8]
+2024-06-20 09:58:22,568 - INFO - Random Forest predictions: [69194.18  67895.024 68446.655 69219.    68535.302 69434.814 68407.073
+ 67591.477 68418.284 67557.769 67841.281 67830.01  68795.217 70597.379
+ 71126.619 70882.712 69361.106 69347.756 69700.291 69468.179 67483.424
+ 68344.586 66854.628 66050.093 66296.336 66772.436 66440.804 65233.655
+ 64990.498 65361.544]
+2024-06-20 10:00:08,573 - INFO - Storing final predictions for bitcoin...
+2024-06-20 10:00:12,225 - INFO - Training and prediction completed for bitcoin.
+2024-06-20 10:00:12,226 - INFO - Processing data for Ethereum...
+2024-06-20 10:00:12,226 - INFO - Fetching processed data for ethereum...
+2024-06-20 10:00:14,221 - INFO - Training and predicting for ethereum...
+2024-06-20 10:00:14,248 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 10:00:14,248 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 10:00:14,338 - INFO - X_train shape: (239, 7), y_train shape: (239,)
+2024-06-20 10:00:14,338 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 10:00:14,340 - INFO - ARIMA predictions: 2024-06-20 19:00:00    3563.327495
+2024-06-21 19:00:00    3572.324827
+2024-06-22 19:00:00    3581.255023
+2024-06-23 19:00:00    3577.777177
+2024-06-24 19:00:00    3577.321025
+2024-06-25 19:00:00    3579.618398
+2024-06-26 19:00:00    3579.402801
+2024-06-27 19:00:00    3578.871792
+2024-06-28 19:00:00    3579.268669
+2024-06-29 19:00:00    3579.387667
+2024-06-30 19:00:00    3579.233676
+2024-07-01 19:00:00    3579.264155
+2024-07-02 19:00:00    3579.319805
+2024-07-03 19:00:00    3579.293716
+2024-07-04 19:00:00    3579.285411
+2024-07-05 19:00:00    3579.299500
+2024-07-06 19:00:00    3579.298252
+2024-07-07 19:00:00    3579.293923
+2024-07-08 19:00:00    3579.296166
+2024-07-09 19:00:00    3579.297067
+2024-07-10 19:00:00    3579.295977
+2024-07-11 19:00:00    3579.296071
+2024-07-12 19:00:00    3579.296456
+2024-07-13 19:00:00    3579.296292
+2024-07-14 19:00:00    3579.296214
+2024-07-15 19:00:00    3579.296305
+2024-07-16 19:00:00    3579.296302
+2024-07-17 19:00:00    3579.296270
+2024-07-18 19:00:00    3579.296283
+2024-07-19 19:00:00    3579.296291
+Freq: D, Name: predicted_mean, dtype: float64
+2024-06-20 10:00:14,340 - INFO - Linear Regression predictions: [3741.27 3782.63 3733.79 3748.19 3828.23 3891.97 3841.22 3768.18 3751.63
+ 3766.81 3816.22 3785.36 3775.62 3813.47 3860.76 3813.78 3677.7  3684.98
+ 3711.62 3666.01 3501.13 3561.35 3467.97 3480.36 3565.48 3623.11 3512.94
+ 3483.02 3557.69 3581.44]
+2024-06-20 10:00:14,341 - INFO - Random Forest predictions: [3739.5187 3781.4478 3736.7079 3747.4108 3822.5769 3874.6378 3841.5689
+ 3769.7676 3747.2106 3767.99   3813.9118 3782.8059 3779.3604 3813.853
+ 3852.8129 3816.2242 3690.6885 3685.2642 3710.6842 3665.5659 3501.4463
+ 3562.4987 3475.8181 3481.2097 3564.2441 3628.2973 3509.3897 3482.5943
+ 3559.8189 3582.5701]
+2024-06-20 10:00:23,018 - INFO - Storing final predictions for ethereum...
+2024-06-20 10:00:26,402 - INFO - Training and prediction completed for ethereum.
+2024-06-20 10:05:50,833 - INFO - Processing data for Bitcoin...
+2024-06-20 10:05:50,834 - INFO - Fetching processed data for bitcoin...
+2024-06-20 10:05:51,301 - INFO - Training and predicting for bitcoin...
+2024-06-20 10:05:51,346 - INFO - X_train shape: (365, 7), y_train shape: (365,)
+2024-06-20 10:05:51,346 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 10:08:50,892 - INFO - Processing data for Bitcoin...
+2024-06-20 10:08:50,892 - INFO - Fetching processed data for bitcoin...
+2024-06-20 10:08:51,370 - INFO - Training and predicting for bitcoin...
+2024-06-20 10:08:51,422 - INFO - X_train shape: (365, 6), y_train shape: (365,)
+2024-06-20 10:08:51,422 - INFO - Features columns: Index(['volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 10:08:51,579 - INFO - X_train shape: (365, 6), y_train shape: (365,)
+2024-06-20 10:08:51,579 - INFO - Features columns: Index(['volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 10:08:51,581 - INFO - ARIMA predictions: 365    65368.166442
+366    65326.199463
+367    65331.774552
+368    65342.709283
+369    65340.297057
+370    65338.813351
+371    65339.254037
+372    65339.508195
+373    65339.423175
+374    65339.385334
+375    65339.402702
+376    65339.408832
+377    65339.405822
+378    65339.405011
+379    65339.405624
+380    65339.405762
+381    65339.405664
+382    65339.405652
+383    65339.405672
+384    65339.405675
+385    65339.405672
+386    65339.405672
+387    65339.405673
+388    65339.405673
+389    65339.405673
+390    65339.405673
+391    65339.405673
+392    65339.405673
+393    65339.405673
+394    65339.405673
+Name: predicted_mean, dtype: float64
+2024-06-20 10:08:51,581 - INFO - Linear Regression predictions: [65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8
+ 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8
+ 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8
+ 65465.8 65465.8 65465.8]
+2024-06-20 10:08:51,582 - INFO - Random Forest predictions: [65339.724 65339.724 65339.724 65339.724 65339.724 65339.724 65339.724
+ 65339.724 65339.724 65339.724 65339.724 65339.724 65339.724 65339.724
+ 65339.724 65339.724 65339.724 65339.724 65339.724 65339.724 65339.724
+ 65339.724 65339.724 65339.724 65339.724 65339.724 65339.724 65339.724
+ 65339.724 65339.724]
+2024-06-20 10:08:51,583 - INFO - Storing final predictions for bitcoin...
+2024-06-20 10:08:54,953 - INFO - Training and prediction completed for bitcoin.
+2024-06-20 10:08:54,953 - INFO - Processing data for Ethereum...
+2024-06-20 10:08:54,954 - INFO - Fetching processed data for ethereum...
+2024-06-20 10:08:55,387 - INFO - Training and predicting for ethereum...
+2024-06-20 10:08:55,477 - INFO - X_train shape: (365, 6), y_train shape: (365,)
+2024-06-20 10:08:55,478 - INFO - Features columns: Index(['volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 10:08:55,601 - INFO - X_train shape: (365, 6), y_train shape: (365,)
+2024-06-20 10:08:55,602 - INFO - Features columns: Index(['volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 10:08:55,603 - INFO - ARIMA predictions: 365    3571.169979
+366    3576.920738
+367    3581.143352
+368    3581.451035
+369    3582.270763
+370    3582.644384
+371    3582.835826
+372    3583.013406
+373    3583.065789
+374    3583.104154
+375    3583.134677
+376    3583.145731
+377    3583.153519
+378    3583.158432
+379    3583.160671
+380    3583.162209
+381    3583.163052
+382    3583.163489
+383    3583.163776
+384    3583.163929
+385    3583.164013
+386    3583.164066
+387    3583.164094
+388    3583.164110
+389    3583.164120
+390    3583.164125
+391    3583.164128
+392    3583.164130
+393    3583.164131
+394    3583.164131
+Name: predicted_mean, dtype: float64
+2024-06-20 10:08:55,603 - INFO - Linear Regression predictions: [3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44
+ 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44
+ 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44
+ 3581.44 3581.44 3581.44]
+2024-06-20 10:08:55,604 - INFO - Random Forest predictions: [3583.3725 3583.3725 3583.3725 3583.3725 3583.3725 3583.3725 3583.3725
+ 3583.3725 3583.3725 3583.3725 3583.3725 3583.3725 3583.3725 3583.3725
+ 3583.3725 3583.3725 3583.3725 3583.3725 3583.3725 3583.3725 3583.3725
+ 3583.3725 3583.3725 3583.3725 3583.3725 3583.3725 3583.3725 3583.3725
+ 3583.3725 3583.3725]
+2024-06-20 10:08:55,604 - INFO - Storing final predictions for ethereum...
+2024-06-20 10:08:58,826 - INFO - Training and prediction completed for ethereum.
+2024-06-20 10:30:21,206 - INFO - Processing data for Bitcoin...
+2024-06-20 10:30:21,207 - INFO - Fetching processed data for bitcoin...
+2024-06-20 10:30:21,694 - INFO - Training and predicting for bitcoin...
+2024-06-20 10:30:21,767 - INFO - X_train shape: (365, 6), y_train shape: (365,)
+2024-06-20 10:30:21,767 - INFO - Features columns: Index(['volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 10:30:21,923 - INFO - X_train shape: (365, 6), y_train shape: (365,)
+2024-06-20 10:30:21,923 - INFO - Features columns: Index(['volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 10:30:21,925 - INFO - ARIMA predictions: 365    65368.166442
+366    65326.199463
+367    65331.774552
+368    65342.709283
+369    65340.297057
+370    65338.813351
+371    65339.254037
+372    65339.508195
+373    65339.423175
+374    65339.385334
+375    65339.402702
+376    65339.408832
+377    65339.405822
+378    65339.405011
+379    65339.405624
+380    65339.405762
+381    65339.405664
+382    65339.405652
+383    65339.405672
+384    65339.405675
+385    65339.405672
+386    65339.405672
+387    65339.405673
+388    65339.405673
+389    65339.405673
+390    65339.405673
+391    65339.405673
+392    65339.405673
+393    65339.405673
+394    65339.405673
+Name: predicted_mean, dtype: float64
+2024-06-20 10:30:21,925 - INFO - Linear Regression predictions: [65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8
+ 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8
+ 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8
+ 65465.8 65465.8 65465.8]
+2024-06-20 10:30:21,925 - INFO - Random Forest predictions: [65346.888 65346.888 65346.888 65346.888 65346.888 65346.888 65346.888
+ 65346.888 65346.888 65346.888 65346.888 65346.888 65346.888 65346.888
+ 65346.888 65346.888 65346.888 65346.888 65346.888 65346.888 65346.888
+ 65346.888 65346.888 65346.888 65346.888 65346.888 65346.888 65346.888
+ 65346.888 65346.888]
+2024-06-20 10:30:21,928 - INFO - Storing final predictions for bitcoin...
+2024-06-20 10:30:26,344 - INFO - Training and prediction completed for bitcoin.
+2024-06-20 10:30:26,344 - INFO - Processing data for Ethereum...
+2024-06-20 10:30:26,344 - INFO - Fetching processed data for ethereum...
+2024-06-20 10:30:26,800 - INFO - Training and predicting for ethereum...
+2024-06-20 10:30:26,876 - INFO - X_train shape: (365, 6), y_train shape: (365,)
+2024-06-20 10:30:26,877 - INFO - Features columns: Index(['volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 10:30:27,002 - INFO - X_train shape: (365, 6), y_train shape: (365,)
+2024-06-20 10:30:27,003 - INFO - Features columns: Index(['volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 10:30:27,004 - INFO - ARIMA predictions: 365    3571.169979
+366    3576.920738
+367    3581.143352
+368    3581.451035
+369    3582.270763
+370    3582.644384
+371    3582.835826
+372    3583.013406
+373    3583.065789
+374    3583.104154
+375    3583.134677
+376    3583.145731
+377    3583.153519
+378    3583.158432
+379    3583.160671
+380    3583.162209
+381    3583.163052
+382    3583.163489
+383    3583.163776
+384    3583.163929
+385    3583.164013
+386    3583.164066
+387    3583.164094
+388    3583.164110
+389    3583.164120
+390    3583.164125
+391    3583.164128
+392    3583.164130
+393    3583.164131
+394    3583.164131
+Name: predicted_mean, dtype: float64
+2024-06-20 10:30:27,004 - INFO - Linear Regression predictions: [3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44
+ 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44
+ 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44
+ 3581.44 3581.44 3581.44]
+2024-06-20 10:30:27,005 - INFO - Random Forest predictions: [3582.5206 3582.5206 3582.5206 3582.5206 3582.5206 3582.5206 3582.5206
+ 3582.5206 3582.5206 3582.5206 3582.5206 3582.5206 3582.5206 3582.5206
+ 3582.5206 3582.5206 3582.5206 3582.5206 3582.5206 3582.5206 3582.5206
+ 3582.5206 3582.5206 3582.5206 3582.5206 3582.5206 3582.5206 3582.5206
+ 3582.5206 3582.5206]
+2024-06-20 10:30:27,006 - INFO - Storing final predictions for ethereum...
+2024-06-20 10:30:30,509 - INFO - Training and prediction completed for ethereum.
+2024-06-20 10:31:31,673 - INFO - Processing data for Bitcoin...
+2024-06-20 10:31:31,673 - INFO - Fetching processed data for bitcoin...
+2024-06-20 10:31:32,166 - INFO - Training and predicting for bitcoin...
+2024-06-20 10:31:32,226 - INFO - X_train shape: (365, 6), y_train shape: (365,)
+2024-06-20 10:31:32,226 - INFO - Features columns: Index(['volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 10:31:32,355 - INFO - X_train shape: (365, 6), y_train shape: (365,)
+2024-06-20 10:31:32,356 - INFO - Features columns: Index(['volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 10:31:32,358 - INFO - ARIMA predictions: 365    65368.166442
+366    65326.199463
+367    65331.774552
+368    65342.709283
+369    65340.297057
+370    65338.813351
+371    65339.254037
+372    65339.508195
+373    65339.423175
+374    65339.385334
+375    65339.402702
+376    65339.408832
+377    65339.405822
+378    65339.405011
+379    65339.405624
+380    65339.405762
+381    65339.405664
+382    65339.405652
+383    65339.405672
+384    65339.405675
+385    65339.405672
+386    65339.405672
+387    65339.405673
+388    65339.405673
+389    65339.405673
+390    65339.405673
+391    65339.405673
+392    65339.405673
+393    65339.405673
+394    65339.405673
+Name: predicted_mean, dtype: float64
+2024-06-20 10:31:32,358 - INFO - Linear Regression predictions: [65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8
+ 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8
+ 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8 65465.8
+ 65465.8 65465.8 65465.8]
+2024-06-20 10:31:32,358 - INFO - Random Forest predictions: [65374.574 65374.574 65374.574 65374.574 65374.574 65374.574 65374.574
+ 65374.574 65374.574 65374.574 65374.574 65374.574 65374.574 65374.574
+ 65374.574 65374.574 65374.574 65374.574 65374.574 65374.574 65374.574
+ 65374.574 65374.574 65374.574 65374.574 65374.574 65374.574 65374.574
+ 65374.574 65374.574]
+2024-06-20 10:31:32,359 - INFO - Storing final predictions for bitcoin...
+2024-06-20 10:31:35,938 - INFO - Training and prediction completed for bitcoin.
+2024-06-20 10:31:35,939 - INFO - Processing data for Ethereum...
+2024-06-20 10:31:35,939 - INFO - Fetching processed data for ethereum...
+2024-06-20 10:31:36,378 - INFO - Training and predicting for ethereum...
+2024-06-20 10:31:36,454 - INFO - X_train shape: (365, 6), y_train shape: (365,)
+2024-06-20 10:31:36,454 - INFO - Features columns: Index(['volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 10:31:36,577 - INFO - X_train shape: (365, 6), y_train shape: (365,)
+2024-06-20 10:31:36,577 - INFO - Features columns: Index(['volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 10:31:36,579 - INFO - ARIMA predictions: 365    3571.169979
+366    3576.920738
+367    3581.143352
+368    3581.451035
+369    3582.270763
+370    3582.644384
+371    3582.835826
+372    3583.013406
+373    3583.065789
+374    3583.104154
+375    3583.134677
+376    3583.145731
+377    3583.153519
+378    3583.158432
+379    3583.160671
+380    3583.162209
+381    3583.163052
+382    3583.163489
+383    3583.163776
+384    3583.163929
+385    3583.164013
+386    3583.164066
+387    3583.164094
+388    3583.164110
+389    3583.164120
+390    3583.164125
+391    3583.164128
+392    3583.164130
+393    3583.164131
+394    3583.164131
+Name: predicted_mean, dtype: float64
+2024-06-20 10:31:36,579 - INFO - Linear Regression predictions: [3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44
+ 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44
+ 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44 3581.44
+ 3581.44 3581.44 3581.44]
+2024-06-20 10:31:36,579 - INFO - Random Forest predictions: [3582.8287 3582.8287 3582.8287 3582.8287 3582.8287 3582.8287 3582.8287
+ 3582.8287 3582.8287 3582.8287 3582.8287 3582.8287 3582.8287 3582.8287
+ 3582.8287 3582.8287 3582.8287 3582.8287 3582.8287 3582.8287 3582.8287
+ 3582.8287 3582.8287 3582.8287 3582.8287 3582.8287 3582.8287 3582.8287
+ 3582.8287 3582.8287]
+2024-06-20 10:31:36,580 - INFO - Storing final predictions for ethereum...
+2024-06-20 10:31:39,986 - INFO - Training and prediction completed for ethereum.
+2024-06-20 11:23:09,768 - INFO - Processing data for Bitcoin...
+2024-06-20 11:23:09,770 - INFO - Fetching processed data for bitcoin...
+2024-06-20 11:23:10,271 - INFO - Training and predicting for bitcoin...
+2024-06-20 11:23:10,344 - INFO - X_train shape: (365, 7), y_train shape: (365,)
+2024-06-20 11:23:10,344 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 12:07:48,644 - INFO - Processing data for Bitcoin...
+2024-06-20 12:07:48,645 - INFO - Fetching processed data for bitcoin...
+2024-06-20 12:07:49,128 - INFO - Training and predicting for bitcoin...
+2024-06-20 12:07:49,232 - INFO - X_train shape: (365, 7), y_train shape: (365,)
+2024-06-20 12:23:42,485 - INFO - Processing data for Bitcoin...
+2024-06-20 12:23:42,487 - INFO - Fetching processed data for bitcoin...
+2024-06-20 12:23:42,990 - INFO - Training and predicting for bitcoin...
+2024-06-20 12:23:43,056 - INFO - X_train shape: (365, 7), y_train shape: (365,)
+2024-06-20 13:35:43,324 - INFO - Processing data for Bitcoin...
+2024-06-20 13:35:43,326 - INFO - Fetching processed data for bitcoin...
+2024-06-20 13:35:43,814 - INFO - Training and predicting for bitcoin...
+2024-06-20 13:35:43,893 - INFO - X_train shape: (365, 7), y_train shape: (365,)
+2024-06-20 13:35:43,893 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 13:42:47,540 - INFO - Processing data for Bitcoin...
+2024-06-20 13:42:47,540 - INFO - Fetching processed data for bitcoin...
+2024-06-20 13:42:48,009 - INFO - Training and predicting for bitcoin...
+2024-06-20 13:42:48,060 - INFO - X_train shape: (365, 7), y_train shape: (365,)
+2024-06-20 13:42:48,060 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 14:01:55,506 - INFO - Processing data for Bitcoin...
+2024-06-20 14:01:55,508 - INFO - Fetching processed data for bitcoin...
+2024-06-20 14:01:56,021 - INFO - Training and predicting for bitcoin...
+2024-06-20 14:01:56,072 - INFO - X_train shape: (365, 7), y_train shape: (365,)
+2024-06-20 14:01:56,073 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 14:07:58,682 - INFO - Processing data for Bitcoin...
+2024-06-20 14:07:58,682 - INFO - Fetching processed data for bitcoin...
+2024-06-20 14:07:59,188 - INFO - Training and predicting for bitcoin...
+2024-06-20 14:07:59,229 - INFO - X_train shape: (365, 7), y_train shape: (365,)
+2024-06-20 14:07:59,230 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 14:17:36,435 - INFO - Processing data for Bitcoin...
+2024-06-20 14:17:36,436 - INFO - Fetching processed data for bitcoin...
+2024-06-20 14:17:36,961 - INFO - Training and predicting for bitcoin...
+2024-06-20 14:17:37,011 - INFO - X_train shape: (365, 6), y_train shape: (365,)
+2024-06-20 14:17:37,011 - INFO - Features columns: Index(['volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 14:25:38,155 - INFO - Processing data for Bitcoin...
+2024-06-20 14:25:38,157 - INFO - Fetching processed data for bitcoin...
+2024-06-20 14:25:54,052 - INFO - Processing data for Bitcoin...
+2024-06-20 14:25:54,053 - INFO - Fetching processed data for bitcoin...
+2024-06-20 14:25:54,594 - INFO - Training and predicting for bitcoin...
+2024-06-20 14:25:54,646 - INFO - X_train shape: (365, 7), y_train shape: (365,)
+2024-06-20 14:25:54,646 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 14:34:34,648 - INFO - Processing data for Bitcoin...
+2024-06-20 14:34:34,650 - INFO - Fetching processed data for bitcoin...
+2024-06-20 14:34:35,133 - INFO - Training and predicting for bitcoin...
+2024-06-20 14:34:35,196 - INFO - X_train shape: (365, 7), y_train shape: (365,)
+2024-06-20 14:34:35,197 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')
+2024-06-20 14:59:48,822 - INFO - Processing data for Bitcoin...
+2024-06-20 14:59:48,823 - INFO - Fetching processed data for bitcoin...
+2024-06-20 14:59:49,333 - INFO - Training and predicting for bitcoin...
+2024-06-20 14:59:49,410 - INFO - X_train shape: (365, 7), y_train shape: (365,)
+2024-06-20 14:59:49,410 - INFO - Features columns: Index(['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close'], dtype='object')

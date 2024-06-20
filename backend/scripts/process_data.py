@@ -1,81 +1,75 @@
 import mysql.connector
-import pandas as pd
 from datetime import datetime
-import logging
 
-# Set up logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[
-    logging.FileHandler("../logs/process_data.log"),
-    logging.StreamHandler()
-])
-logger = logging.getLogger(__name__)
-
-def fetch_raw_data(table_name):
-    db = mysql.connector.connect(
+# Database connection
+def get_db_connection():
+    return mysql.connector.connect(
         host='cryptodb.cliawc8awtqk.us-east-1.rds.amazonaws.com',
         user='abern8',
         password='JettaGLI17!',
         database='crypto_db'
     )
+
+# Fetch raw data from the database
+def fetch_raw_data(coin):
+    db = get_db_connection()
     cursor = db.cursor()
     
-    query = f"SELECT * FROM {table_name}"
+    query = f"SELECT * FROM raw_data_{coin.lower()}"
     cursor.execute(query)
-    data = cursor.fetchall()
+    raw_data = cursor.fetchall()
     
-    columns = [desc[0] for desc in cursor.description]
-    df = pd.DataFrame(data, columns=columns)
     cursor.close()
     db.close()
-    return df
+    
+    return raw_data
 
-def store_processed_data(df, table_name):
-    db = mysql.connector.connect(
-        host='cryptodb.cliawc8awtqk.us-east-1.rds.amazonaws.com',
-        user='abern8',
-        password='JettaGLI17!',
-        database='crypto_db'
-    )
+# Calculate market cap (Example calculation, assuming market cap is calculated as price * volume)
+def calculate_market_cap(price, volume):
+    return price * volume
+
+# Process and store data in the processed data table
+def process_and_store_processed_data(coin):
+    db = get_db_connection()
     cursor = db.cursor()
     
-    for index, row in df.iterrows():
-        cursor.execute(
-            f"INSERT INTO {table_name} (timestamp, price_arima, price_other) VALUES (%s, %s, %s)",
-            (row['timestamp'], row['price_arima'], row['price_other'])
-        )
+    # Fetch raw data
+    raw_data = fetch_raw_data(coin)
     
+    # Prepare data for insertion
+    processed_data = []
+    for row in raw_data:
+        timestamp_ms = row[0]
+        price = row[1]
+        volume = row[2]
+        market_cap = row[3] if row[3] is not None else calculate_market_cap(price, volume)
+        open_price = row[4]
+        high = row[5]
+        low = row[6]
+        close = row[7]
+        
+        # Convert milliseconds to datetime
+        timestamp_arima = datetime.fromtimestamp(timestamp_ms / 1000.0)
+        
+        # Add entries to processed data
+        processed_data.append((timestamp_arima, timestamp_ms, price, volume, market_cap, open_price, high, low, close))
+    
+    # Insert processed data into the database
+    insert_query = f"""
+    INSERT INTO processed_data_{coin.lower()} 
+    (timestamp_arima, timestamp_ml, price, volume, market_cap, open, high, low, close) 
+    VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+    """
+    cursor.executemany(insert_query, processed_data)
     db.commit()
+    
     cursor.close()
     db.close()
-
-def process_and_store_data(raw_table, processed_table):
-    logger.info(f"Fetching raw data from {raw_table}...")
-    raw_data_df = fetch_raw_data(raw_table)
-    
-    # Convert timestamp to datetime
-    raw_data_df['timestamp'] = pd.to_datetime(raw_data_df['timestamp'])
-    
-    # Clean and preprocess data
-    # Remove duplicates if any
-    raw_data_df = raw_data_df.drop_duplicates(subset=['timestamp'])
-    
-    # Sort data by timestamp
-    raw_data_df = raw_data_df.sort_values(by='timestamp')
-    
-    # Reset index
-    raw_data_df = raw_data_df.reset_index(drop=True)
-    
-    # Assuming 'price' is the column in raw data that needs to be split
-    raw_data_df['price_arima'] = raw_data_df['price']
-    raw_data_df['price_other'] = raw_data_df['price']
-    
-    logger.info(f"Storing processed data into {processed_table}...")
-    store_processed_data(raw_data_df, processed_table)
-    logger.info(f"Data processing and storing completed for {processed_table}.")
+    print(f"Processed data for {coin} stored successfully.")
 
 if __name__ == "__main__":
-    logger.info("Processing data for Bitcoin...")
-    process_and_store_data('raw_data_bitcoin', 'processed_data_bitcoin')
+    print("Processing and storing data for Bitcoin...")
+    process_and_store_processed_data('bitcoin')
 
-    logger.info("Processing data for Ethereum...")
-    process_and_store_data('raw_data_ethereum', 'processed_data_ethereum')
+    print("Processing and storing data for Ethereum...")
+    process_and_store_processed_data('ethereum')

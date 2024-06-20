@@ -9,11 +9,12 @@ def query_raw_data():
     )
     cursor = db.cursor()
 
-    cursor.execute("SELECT * FROM raw_data")
+    cursor.execute("SELECT * FROM predictions_bitcoin")
     results = cursor.fetchall()
 
     for row in results:
         print(row)
+
     
     cursor.close()
     db.close()

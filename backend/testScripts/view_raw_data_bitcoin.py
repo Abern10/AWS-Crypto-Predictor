@@ -9,7 +9,7 @@ def query_raw_data():
     )
     cursor = db.cursor()
 
-    cursor.execute("SELECT * FROM predictions LIMIT 5")
+    cursor.execute("SELECT * FROM raw_data_bitcoin")
     results = cursor.fetchall()
 
     for row in results:

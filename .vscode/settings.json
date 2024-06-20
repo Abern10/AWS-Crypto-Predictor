@@ -14,5 +14,6 @@
             "username": "abern",
             "askForPassword": true
         }
-    ]
+    ],
+    "CodeGPT.apiKey": "CodeGPT Plus Beta"
 }
