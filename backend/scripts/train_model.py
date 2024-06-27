@@ -1,11 +1,14 @@
 import mysql.connector
 import pandas as pd
 import numpy as np
-from datetime import datetime, timedelta
+from datetime import datetime, timezone
 import logging
-from statsmodels.tsa.arima.model import ARIMA
-from sklearn.linear_model import LinearRegression
-from sklearn.ensemble import RandomForestRegressor
+from arima_model import arima_predictions
+from linear_regression_model import linear_regression_predictions
+from random_forest_model import random_forest_predictions
+from xgboost_model import xgboost_predictions
+from meta_model import meta_model_predictions
+from sklearn.preprocessing import StandardScaler
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[
@@ -36,6 +39,11 @@ def fetch_processed_data(crypto_name):
     df = pd.DataFrame(data, columns=columns)
     cursor.close()
     db.close()
+
+    logger.info(f"Fetched data columns: {df.columns}")
+    logger.info(f"Fetched data types:\n{df.dtypes}")
+    logger.info(f"First few rows of fetched data:\n{df.head()}")
+    
     return df
 
 # Store predictions
@@ -43,10 +51,12 @@ def store_predictions(predictions, table_name):
     db = get_db_connection()
     cursor = db.cursor()
     
+    cursor.execute(f"TRUNCATE TABLE {table_name}")
+    
     for prediction in predictions:
         cursor.execute(
             f"INSERT INTO {table_name} (timestamp, predicted_price) VALUES (%s, %s)",
-            (prediction['timestamp'], prediction['predicted_price'])
+            (prediction['timestamp'], float(prediction['predicted_price']))  # Convert to float
         )
     
     db.commit()
@@ -60,98 +70,46 @@ def store_past_predictions(predictions, table_name, model_name):
     for prediction in predictions:
         cursor.execute(
             f"INSERT INTO {table_name} (timestamp, model_name, predicted_price, actual_price, prediction_error, prediction_accuracy) VALUES (%s, %s, %s, %s, %s, %s)",
-            (prediction['timestamp'], model_name, prediction['predicted_price'], None, None, None)
+            (prediction['timestamp'], model_name, float(prediction['predicted_price']), None, None, None)  # Convert to float
         )
     
     db.commit()
     cursor.close()
     db.close()
 
-# Model training and prediction functions
-def arima_predictions(train_data, forecast_periods):
-    train_data = train_data.astype(float)
-    model = ARIMA(train_data, order=(5, 1, 0))
-    model_fit = model.fit()
-    predictions = model_fit.forecast(steps=forecast_periods)
-    return predictions
-
-def linear_regression_predictions(train_data, features, forecast_periods):
-    model = LinearRegression()
-    X_train = features
-    y_train = train_data
-    model.fit(X_train, y_train)
-    
-    # Log shapes and data types
-    logger.info(f"X_train shape: {X_train.shape}, y_train shape: {y_train.shape}")
-    logger.info(f"Features columns: {features.columns}")
-    
-    # Prepare features for forecasting
-    X_forecast = np.arange(len(train_data), len(train_data) + forecast_periods).reshape(-1, 1)
-    
-    # Calculate EMA for features
-    ema_span = 7  # Example span for EMA
-    features_ema = features.ewm(span=ema_span, adjust=False).mean().iloc[-1]
-    features_forecast = np.hstack([X_forecast] + [np.full((forecast_periods, 1), features_ema[col]) for col in features.columns if col != 'timestamp_ml'])
-    features_forecast_df = pd.DataFrame(features_forecast, columns=[col for col in features.columns if col != 'timestamp_ml'])
-    
-    predictions = model.predict(features_forecast_df)
-    return predictions
-
-def random_forest_predictions(train_data, features, forecast_periods):
-    model = RandomForestRegressor(n_estimators=100)
-    X_train = features
-    y_train = train_data
-    model.fit(X_train, y_train)
-    
-    # Log shapes and data types
-    logger.info(f"X_train shape: {X_train.shape}, y_train shape: {y_train.shape}")
-    logger.info(f"Features columns: {features.columns}")
-    
-    # Prepare features for forecasting
-    X_forecast = np.arange(len(train_data), len(train_data) + forecast_periods).reshape(-1, 1)
-    
-    # Calculate EMA for features
-    ema_span = 7  # Example span for EMA
-    features_ema = features.ewm(span=ema_span, adjust=False).mean().iloc[-1]
-    features_forecast = np.hstack([X_forecast] + [np.full((forecast_periods, 1), features_ema[col]) for col in features.columns if col != 'timestamp_ml'])
-    features_forecast_df = pd.DataFrame(features_forecast, columns=[col for col in features.columns if col != 'timestamp_ml'])
-    
-    predictions = model.predict(features_forecast_df)
-    return predictions
-
-def meta_model_predictions(arima_preds, lr_preds, rf_preds):
-    X_meta = np.column_stack((arima_preds, lr_preds, rf_preds))
-    model = LinearRegression()
-    model.fit(X_meta, arima_preds)
-    meta_predictions = model.predict(X_meta)
-    return meta_predictions
+def normalize_features(features):
+    scaler = StandardScaler()
+    normalized_features = scaler.fit_transform(features)
+    return pd.DataFrame(normalized_features, columns=features.columns)
 
 def train_and_predict(crypto_name):
     logger.info(f"Fetching processed data for {crypto_name}...")
     data_df = fetch_processed_data(crypto_name)
     
-    # Use 100% of the data for training
     train_data = data_df['price']
     features = data_df[['timestamp_ml', 'volume', 'market_cap', 'open', 'high', 'low', 'close']].dropna()
+    
+    features = normalize_features(features)
     
     forecast_periods = 30  # Predict for the next 30 days
     
     logger.info(f"Training and predicting for {crypto_name}...")
     
-    # Create a separate variable for prices to avoid warnings
     prices = train_data.values
+    last_timestamp = data_df['timestamp_ml'].iloc[-1]
     
     arima_preds = arima_predictions(prices, forecast_periods)
-    lr_preds = linear_regression_predictions(prices, features, forecast_periods)
-    rf_preds = random_forest_predictions(prices, features, forecast_periods)
+    lr_preds = linear_regression_predictions(prices, features, forecast_periods, last_timestamp)
+    rf_preds = random_forest_predictions(prices, features, forecast_periods, last_timestamp)
+    xgb_preds = xgboost_predictions(prices, features, forecast_periods, last_timestamp)
     
-    meta_predictions = meta_model_predictions(arima_preds, lr_preds, rf_preds)
+    meta_predictions = meta_model_predictions(arima_preds, lr_preds, rf_preds, xgb_preds)
     
     final_predictions = []
-    start_date = data_df['timestamp_ml'].iloc[-1] + timedelta(days=1)
+    start_date = last_timestamp + 86400000  # Add one day in milliseconds
     for i in range(forecast_periods):
         final_predictions.append({
-            'timestamp': (start_date + timedelta(days=i)).strftime('%Y-%m-%d %H:%M:%S'),
+            'timestamp': datetime.fromtimestamp((start_date + i * 86400000) / 1000, tz=timezone.utc).strftime('%Y-%m-%d %H:%M:%S'),  # Convert to datetime and format
             'predicted_price': meta_predictions[i]
         })
     
@@ -161,8 +119,7 @@ def train_and_predict(crypto_name):
     logger.info(f"Training and prediction completed for {crypto_name}.")
 
 if __name__ == "__main__":
-    logger.info("Processing data for Bitcoin...")
+    logger.info("Processing data for Bitcoin…")
     train_and_predict('bitcoin')
-
     logger.info("Processing data for Ethereum...")
     train_and_predict('ethereum')

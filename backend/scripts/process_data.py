@@ -54,11 +54,14 @@ def process_and_store_processed_data(coin):
         # Add entries to processed data
         processed_data.append((timestamp_arima, timestamp_ms, price, volume, market_cap, open_price, high, low, close))
     
-    # Insert processed data into the database
+    # Insert processed data into the database with ON DUPLICATE KEY UPDATE clause
     insert_query = f"""
     INSERT INTO processed_data_{coin.lower()} 
     (timestamp_arima, timestamp_ml, price, volume, market_cap, open, high, low, close) 
     VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+    ON DUPLICATE KEY UPDATE 
+    price=VALUES(price), volume=VALUES(volume), market_cap=VALUES(market_cap), 
+    open=VALUES(open), high=VALUES(high), low=VALUES(low), close=VALUES(close)
     """
     cursor.executemany(insert_query, processed_data)
     db.commit()
